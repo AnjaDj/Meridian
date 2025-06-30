@@ -17,18 +17,18 @@ Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-
 
 Iz
 
-|   PIN   |               Funkcije PIN-a                   |  Selektovana funkcija  |
-|---------|------------------------------------------------|------------------------|
-|   E23   |   TRACE_D7/SPIS1_MISO/**I2C0_SCL**/HPS_GPIO56  |       I2C0_SCL         |
-|   C24   |   TRACE_D6/SPIS1_SS0/**I2C0_SDA**/HPS_GPIO55   |       I2C0_SDA         |
-|         |                                                |                        |
-|   H23   |   TRACE_D3/**SPIS0_SS0**/I2C1_SCL/HPS_GPIO52   |    SPIS0_SS0           |
-|   A25   |   TRACE_D2/**SPIS0_MISO**/I2C1_SDA/HPS_GPIO51  |    SPIS0_MISO          |
-|   C25   |   TRACE_D1/**SPIS0_MOSI**/UART0_TX/HPS_GPIO50  |    SPIS0_MOSI          |
-|   B25   |   TRACE_D0/**SPIS0_CLK**/UART0_RX/HPS_GPIO49   |    SPIS0_CLK           |
-|         |                                                |                        |
-|   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64      |    UART1_TX            |
-|   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63       |    UART1_RX            |
+|   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
+|---------|------------------------------------------------|---------------------------|
+|   E23   |   TRACE_D7/SPIS1_MISO/**I2C0_SCL**/HPS_GPIO56  |       I2C0_SCL            |
+|   C24   |   TRACE_D6/SPIS1_SS0/**I2C0_SDA**/HPS_GPIO55   |       I2C0_SDA            |
+|         |                                                |                           |
+|   H23   |   TRACE_D3/**SPIS0_SS0**/I2C1_SCL/HPS_GPIO52   |       SPIS0_SS0           |
+|   A25   |   TRACE_D2/**SPIS0_MISO**/I2C1_SDA/HPS_GPIO51  |       SPIS0_MISO          |
+|   C25   |   TRACE_D1/**SPIS0_MOSI**/UART0_TX/HPS_GPIO50  |       SPIS0_MOSI          |
+|   B25   |   TRACE_D0/**SPIS0_CLK**/UART0_RX/HPS_GPIO49   |       SPIS0_CLK           |
+|         |                                                |                           |
+|   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64  |       UART1_TX            |
+|   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
 
 
 
