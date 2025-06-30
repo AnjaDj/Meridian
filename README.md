@@ -18,7 +18,7 @@ Hardver realizujemo pomocu *Qsys* alata, a nas sistem ce se sastojati od:
 3. *PIO* komponente za povezivanje sa *GPIO* konektorom na *FPGA Fabric*-u
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9bd42640-037e-41ea-9cd5-945ec7a4414f" alt="Description" width="900" height="300"/>
+  <img src="https://github.com/user-attachments/assets/9bd42640-037e-41ea-9cd5-945ec7a4414f"/>
 </p>
 <p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema</i></p>
 
