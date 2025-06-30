@@ -4,7 +4,7 @@ Prilagoditi sistem na **FPGA** dijelu tako da se omogući povezivanje izmedju *k
 
 ## Realizacija hardvera
 
-<p>
-  <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="400" height="350"/><br/>
-  <b>Slika 1</b>: Shema 5CSEMA5F31C6 CycloneV SoC
-</p>
+<figure style="text-align: left;">
+  <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="400" height="350"/>
+  <figcaption> <b>Slika 1 </b>: Shema 5CSEMA5F31C6 CycloneV SoC</figcaption>
+</figure>
