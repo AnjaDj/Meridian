@@ -8,7 +8,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 <p align="center">
   <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="500" height="450"/>
 </p>
-<p align="center"><i><b>Slika 1 </b>: Shema 5CSEMA5F31C6 CycloneV SoC</i></p>
+<p align="center"><i><b>Slika 1 </b>: Sema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
 ## Realizacija hardvera
 
