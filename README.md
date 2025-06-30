@@ -10,7 +10,17 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 </p>
 <p align="center"><i><b>Slika 1 </b>: Sema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
-## Realizacija hardvera
+## Realizacija hardvera 
+
+Hardver realizujemo pomocu *Qsys* alata, a nas sistem ce se sastojati od:
+1. izvora takst signala od *50MHz*
+2. CycloneV HPS
+3. *PIO* komponente za povezivanje sa *GPIO* konektorom na *FPGA Fabric*-u
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9bd42640-037e-41ea-9cd5-945ec7a4414f" alt="Description" width="900" height="300"/>
+</p>
+<p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema</i></p>
 
 Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) odabrana je sledeca konfiguracija HPS pinova:
 
