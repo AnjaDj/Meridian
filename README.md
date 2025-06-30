@@ -15,7 +15,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*.
 Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-to-FPGA* interfejsa
 
-Iz
+Iz [](/docs/)
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
