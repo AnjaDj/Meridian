@@ -5,10 +5,10 @@ Prilagoditi sistem na **FPGA** dijelu tako da se omogući povezivanje izmedju *k
 Koristićemo **I2C**/**SPI** periferije koje se nalaze u sklopu **HPS** dijela CycloneV chip-a, s tim da cemo signalima tih HPS periferija pristupati preko **GPIO** konektora koji je, kao sto vidimo na **Slici 1**,
 povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretno I2C i SPI) ce kroz *FPGA Fabric* biti povezani na pinove *GPIO konektora*.
 
-<figure style="center">
-  <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="400" height="350"/>
-  <figcaption> <b>Slika 1 </b>: Shema 5CSEMA5F31C6 CycloneV SoC</figcaption>
-</figure> </br></br>
+<p align="center">
+  <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="500" height="450"/>
+</p>
+<p align="center"><i><b>Slika 1 </b>: Shema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
 ## Realizacija hardvera
 
