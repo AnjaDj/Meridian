@@ -12,7 +12,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 
 ## Realizacija hardvera
 
-Iz [fajla](docs/DE1-SoC_schematic.pdf) odabrana je sledeca konfiguracija pinova:
+Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) odabrana je sledeca konfiguracija HPS pinova:
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
@@ -27,6 +27,7 @@ Iz [fajla](docs/DE1-SoC_schematic.pdf) odabrana je sledeca konfiguracija pinova:
 |   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64  |       UART1_TX            |
 |   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
 
+U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo sledecu *Peripherals Mux Table* za HPS:
 ![image](https://github.com/user-attachments/assets/d0179f78-c84d-4b29-b83e-7bf0879a9875)
 
 
