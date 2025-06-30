@@ -9,4 +9,8 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 <figure style="text-align: left;">
   <img src="/docs/5CSEMA5F31C6_shema.jpg" alt="Description" width="400" height="350"/>
   <figcaption> <b>Slika 1 </b>: Shema 5CSEMA5F31C6 CycloneV SoC</figcaption>
-</figure>
+</figure> </br></br>
+
+
+Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*.
+Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-to-FPGA* interfejsa
