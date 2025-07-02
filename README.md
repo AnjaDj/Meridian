@@ -44,7 +44,6 @@ U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo slede
 <p align="center"><i><b>Slika 3 </b>: Peripherals Mux Table</i></p>
 </br>
 
-
 Kako **HPS** koristi eksternu DDR3, eksportujemo **hps_0_ddr** *Conduit* za pristup toj memoriji, te koristimo sledeci [preset](presets/de1-soc-hps-ddr.qprs) za efikasnije
 podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS eksportovali **hps_0_io** *Conduit*.
 <p align="center">
@@ -53,11 +52,15 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
 
+### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
 
 
-**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**.
-Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*. Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-to-FPGA* interfejsa.
-
+**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**. </br>
+Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*. Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko ***Lightweight HPS-to-FPGA*** interfejsa.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3a4e3280-7254-49fc-9a70-348a42c5ef2e" alt="Description" width="500" height="400"/>
+</p>
+<p align="center"><i><b>Slika 5 </b>: Interfejsi izmedju FPGA Fabric-a i HPS-a</i></p>
 
 
 
