@@ -31,10 +31,10 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 |   C14   |   RGMII0_MDIO/USB1_D5/**I2C2_SDA**/HPS_GPIO6   |       I2C2_SDA            |
 |   D15   |   RGMII0_MDC/USB1_D6/**I2C2_SCL**/HPS_GPIO7    |       I2C2_SCL            |
 |         |                                                |                           |
-|   H23   |   TRACE_D3/**SPIS0_SS0**/I2C1_SCL/HPS_GPIO52   |       SPIS0_SS0           |
-|   A25   |   TRACE_D2/**SPIS0_MISO**/I2C1_SDA/HPS_GPIO51  |       SPIS0_MISO          |
-|   C25   |   TRACE_D1/**SPIS0_MOSI**/UART0_TX/HPS_GPIO50  |       SPIS0_MOSI          |
-|   B25   |   TRACE_D0/**SPIS0_CLK**/UART0_RX/HPS_GPIO49   |       SPIS0_CLK           |
+|   A23   |   **SPIM0_CLK**/I2C1_SDA/UART0_CTS/HPS_GPIO57  |       SPIM0_CLK           |
+|   C22   |  **SPIM0_MOSI**/I2C1_SCL/UART0_RTS/HPS_GPIO58  |       SPIM0_MOSI          |
+|   B23   |   **SPIM0_MISO**/CAN1_RX/UART1_CTS/HPS_GPIO59  |       SPIM0_MISO          |
+|   H20   |   SPIM0_SS0,BOOTSEL0/SPIM0_SS0/CAN1_TX/UART1_RTS/HPS_GPIO60   |       SPIM0_SS0          |
 |         |                                                |                           |
 |   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64  |       UART1_TX            |
 |   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
