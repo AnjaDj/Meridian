@@ -12,7 +12,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 
 ## Realizacija hardvera 
 
-Hardver realizujemo pomocu *Qsys* alata, a nas sistem ce se sastojati od:
+Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem ce se sastojati od:
 1. izvora takst signala od *50MHz*
 2. CycloneV HPS
 3. *PIO* komponente za povezivanje sa *GPIO* konektorom na *FPGA Fabric*-u
@@ -20,9 +20,11 @@ Hardver realizujemo pomocu *Qsys* alata, a nas sistem ce se sastojati od:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9bd42640-037e-41ea-9cd5-945ec7a4414f"/>
 </p>
-<p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema</i></p>
+<p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
-Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) odabrana je sledeca konfiguracija HPS pinova:
+### Podesavanje HPS dijela?
+
+Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledeci nacin :
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
@@ -43,9 +45,8 @@ U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo slede
 
 
 
-
-Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*.
-Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-to-FPGA* interfejsa
+**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**.
+Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*. Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko *Lightweight HPS-to-FPGA* interfejsa.
 
 
 
