@@ -28,8 +28,8 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
-|   E23   |   TRACE_D7/SPIS1_MISO/**I2C0_SCL**/HPS_GPIO56  |       I2C0_SCL            |
-|   C24   |   TRACE_D6/SPIS1_SS0/**I2C0_SDA**/HPS_GPIO55   |       I2C0_SDA            |
+|   C14   |   RGMII0_MDIO/USB1_D5/**I2C2_SDA**/HPS_GPIO6   |       I2C2_SDA            |
+|   D15   |   RGMII0_MDC/USB1_D6/**I2C2_SCL**/HPS_GPIO7    |       I2C2_SCL            |
 |         |                                                |                           |
 |   H23   |   TRACE_D3/**SPIS0_SS0**/I2C1_SCL/HPS_GPIO52   |       SPIS0_SS0           |
 |   A25   |   TRACE_D2/**SPIS0_MISO**/I2C1_SDA/HPS_GPIO51  |       SPIS0_MISO          |
