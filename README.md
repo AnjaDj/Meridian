@@ -45,6 +45,11 @@ U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo slede
 
 Kako **HPS** koristi eksternu DDR3, eksportujemo **hps_0_ddr** *Conduit* za pristup toj memoriji, te koristimo sledeci [preset](presets/de1-soc-hps-ddr.qprs) za efikasnije
 podesavanje parametara SDRAM-a
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/4b8efe33-9130-4fd5-876d-3a1d582d8ce0" alt="Description" width="500" height="250"/>
+</p>
+<p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
+
 
 
 
