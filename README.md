@@ -55,8 +55,11 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 ### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
 
 
-**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**. </br>
+**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**. </br></br>
 Kako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciracemo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*. Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko ***Lightweight HPS-to-FPGA*** interfejsa.
+
+Vise o dostupnim interfejsima za medjukomunikaciju uzmedju *Hard Processor System*-a i *FPGA Fabric*-a se moze naci na [linku](https://haoxinshengic.com/interconnection-structure-between-fpga-and-hps/) .
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3a4e3280-7254-49fc-9a70-348a42c5ef2e" alt="Description" width="500" height="400"/>
 </p>
