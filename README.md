@@ -34,7 +34,7 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 |   A23   |   **SPIM0_CLK**/I2C1_SDA/UART0_CTS/HPS_GPIO57  |       SPIM0_CLK           |
 |   C22   |  **SPIM0_MOSI**/I2C1_SCL/UART0_RTS/HPS_GPIO58  |       SPIM0_MOSI          |
 |   B23   |   **SPIM0_MISO**/CAN1_RX/UART1_CTS/HPS_GPIO59  |       SPIM0_MISO          |
-|   H20   |   SPIM0_SS0,BOOTSEL0/SPIM0_SS0/CAN1_TX/UART1_RTS/HPS_GPIO60   |       SPIM0_SS0          |
+|   H20   |   **SPIM0_SS0**,BOOTSEL0/SPIM0_SS0/CAN1_TX/UART1_RTS/HPS_GPIO60   |       SPIM0_SS0          |
 |         |                                                |                           |
 |   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64  |       UART1_TX            |
 |   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
