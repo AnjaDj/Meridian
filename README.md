@@ -40,7 +40,9 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 |   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
 
 U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo sledecu *Peripherals Mux Table* za HPS:
-![image](https://github.com/user-attachments/assets/d0179f78-c84d-4b29-b83e-7bf0879a9875) </br>
+![image](https://github.com/user-attachments/assets/d0179f78-c84d-4b29-b83e-7bf0879a9875)
+<p align="center"><i><b>Slika 3 </b>: Peripherals Mux Table</i></p>
+</br>
 
 
 Kako **HPS** koristi eksternu DDR3, eksportujemo **hps_0_ddr** *Conduit* za pristup toj memoriji, te koristimo sledeci [preset](presets/de1-soc-hps-ddr.qprs) za efikasnije
