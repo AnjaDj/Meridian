@@ -10,7 +10,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 </p>
 <p align="center"><i><b>Slika 1 </b>: Sema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
-## Realizacija hardvera 
+## Realizacija hardvera 💻⚙️
 
 Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem ce se sastojati od:
 1. izvora takst signala od *50MHz*
@@ -22,7 +22,7 @@ Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem
 </p>
 <p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
-### Podesavanje HPS dijela?
+### ➙ Podesavanje HPS dijela?
 
 Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledeci nacin :
 
