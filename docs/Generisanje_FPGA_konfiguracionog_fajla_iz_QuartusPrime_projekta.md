@@ -27,3 +27,7 @@ Otvorite projekat u *Intel Quartus Prime* alatu (*File->Open Project->meridian.q
     - **Input files to convert->Add file->.sof**
     - Nakon podesavanja, idite na **Generate**
 ![image](https://github.com/user-attachments/assets/1f75236a-f734-4ee5-ab87-8b87045ae8be)
+
+## Reference
+[link1](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) </br>
+[link2](https://github.com/robseb/rsyocto/blob/rsYocto-1.041/doc/guides/6_newFPGAconf.md)
