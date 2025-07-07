@@ -17,4 +17,37 @@ Konacno dobijamo **meridian.qpf** sa [**meridian_top.vhd**](vhd/meridian_top.vhd
 
 ### Kreiranje Qsys projekta
 
-U okviru prethodno kreiranom Quartus projekta, biramo opciju **Tools->Qsys*** te mozemo odmah da sacuvamo **.qsys** fajl kao **soc_system.qsys** u okviu koga cemo dodavati komponente koje ce graditi nas hardverski sistem.
+U okviru prethodno kreiranom Quartus projekta, biramo opciju **Tools->Qsys** te mozemo odmah da sacuvamo **.qsys** fajl kao **soc_system.qsys** u okviru koga cemo dodavati komponente koje ce graditi nas hardverski sistem.
+
+U okviru **IP Catalog** tab-a biramo da dodamo sledece kommponente:
+- **Clock Source** (trebalo bi da je po default-u ukljucen u .qsys projekat)
+- **Arria V/Cyclone V Hard Processor System**
+- **System ID Peripheral**
+
+Sada cemo podesiti neke od parametara **HPS**-a.
+
+Ovdje smo omogucili sve **AXI Bridge**-eve i postavili ih kao **32bit**-ne, mada nije neophodno. Ali ako Linux aplikacija pokusa da pristupi disable-ovanom bridge-u desice se **Kernel panic**, tako da smo omogucili sva tri interfejsa.
+![image](https://github.com/user-attachments/assets/08954620-0a9b-40fe-8e4a-112784d9e352)</br>
+
+Dalje, prelazimo na **Peripheral Pins** tab, gdje biramo sledece:</br>
+![image](https://github.com/user-attachments/assets/72a974f6-d8d9-4ad1-b1b2-d9b0c04a426b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
