@@ -40,6 +40,9 @@ Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc
 Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
 ![image](https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705) </br>
 
+Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata koje smo dodali u nas sistem, idemo na **System->Assign Base Addresses** i da generisemo 
+nas hardverski sistem **Generate->Generate HDL**
+![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)
 
 
 
