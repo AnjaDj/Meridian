@@ -36,6 +36,10 @@ Dodatno, selektujemo **QSPI_SS1** kao **GPIO_35** i **TRACE_D4/TRACE_D5** kao **
 Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc-hps-ddr](../presets/de1-soc-hps-ddr) te kliknemo **Apply**.
 
 
+Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
+![image](https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705) </br>
+![image](https://github.com/user-attachments/assets/62408f22-f993-4dd6-bdf0-a4cb5f9e40c1)
+
 
 
 
