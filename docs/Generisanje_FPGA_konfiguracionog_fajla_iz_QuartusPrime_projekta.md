@@ -39,9 +39,9 @@ U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 
 Proces kopiranja fajla na **FAT32** je sledeci:
 1. Napravicemo **mount point** - folder gdje cemo montirati particiju  `sudo mkdir /mnt/mydisk`
-2. Montiramo particiju ***/dev/sda1*** na ***/mnt/mydisk***. Sada ce sadržaj particije ***/dev/sda1*** biti dostupan kroz ***/mnt/mydisk*** `sudo mount /dev/sda1 /mnt/mydisk`
+2. Montiramo particiju ***/dev/sda1*** na ***/mnt/mydisk***. Sada ce sadržaj particije ***/dev/sda1*** biti dostupan kroz ***/mnt/mydisk***</br>`sudo mount /dev/sda1 /mnt/mydisk`
 3. Kopiramo fajl `sudo cp socfpga.rbf /mnt/mydisk/`
-
+4. Odmontiramo particiju `sudo umount /mnt/mydisk`
 
 ## Reference
 [link1](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) </br>
