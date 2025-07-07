@@ -13,12 +13,12 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 ## Realizacija hardvera 💻⚙️
 
 Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem ce se sastojati od:
-1. izvora takst signala od *50MHz*
-2. CycloneV HPS
-3. *PIO* komponente za povezivanje sa *GPIO* konektorom na *FPGA Fabric*-u
+1. **Clock Source** izvora takst signala od *50MHz*
+2. **AlteraV/CycloneV HPS**
+3. **System Peripheral ID**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9bd42640-037e-41ea-9cd5-945ec7a4414f"/>
+  <img src="https://github.com/user-attachments/assets/c6c00afe-a715-402d-a3eb-ae2d53a5833d"/>
 </p>
 <p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
