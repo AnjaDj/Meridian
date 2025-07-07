@@ -49,19 +49,12 @@ Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softve
 ### Proces kompajliranja dizajna
 
 - Kako smo prethodno komandom **Generate** izgenerisali **synthesis** fajl potreban za proces kompilacije sistema u Quartus Prime projektu, moramo ga dodati
-u sam projekat **Project->Add/Remove Files in Project->Add:**
+u sam projekat **Project->Add/Remove Files in Project->**
 ![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)
 
 
-
-
-
-
-
-
-
-
-
-
+- Krovni VHDL dizajn je dao kao [meridian_top.vhd](../vhd/meridian_top.vhd), te cemo nakon pokretanja [Tcl skripte](../tcl/pin_assignment_de1_soc.tcl) pokrenuti samo proces **Analize i Sinteze**.
+- Nakon sto je **Analysis & Synthesis** uspjesno zavrsena, pokrecemo drugu [Tcl skriptu](../tcl/hps_sdram_p0_pin_assignments.tcl)
+- Sada pokrecemo cjelokupan proces kompilacije sa **Processing->Start compilation**
 
 
