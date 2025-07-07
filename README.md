@@ -64,8 +64,7 @@ Vise o dostupnim interfejsima za medjukomunikaciju uzmedju *Hard Processor Syste
 </p>
 <p align="center"><i><b>Slika 5 </b>: Interfejsi izmedju FPGA Fabric-a i HPS-a</i></p>
 
-
-
+## [Generisanje FPGA konfiguracionog fajla](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) 📋⚙️
 
 
 
