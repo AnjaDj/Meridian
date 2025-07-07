@@ -44,6 +44,13 @@ Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata k
 nas hardverski sistem **Generate->Generate HDL**
 ![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)
 
+Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softvera
+
+### Proces kompajliranja dizajna
+
+- Kako smo prethodno komandom **Generate** izgenerisali **synthesis** fajl potreban za proces kompilacije sistema u Quartus Prime projektu, moramo ga dodati
+u sam projekat **Project->Add/Remove Files in Project->Add:**
+![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)
 
 
 
