@@ -29,16 +29,14 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
-|   C14   |   RGMII0_MDIO/USB1_D5/**I2C2_SDA**/HPS_GPIO6   |       I2C2_SDA            |
-|   D15   |   RGMII0_MDC/USB1_D6/**I2C2_SCL**/HPS_GPIO7    |       I2C2_SCL            |
+|   C25   |   TRACE_D1/SPIS0_MOSI/**UART0_TX**/HPS_GPIO50  |       UART0_TX            |
+|   B25   |   TRACE_D0/SPIS0_CLK/**UART0_RX**/HPS_GPIO49   |       UART0_RX            |
 |         |                                                |                           |
-|   A23   |   **SPIM0_CLK**/I2C1_SDA/UART0_CTS/HPS_GPIO57  |       SPIM0_CLK           |
-|   C22   |  **SPIM0_MOSI**/I2C1_SCL/UART0_RTS/HPS_GPIO58  |       SPIM0_MOSI          |
-|   B23   |   **SPIM0_MISO**/CAN1_RX/UART1_CTS/HPS_GPIO59  |       SPIM0_MISO          |
-|   H20   |   **SPIM0_SS0**,BOOTSEL0/SPIM0_SS0/CAN1_TX/UART1_RTS/HPS_GPIO60   |       SPIM0_SS0          |
+|    -    |      FPGA mode=Full                            |          I2C2             |
+|    -    |      FPGA mode=Full                            |          SPIM0            |
 |         |                                                |                           |
-|   D22   |   I2C0_SCL/**UART1_TX**/SPIM1_MOSI/HPS_GPIO64  |       UART1_TX            |
-|   C23   |   I2C0_SDA/**UART1_RX**/SPIM1_CLK/HPS_GPIO63   |       UART1_RX            |
+|    -    |      HPS I/O  RGMII                            |          EMAC1            |
+|    -    |      HPS I/O  4-bit Data                       |          SDIO0            |
 
 U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo sledecu *Peripherals Mux Table* za HPS:
 ![image](https://github.com/user-attachments/assets/1ead44a2-35d4-4012-bd76-8fe7f8956c9a)
