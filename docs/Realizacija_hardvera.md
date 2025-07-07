@@ -1,4 +1,5 @@
 # Realizacija hardvera
+![image](https://github.com/user-attachments/assets/96be3d69-59a2-4e7f-8a7d-c42f8ec897fa)
 
 ## Preduslov
 - Instaliran [*Quartus Prime*](https://www.intel.com/content/www/us/en/software-kit/669553/intel-quartus-prime-lite-edition-design-software-version-17-0-for-linux.html) sa *Intel® Cyclone® V Device Support* i *Nios® II EDS*
@@ -38,7 +39,6 @@ Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc
 
 Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
 ![image](https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705) </br>
-![image](https://github.com/user-attachments/assets/62408f22-f993-4dd6-bdf0-a4cb5f9e40c1)
 
 
 
