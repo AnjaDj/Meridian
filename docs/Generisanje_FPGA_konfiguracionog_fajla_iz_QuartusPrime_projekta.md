@@ -38,10 +38,20 @@ U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 ![image](https://github.com/user-attachments/assets/5cc6c31e-3e93-4347-af61-3d3f9b98b8e4) </br>
 
 Proces kopiranja fajla na **FAT32** je sledeci:
-1. Napravicemo **mount point** - folder gdje cemo montirati particiju  `sudo mkdir /mnt/mydisk`
-2. Montiramo particiju ***/dev/sda1*** na ***/mnt/mydisk***. Sada ce sadržaj particije ***/dev/sda1*** biti dostupan kroz ***/mnt/mydisk***</br>`sudo mount /dev/sda1 /mnt/mydisk`
-3. Kopiramo fajl `sudo cp socfpga.rbf /mnt/mydisk/`
-4. Odmontiramo particiju `sudo umount /mnt/mydisk`
+1. Umetnite SD karticu u citac za PC
+2. Napravicemo **mount point** - folder gdje cemo montirati particiju  `sudo mkdir /mnt/mydisk`
+3. Montiramo particiju ***/dev/sda1*** na ***/mnt/mydisk***. Sada ce sadržaj particije ***/dev/sda1*** biti dostupan kroz ***/mnt/mydisk***</br>`sudo mount /dev/sda1 /mnt/mydisk`
+4. Kopiramo fajl `sudo cp socfpga.rbf /mnt/mydisk/`
+5. Odmontiramo particiju `sudo umount /mnt/mydisk`
+
+Ukoliko zelimo da provjerimo da li je kopiranje zaista i izvrseno, mozemo umetnuti SD karticu nazad u plocu, pokrenuti je i uci u U-Boot konzolu:
+1. Koritimo komandu `fatls` kojoj moramo proslijediti naziv uređaja (`mmc`), broj uređaja (`0`), broj particije (`1`) i putanju do foldera čiji sadržaj želimo da izlistamo (u našem slučaju to je korjeni folder /)</br>
+`fatls mmc 0:1 /`
+2. Ako fajl nije prikazan ili ne može da se učita, pokrecemo `mmc rescan` a zatim ponovo `fatls mmc 0:1 /`
+3. Sada ćemo učitati ovaj tekstualni fajl u RAM na lokaciju 0x01000000 </br>
+`fatload mmc 0:1 0x01000000 socfpga.rbf`
+4. Koristimo komandu md (memory dump) koja nam prikazuje sadržaj memorije na specificiranoj lokaciji</br>
+`md 0x01000000`
 
 ## Reference
 [link1](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) </br>
