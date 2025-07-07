@@ -1,4 +1,4 @@
-# Generisanje .rbf fajla iz .sof fajla
+# Generisanje konfiguracionog .rbf fajla iz .sof fajla
 
 Vodic za generisanje FPGA konfiguracionog fajla pomocu *Intel Quartus Prime* alata. Moguce je da se konfiguracija *FPGA Fabric*-a
 izvrsi ili tokom procesa **boot**-anja sistema ili od strane **Linux** OS-a. Obije mogucnosti su opisane u nastavku teksta.
@@ -30,6 +30,18 @@ Otvorite projekat u *Intel Quartus Prime* alatu (*File->Open Project->meridian.q
     - **Input files to convert->Add file->.sof**
     - Nakon podesavanja, idite na **Generate**
 ![image](https://github.com/user-attachments/assets/1f75236a-f734-4ee5-ab87-8b87045ae8be)
+
+## Kopiranje konfiguracionog .rbf fajla na FAT32 particiju na SD kartici
+
+U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
+![image](https://github.com/user-attachments/assets/5819590a-5373-4360-9b6c-a1139b69cff8) </br>
+![image](https://github.com/user-attachments/assets/5cc6c31e-3e93-4347-af61-3d3f9b98b8e4) </br>
+
+Proces kopiranja fajla na **FAT32** je sledeci:
+1. Napravicemo **mount point** - folder gdje cemo montirati particiju  `sudo mkdir /mnt/mydisk`
+2. Montiramo particiju ***/dev/sda1*** na ***/mnt/mydisk***. Sada ce sadržaj particije ***/dev/sda1*** biti dostupan kroz ***/mnt/mydisk*** `sudo mount /dev/sda1 /mnt/mydisk`
+3. Kopiramo fajl `sudo cp socfpga.rbf /mnt/mydisk/`
+
 
 ## Reference
 [link1](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) </br>
