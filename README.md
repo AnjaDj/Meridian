@@ -17,6 +17,7 @@ Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem
 2. **AlteraV/CycloneV HPS**
 3. **System Peripheral ID**
 
+Kompletan vodac za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartus-a** dat je [ovdje](/docs/Realizacija_hardvera.md), a u nastavcu cemo se dotaci samo najbitnijih tacaka.</br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c6c00afe-a715-402d-a3eb-ae2d53a5833d"/>
 </p>
