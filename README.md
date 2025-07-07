@@ -39,8 +39,7 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 |    -    |      HPS I/O  4-bit Data                       |          SDIO0            |
 
 U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo sledecu *Peripherals Mux Table* za HPS:
-![image](https://github.com/user-attachments/assets/1ead44a2-35d4-4012-bd76-8fe7f8956c9a)
-![image](https://github.com/user-attachments/assets/f499456e-fb63-4ce4-9431-6f16899afb55)
+![image](https://github.com/user-attachments/assets/4f58e6f7-6b5a-43e0-a63b-8360cde7324b)
 <p align="center"><i><b>Slika 3 </b>: Peripherals Mux Table</i></p>
 </br>
 
