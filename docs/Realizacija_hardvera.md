@@ -17,4 +17,4 @@ Konacno dobijamo **meridian.qpf** sa [**meridian_top.vhd**](vhd/meridian_top.vhd
 
 ### Kreiranje Qsys projekta
 
-U okviru prethodno kreiranom Quartus projekta, biramo opciju **Tools->Qsys*** te mozemo odmah da sacuvamo **.qsys** fajl kao **soc_system.qsys** koji ce predstavljati nas radni hardverski dizajn.
+U okviru prethodno kreiranom Quartus projekta, biramo opciju **Tools->Qsys*** te mozemo odmah da sacuvamo **.qsys** fajl kao **soc_system.qsys** u okviu koga cemo dodavati komponente koje ce graditi nas hardverski sistem.
