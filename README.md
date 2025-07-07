@@ -66,6 +66,13 @@ Vise o dostupnim interfejsima za medjukomunikaciju uzmedju *Hard Processor Syste
 
 ## [Generisanje FPGA konfiguracionog fajla](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) 📋⚙️
 
+Nakon sto je uspjesno (*100%*) zavrsen proces **kompilacije** (Analysis & Synthesis, Fitter, Assembler...) naseg dizajna u *Quartus Prime* softveru, generisan je **.sof** (engl. **SRAM Object File**)fajl,
+koji se treba konvertovati u **.rbf** format. Kompletno uputstvo kako se dolazi do **.sof** i **.rbf** fajlova moze se pronaci [ovdje](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md).
+
+S obzirom da mi zelimo konfiguraciju FPGA Fabric-a tokom faze **boot**-ovanja sistema sa U-Boot-om:
+- Type: Raw Binary File (.rbf)
+- Mode: Passive Paralle x8
+![image](https://github.com/user-attachments/assets/0c828854-1882-44c3-92b1-0ce0897102cb)
 
 
 
