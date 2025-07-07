@@ -1,5 +1,8 @@
 # Generisanje .rbf fajla iz .sof fajla
 
+Vodic za generisanje FPGA konfiguracionog fajla pomocu *Intel Quartus Prime* alata. Moguce je da se konfiguracija *FPGA Fabric*-a
+izvrsi ili tokom procesa **boot**-anja sistema ili od strane **Linux** OS-a. Obije mogucnosti su opisane u nastavku teksta.
+
 ## Preduslov
 
 - Kompajliran VHDL dizajn (*Processing->Start Compilation*), nakon cega ce biti izgenerisan **.sof** fajl.
