@@ -56,6 +56,7 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 </p>
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
+Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardvera.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces kompilacije **Processing->Start compilation**.
 
 ### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
 
