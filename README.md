@@ -3,6 +3,8 @@
 - [Instalacija](#instalacija)
 - [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardvera.md)
   - [Kreiranje Quartus projekta](/docs/Realizacija_hardvera.md#kreiranje-quartus-projekta)
+  - [Kreiranje Qsys projekta](/docs/Realizacija_hardvera.md#kreiranje-qsys-projekta)
+  - [Kompajliranje dizajna](/docs/Realizacija_hardvera.md#proces-kompajliranja-dizajna)
 
 # Zadatak
 Integrisati termalnu kameru [**Meridian-MI1602**](https://www.meridianinno.com/products) na infrastrukturu [**DE1-SoC**](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836) platforme.
