@@ -35,7 +35,7 @@ Dalje, prelazimo na **Peripheral Pins** tab, gdje biramo sledece:</br>
 ![image](https://github.com/user-attachments/assets/72a974f6-d8d9-4ad1-b1b2-d9b0c04a426b) </br>
 Dodatno, selektujemo **QSPI_SS1** kao **GPIO_35** i **TRACE_D4/TRACE_D5** kao **GPIO_53/GPIO_54** u sklopu **Peripherals Mux Table**.
 
-Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc-hps-ddr](../presets/de1-soc-hps-ddr) te kliknemo **Apply**.
+Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc-hps-ddr](../presets/de1-soc-hps-ddr.qprs) te kliknemo **Apply**.
 
 
 Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
