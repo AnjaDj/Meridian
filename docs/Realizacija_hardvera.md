@@ -1,5 +1,6 @@
 # Realizacija hardvera
 ![image](https://github.com/user-attachments/assets/96be3d69-59a2-4e7f-8a7d-c42f8ec897fa)
+<p align="center"><i><b>Slika 1 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
 ## Preduslov
 - Instaliran [*Quartus Prime*](https://www.intel.com/content/www/us/en/software-kit/669553/intel-quartus-prime-lite-edition-design-software-version-17-0-for-linux.html) sa *Intel® Cyclone® V Device Support* i *Nios® II EDS*
