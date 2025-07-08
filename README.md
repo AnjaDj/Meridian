@@ -1,7 +1,7 @@
 ## Sadržaj
 - [Opis](#Zadatak)
 - [Instalacija](#instalacija)
-- [Upotreba](#upotreba)
+- [Realizacija hardverskog dijela sistema](#Realizacija_hardvera)
 - [Licenca](#licenca)
 
 # Zadatak
@@ -16,7 +16,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 </p>
 <p align="center"><i><b>Slika 1 </b>: Sema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
-## [Realizacija hardvera](/docs/Realizacija_hardvera.md) 💻⚙️
+## [Realizacija_hardvera](/docs/Realizacija_hardvera.md) 💻⚙️
 
 Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem ce se sastojati od:
 1. **Clock Source** izvora takst signala od *50MHz*
