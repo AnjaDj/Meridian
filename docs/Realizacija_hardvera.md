@@ -66,7 +66,8 @@ u sam projekat **Project->Add/Remove Files in Project->** </br>
 - Pokrecemo [Tcl skriptu](../tcl/pin_assignment_de1_soc.tcl) sa **Tools->Tcl Scripts..** </br>
   ![image](https://github.com/user-attachments/assets/b3e520f1-8756-4c9e-9c53-68b8e9ebc198)
 - Pokrenuti samo proces **Processing->Start->Analysis & Synthesis**
-- Nakon sto je **Analysis & Synthesis** uspjesno zavrsena, pokrecemo drugu [Tcl skriptu](../tcl/hps_sdram_p0_pin_assignments.tcl) sa sa **Tools->Tcl Scripts..**
+- Nakon sto je **Analysis & Synthesis** uspjesno zavrsena, pokrecemo drugu [Tcl skriptu](../tcl/hps_sdram_p0_pin_assignments.tcl) sa sa **Tools->Tcl Scripts..**</br>
+  ![image](https://github.com/user-attachments/assets/707bf23d-06f1-42a4-af62-4199cf716696)
 - konacno pokrecemo cjelokupan proces kompilacije sa **Processing->Start compilation**
 
 
