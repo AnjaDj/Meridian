@@ -71,4 +71,12 @@ u sam projekat **Project->Add/Remove Files in Project->** </br>
   ![image](https://github.com/user-attachments/assets/707bf23d-06f1-42a4-af62-4199cf716696)
 - konacno pokrecemo cjelokupan proces kompilacije sa **Processing->Start compilation**
 
+### Generisanje FPGA konfiguracionog fajla
+
+Sada kada je kompilacija naseg VHDL dizajna uspjesno zavrsena, dobili smo **output_files/meridian_top.sof** koji je potrebno konvertovati
+u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan
+u [vodicu](/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**
+
+
+
 
