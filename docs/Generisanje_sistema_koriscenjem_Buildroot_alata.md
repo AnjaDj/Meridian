@@ -42,7 +42,7 @@ mkdir -p board/terasic/de1soc_cyclone5
 ```
 
 Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nadju sledeci fajlovi:
-- **Device Tree Source** ([socfpga_cyclone5_de1_soc.dts](socfpga_cyclone5_de1_soc.dts))
+- **Device Tree Source** ([socfpga_cyclone5_de1_soc.dts](../buildroot/board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts))
 - **Default kernel configuration file** ([de1_soc_defconfig](de1_soc_defconfig))
 - fajl kojim opisujemo **strukturu SD kartice** koja je pogodna za našu platformu ([genimage.cfg](genimage.cfg))
 - fajl kojim opisujemo U-Boot okruženje (umjesto podrazumijevanog sadržaja koji je ugrađen u sam izvorni kod bootloader-a) ([boot-env.txt](boot-env.txt))
