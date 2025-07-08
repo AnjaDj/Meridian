@@ -57,6 +57,8 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
 Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardvera.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces kompilacije **Processing->Start compilation**.
+Ovaj korak ce nam dati fajl **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan
+u [vodicu](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**
 
 ### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
 
