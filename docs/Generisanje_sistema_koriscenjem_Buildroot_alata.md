@@ -38,9 +38,14 @@ Potvrdite da na razvojnom računaru imate instalirane sve [obavezne softverske p
 Za DE1-SoC ploču ne postoji predefinisana konfiguracija, pa ćemo kreirati resurse neophodne
 za ovu ploču. Prvo je potrebno kreirati direktorijum u kojem će se nalaziti potrebni resursi
 ```
-user:~/buildroot$  mkdir -p board/terasic/de1soc_cyclone5
+mkdir -p board/terasic/de1soc_cyclone5
 ```
 
+Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nadju sledeci fajlovi:
+- **Device Tree Source** ([socfpga_cyclone5_de1_soc.dts](socfpga_cyclone5_de1_soc.dts))
+- **Default kernel configuration file** ([de1_soc_defconfig](de1_soc_defconfig))
+- fajl kojim opisujemo **strukturu SD kartice** koja je pogodna za našu platformu ([genimage.cfg](genimage.cfg))
+- fajl kojim opisujemo U-Boot okruženje (umjesto podrazumijevanog sadržaja koji je ugrađen u sam izvorni kod bootloader-a) ([boot-env.txt](boot-env.txt))
 
 
 
