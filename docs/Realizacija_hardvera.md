@@ -44,6 +44,15 @@ Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata k
 nas hardverski sistem **Generate->Generate HDL**
 ![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)
 
+Nakon zavrsetka procesa **Generisanja** dobili smo:
+- **soc_system.sopcinfo**
+  -   XML fajl sa kompletnim opisom sistema (komponente, konekcije, parametri)
+  -   Koristi se za Device Tree (`sopc2dts`), generisanje drajvera, U-Boot konfiguraciju itd.
+- **soc_system/synthesis/soc_system.qip**
+  - Sadrži sve potrebne informacije da se integracija u **Quartus dizajn** automatizuje.
+  - Koristi se u **Quartus Project Navigator → Project → Add Files**   
+- (Opcionalno) Simulation fajlovi
+
 Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softvera
 
 ### Proces kompajliranja dizajna
