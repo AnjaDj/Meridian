@@ -55,7 +55,7 @@ za DE10-nano plocu jer su vrlo slicne.
 - pokrecemo alat za prilagodjavanje pojedinih opcija polazne konfiguracije kako bi u potpunosti odgovarala nasoj ciljnoj DE1-SoC platformi</br>
 `make menuconfig`</br>
 ![image](https://github.com/user-attachments/assets/6abec423-27d6-4b12-80ed-5105ee7fc3ac)
-
+- U konfiguraciji pravimo sljedeće izmjene:
 
 
 
