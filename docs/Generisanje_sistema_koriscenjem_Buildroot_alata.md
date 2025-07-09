@@ -57,40 +57,37 @@ za DE10-nano plocu jer su vrlo slicne.
 ![image](https://github.com/user-attachments/assets/6abec423-27d6-4b12-80ed-5105ee7fc3ac)
 - U konfiguraciji pravimo sljedeće izmjene:
 - U okviru **Toochain**:
-	- postavite **Toolchain type** opciju na **External toolchain**
+    - postavite **Toolchain type** opciju na **External toolchain**
     - postavite **Toolchain** opciju na **Custom toolchain**
     - postavite **Toolchain origin** opciju na **Pre-installed toolchain**
-    - postavite **Toolchain path** tako da odgovara putanji korišćenog
-    *toolchain*-a (relativno u odnosu na `buildroot` folder)
+    - postavite **Toolchain path** tako da odgovara putanji korišćenog *toolchain*-a (relativno u odnosu na `buildroot` folder)
     - ostavite opciju **Toolchain prefix** kako jeste (**$(ARCH)-linux**)
     - ostavite opciju **External toolchain gcc version** kako jeste (**13x**)
     - postavite **External toolchain kernel headers series** opciju na **6.1.x**
     - postavite **External toolchain C library** opciju na **glibc**
     - uključite opcije **Toolchain has SSP support?** i **Toolchain has C++ support?**
-    (ako nisu već uključene) i
-	- isključite opciju **Toolchain has RPC support?**
+    - isključite opciju **Toolchain has RPC support?**
 - U okviru **Build options**:
-	- postavite **Location to save buildroot config** opciju na **<path-to-buildroot>/configs/terasic_de1soc_cyclone5_defconfig**
-    ili ostavite prazno polje (`<path-to-buildroot>` treba zamijeniti apsolutnom putanjom do `buildroot` direktorijuma)
+    - postavite **Location to save buildroot config** opciju na **<path-to-buildroot>/configs/terasic_de1soc_cyclone5_defconfig**
 - U okviru **System configuration**:
-	- postavite **System hostname** opciju na **etfbl**
-	- postavite **System banner** opciju na **Welcome to DE1-SoC on ETFBL**
+    - postavite **System hostname** opciju na **etfbl**
+    - postavite **System banner** opciju na **Welcome to DE1-SoC on ETFBL**
     - odaberite **systemd** u okviru opcije **Init system** i
     - izmijenite **Extra arguments** opciju tako da bude **-c board/terasic/de1soc_cyclone5/genimage.cfg**
 - U okviru **Kernel**:
-	- postavite **Custom repository version** opciju na **socfpga-6.1.38-lts**
+    - postavite **Custom repository version** opciju na **socfpga-6.1.38-lts**
     - postavite **Kernel configuration** opciju na **Using a custom (def)config file**
     - postavite **Configuration file path** opciju na **board/terasic/de1soc_cyclone5/de1_soc_defconfig**
     - obrišite sadržaj opcije **In-Tree Device Tree Source file names**
     - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts** i
     - uključite opciju **Linux Kernel Tools**&rarr;**iio**
 - U okviru **Target packages**:
-	- uključite opciju **Hardware handling**&rarr;**evtest**
-	- uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**libgpiod** i
+    - uključite opciju **Hardware handling**&rarr;**evtest**
+    - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**libgpiod** i
     - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**install tools**
 - U okviru **Bootloaders**:
-	- isključite opciju **Disable barebox** i uključite opciju **U-Boot**
-	- zadržite vrijednost opcije **U-Boot version** (**2025.04**)
+    - isključite opciju **Disable barebox** i uključite opciju **U-Boot**
+    - zadržite vrijednost opcije **U-Boot version** (**2025.04**)
     - postavite **U-Boot configuration** opciju na **Using an in-tree board defconfig file**
     - postavite **Board defconfig** opciju na **socfpga_de1_soc**
     - uključite opciju **U-Boot needs dtc**
@@ -98,10 +95,10 @@ za DE10-nano plocu jer su vrlo slicne.
     - uključite opciju **Install U-Boot SPL binary image** i
     - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**
 - U okviru **Host utilities**:
-	- uključite opciju **host u-boot tools**
+    - uključite opciju **host u-boot tools**
     - uključite opciju **Environment image**
-    - postavite **Source files for environment** opciju na **board/terasic/de1soc_cyclone5/boot-env.txt** i
-	- postavite **Size of environment** opciju na 8192
+    - postavite **Source files for environment** opciju na **board/terasic/de1soc_cyclone5/boot-env.txt** 
+    - postavite **Size of environment** opciju na 8192
 
 
 
