@@ -81,14 +81,14 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Kernel configuration** opciju na **Using a custom (def)config file**
     - postavite **Configuration file path** opciju na **board/terasic/de1soc_cyclone5/de1_soc_defconfig**
     - obrišite sadržaj opcije **In-Tree Device Tree Source file names**
-    - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts** i
+    - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts**
     - uključite opciju **Linux Kernel Tools**&rarr;**iio**
 
 - U okviru **Target packages**:
     - uključite opciju **Hardware handling**&rarr;**evtest**
     - uključite opciju **Hardware handling**&rarr;**i2c-tools**
     - uključite opciju **Hardware handling**&rarr;**spi-tools**
-    - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**libgpiod** i
+    - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**libgpiod**
     - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**install tools**
 
 - U okviru **Bootloaders**:
@@ -100,7 +100,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Board defconfig** opciju na **socfpga_de1_soc**
     - uključite opciju **U-Boot needs dtc**
     - u okviru **U-Boot binary format** isključite opciju **u-boot.bin** i uključite opciju **u-boot.img**
-    - uključite opciju **Install U-Boot SPL binary image** i
+    - uključite opciju **Install U-Boot SPL binary image**
     - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**
 
 - U okviru **Host utilities**:
