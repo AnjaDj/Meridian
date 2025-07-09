@@ -17,7 +17,7 @@ Buildroot može da generiše:
 - **Root filesystem** (rootfs.ext2, rootfs.cpio.gz, ili sl. – često mountovan kao drugi partition ili initramfs)
 
 
-❌ Toolchain se NE nalazi na SD kartici jer je samo za razvoj
+❌ Toolchain se NE nalazi na SD kartici jer je samo alat za razvoj
 - Instalira se na razvojnoj mašini (npr. Ubuntu)
 - Koristi se da cross-kompajliraš aplikacije za target (ARM, MIPS…)
 - Nema potrebu da se nalazi na samom target uređaju
@@ -25,12 +25,12 @@ Buildroot može da generiše:
 
 ## Generisanje sistema korišćenjem Buildroot alata
 
-Prvo je potrebno da preuzmemo repozitorijum ovog *build* sistema i da se prebacimo
-na odgovarajuću granu:
+Prvo cemo klonirati repozitorijum ovog *build* sistema i prebaciti
+na trenutno najnoviju granu:
 ```
 git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
-git checkout 2024.02
+git checkout 2025.05
 ```
 
 Potvrdite da na razvojnom računaru imate instalirane sve [obavezne softverske pakete](https://buildroot.org/downloads/manual/manual.html#requirement-mandatory).
