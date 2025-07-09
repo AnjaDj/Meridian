@@ -67,6 +67,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **External toolchain C library** opciju na **glibc**
     - uključite opcije **Toolchain has SSP support?** i **Toolchain has C++ support?**
     - isključite opciju **Toolchain has RPC support?**
+      
 - U okviru **Build options**:
     - postavite **Location to save buildroot config** opciju na **<path-to-buildroot>/configs/terasic_de1soc_cyclone5_defconfig**
 - U okviru **System configuration**:
