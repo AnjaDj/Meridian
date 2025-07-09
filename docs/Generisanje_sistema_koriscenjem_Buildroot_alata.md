@@ -48,8 +48,13 @@ Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nad
 - fajl kojim opisujemo U-Boot okruženje (umjesto podrazumijevanog sadržaja koji je ugrađen u sam izvorni kod bootloader-a) ([boot-env.txt](../buildroot/board/terasic/de1soc_cyclone5/boot-env.txt))
 
 
-
-
+Kako predefinisana konfiguracija ne postoji za DE1-SoC ploču, koristicemo predefinisanu konfiguraciju
+za DE10-nano plocu jer su vrlo slicne. 
+- Ucitavamo predefinisanu konfiguraciju za DE10-nano plocu u `.config` kao nasu polaznu radnu konfiguraciju </br>
+  `make terasic_de10nano_cyclone5_defconfig`
+- pokrecemo alat za prilagodjavanje pojedinih opcija polazne konfiguracije kako bi u potpunosti odgovarala nasoj ciljnoj DE1-SoC platformi</br>
+`make menuconfig`</br>
+![image](https://github.com/user-attachments/assets/6abec423-27d6-4b12-80ed-5105ee7fc3ac)
 
 
 
