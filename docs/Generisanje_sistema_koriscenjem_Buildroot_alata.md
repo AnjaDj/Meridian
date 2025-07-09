@@ -62,7 +62,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Toolchain origin** opciju na **Pre-installed toolchain**
     - postavite **Toolchain path** tako da odgovara putanji korišćenog *toolchain*-a (relativno u odnosu na `buildroot` folder)
     - ostavite opciju **Toolchain prefix** kako jeste (**$(ARCH)-linux**)
-    - ostavite opciju **External toolchain gcc version** kako jeste (**13x**)
+    - ostavite opciju **External toolchain gcc version** na (**13x**)
     - postavite **External toolchain kernel headers series** opciju na **6.1.x**
     - postavite **External toolchain C library** opciju na **glibc**
     - uključite opcije **Toolchain has SSP support?** i **Toolchain has C++ support?**
@@ -72,7 +72,7 @@ za DE10-nano plocu jer su vrlo slicne.
 - U okviru **System configuration**:
     - postavite **System hostname** opciju na **etfbl**
     - postavite **System banner** opciju na **Welcome to DE1-SoC on ETFBL**
-    - odaberite **systemd** u okviru opcije **Init system** i
+    - odaberite **systemd** u okviru opcije **Init system**
     - izmijenite **Extra arguments** opciju tako da bude **-c board/terasic/de1soc_cyclone5/genimage.cfg**
 - U okviru **Kernel**:
     - postavite **Custom repository version** opciju na **socfpga-6.1.38-lts**
