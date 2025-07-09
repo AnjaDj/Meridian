@@ -25,8 +25,7 @@ Buildroot može da generiše:
 
 ## Generisanje sistema korišćenjem Buildroot alata
 
-Prvo cemo klonirati repozitorijum ovog *build* sistema i prebaciti
-na trenutno najnoviju granu:
+Kloniramo repozitorijum **buildroot**-a i prebacujemo se na najnoviju granu. U trenutku pisanja ovog vodica, to je grana 2025.05
 ```
 git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
@@ -55,7 +54,6 @@ za DE10-nano plocu jer su vrlo slicne.
 - pokrecemo alat za prilagodjavanje pojedinih opcija polazne konfiguracije kako bi u potpunosti odgovarala nasoj ciljnoj DE1-SoC platformi</br>
 `make menuconfig`</br>
 ![image](https://github.com/user-attachments/assets/6abec423-27d6-4b12-80ed-5105ee7fc3ac)
-- U konfiguraciji pravimo sljedeće izmjene:
 - U okviru **Toochain**:
     - postavite **Toolchain type** opciju na **External toolchain**
     - postavite **Toolchain** opciju na **Custom toolchain**
@@ -65,16 +63,19 @@ za DE10-nano plocu jer su vrlo slicne.
     - ostavite opciju **External toolchain gcc version** na (**13x**)
     - postavite **External toolchain kernel headers series** opciju na **6.1.x**
     - postavite **External toolchain C library** opciju na **glibc**
-    - uključite opcije **Toolchain has SSP support?** i **Toolchain has C++ support?**
+    - uključite opciju **Toolchain has SSP support?**
+    - uključite opciju **Toolchain has C++ support?**
     - isključite opciju **Toolchain has RPC support?**
       
 - U okviru **Build options**:
     - postavite **Location to save buildroot config** opciju na **<path-to-buildroot>/configs/terasic_de1soc_cyclone5_defconfig**
+      
 - U okviru **System configuration**:
     - postavite **System hostname** opciju na **etfbl**
     - postavite **System banner** opciju na **Welcome to DE1-SoC on ETFBL**
     - odaberite **systemd** u okviru opcije **Init system**
     - izmijenite **Extra arguments** opciju tako da bude **-c board/terasic/de1soc_cyclone5/genimage.cfg**
+
 - U okviru **Kernel**:
     - postavite **Custom repository version** opciju na **socfpga-6.1.38-lts**
     - postavite **Kernel configuration** opciju na **Using a custom (def)config file**
@@ -82,19 +83,26 @@ za DE10-nano plocu jer su vrlo slicne.
     - obrišite sadržaj opcije **In-Tree Device Tree Source file names**
     - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts** i
     - uključite opciju **Linux Kernel Tools**&rarr;**iio**
+
 - U okviru **Target packages**:
     - uključite opciju **Hardware handling**&rarr;**evtest**
+    - uključite opciju **Hardware handling**&rarr;**i2c-tools**
+    - uključite opciju **Hardware handling**&rarr;**spi-tools**
     - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**libgpiod** i
     - uključite opciju **Libraries**&rarr;**Hardware handling**&rarr;**install tools**
+
 - U okviru **Bootloaders**:
-    - isključite opciju **Disable barebox** i uključite opciju **U-Boot**
-    - zadržite vrijednost opcije **U-Boot version** (**2025.04**)
+    - isključite opciju **Barebox**
+    - uključite opciju **U-Boot**
+    - postavite vrijednost opcije **U-Boot version** (**2025.04**)
+    - postavite **Custom U-Boot patches** na **board/terasic/de1soc_cyclone5/patches/de1-soc-handoff.patch**
     - postavite **U-Boot configuration** opciju na **Using an in-tree board defconfig file**
     - postavite **Board defconfig** opciju na **socfpga_de1_soc**
     - uključite opciju **U-Boot needs dtc**
     - u okviru **U-Boot binary format** isključite opciju **u-boot.bin** i uključite opciju **u-boot.img**
     - uključite opciju **Install U-Boot SPL binary image** i
     - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**
+
 - U okviru **Host utilities**:
     - uključite opciju **host u-boot tools**
     - uključite opciju **Environment image**
