@@ -33,9 +33,11 @@ Otvorite projekat u *Intel Quartus Prime* alatu (**File->Open Project->meridian.
 
 ## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
 
+Prije prelaska na korak kopiranja fajlova na specificnu particiju, korisno je upoznati se sa ocekivanom strukturom
+SD kartice za nasu DE1-SoC platformu. Vise o tome sse moze naci u sledecem [vodicu](bla)
 U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
-![image](https://github.com/user-attachments/assets/5819590a-5373-4360-9b6c-a1139b69cff8) </br>
-![image](https://github.com/user-attachments/assets/5cc6c31e-3e93-4347-af61-3d3f9b98b8e4) </br>
+<img width="2514" height="995" alt="image" src="https://github.com/user-attachments/assets/17cf4f84-7979-4ec7-9ef3-997c8783763c" />
+
 
 Proces kopiranja fajla na **FAT32** je sledeci:
 1. Umetnite SD karticu u citac za PC
