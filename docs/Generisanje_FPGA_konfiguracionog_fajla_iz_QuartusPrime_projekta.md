@@ -39,6 +39,8 @@ U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 <img width="2514" height="995" alt="image" src="https://github.com/user-attachments/assets/17cf4f84-7979-4ec7-9ef3-997c8783763c" />
 <p align="center"><i>Ocekivana organizacija particija na SD kartici sa ocekivanim sadrzajem</i></p>
 
+Potrebno je kopirati **socfpga.rbf** fajl na **FAT32** particiju, gdje se nalaze i **zImage** i **DTB**.
+
 Proces kopiranja fajla na **FAT32** je sledeci:
 1. Umetnite SD karticu u citac za PC
 2. Napravicemo **mount point** - folder gdje cemo montirati particiju  `sudo mkdir /mnt/mydisk`
