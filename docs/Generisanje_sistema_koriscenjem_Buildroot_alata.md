@@ -74,6 +74,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **System hostname** opciju na **etfbl**
     - postavite **System banner** opciju na **Welcome to DE1-SoC on ETFBL**
     - odaberite **systemd** u okviru opcije **Init system**
+    - postavite **Root filesystem overlay directories** na **board/terasic/de1soc_cyclone5/rootfs-overlay**
     - izmijenite **Extra arguments** opciju tako da bude **-c board/terasic/de1soc_cyclone5/genimage.cfg**
 
 - U okviru **Kernel**:
