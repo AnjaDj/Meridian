@@ -31,7 +31,7 @@ Otvorite projekat u *Intel Quartus Prime* alatu (**File->Open Project->meridian.
     - Nakon podesavanja, idite na **Generate**
 ![image](https://github.com/user-attachments/assets/1f75236a-f734-4ee5-ab87-8b87045ae8be)
 
-## Kopiranje konfiguracionog .rbf fajla na FAT32 particiju na SD kartici
+## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
 
 U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 ![image](https://github.com/user-attachments/assets/5819590a-5373-4360-9b6c-a1139b69cff8) </br>
