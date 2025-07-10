@@ -110,9 +110,20 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Size of environment** opciju na 8192
 
 
+Nakon sto smo izvrsili prilagodjenje polazne radne konfiguracije koja je bila u potpunosti prilagodjena **DE10-nano** platformi,
+mozemo u **menuconfig**-u ici na **Save**. 
 
+Sada u **.config** fajlu imamo novu konfiguraciju koja je prilagodjena za **DE1-SoC** platformu, a kreirana je na bazi konfiguracije za
+**DE10-nano** platformu.
 
-
+Sada cemo da sacuvamo našu prilagođenu konfiguraciju za **DE1-SoC** kao predefinisanu pod nazivom `terasic_de1soc_cyclone5_defconfig`.Bice smjestena u `buildroot/configs`.</br>
+```
+make savedefconfig
+```
+Nakon što smo sačuvali predefinisanu konfiguraciju, po potrebi mozemo da je aktiviramo komandom:
+```
+make terasic_de1soc_cyclone5_defconfig
+```
 
 
 
