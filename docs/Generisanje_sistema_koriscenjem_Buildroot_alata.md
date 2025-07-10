@@ -125,6 +125,7 @@ Nakon što smo sačuvali predefinisanu konfiguraciju, po potrebi mozemo da je ak
 ```
 make terasic_de1soc_cyclone5_defconfig
 ```
+<img width="664" height="81" alt="image" src="https://github.com/user-attachments/assets/9cc985d8-d8fe-4512-b966-337e9b0ca581" />
 
 
 
