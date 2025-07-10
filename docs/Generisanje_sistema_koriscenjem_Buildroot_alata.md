@@ -125,10 +125,17 @@ Nakon što smo sačuvali predefinisanu konfiguraciju, po potrebi mozemo da je ak
 ```
 make terasic_de1soc_cyclone5_defconfig
 ```
-<img width="664" height="81" alt="image" src="https://github.com/user-attachments/assets/9cc985d8-d8fe-4512-b966-337e9b0ca581" />
+<img width="664" height="81" alt="image" src="https://github.com/user-attachments/assets/9cc985d8-d8fe-4512-b966-337e9b0ca581" /></br>
 
+Posto smo sacuvali konfiguraciju, ostaje nam da pokrenemo proces generisanja artifakata komandom `make`.
+Po završetku, svi relevantni fajlovi će da se nalaze u folderu `<buildroot-folder>/output/images`. Dovoljno je da prekopiramo sliku SD kartice `sdcard.img` sljedećom komandom:
+```
+cd output/images
+sudo dd if=sdcard.img of=/dev/sda bs=1M
+```
 
-
+> [!IMPORTANT]
+>Prije korišćenja komande dd potrebno je da demontirate fajl sisteme particija SD kartice (ukoliko su montirane). Putanju do foldera koji predstavlja tačku montiranja particija SD kartice možete prikazati komandom lsblk. Kao i ranije, vodite računa da ovom komandom možete napraviti štetu na fajl sistemu razvojnog računara ako ne specificirate odgovarajući uređaj.
 
 
 
