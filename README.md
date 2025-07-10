@@ -6,7 +6,7 @@
   - [Kreiranje Qsys projekta](/docs/Realizacija_hardvera.md#kreiranje-qsys-projekta)
   - [Kompajliranje dizajna](/docs/Realizacija_hardvera.md#proces-kompajliranja-dizajna)
 - [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md)
-  - [Kopiranje konfiguracionog fajla na FAT32](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-.rbf-fajla-na-fat32-particiju-na-sd-kartici) 
+  - [Kopiranje konfiguracionog fajla na FAT32](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) 
 - [Izgradnja Linux sistema upotrebom Buildroot-a](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md)
 
   
