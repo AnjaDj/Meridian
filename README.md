@@ -1,13 +1,13 @@
 ## Sadržaj
-- [Opis](#Zadatak)
-- [Instalacija](#instalacija)
-- [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md)
-  - [Kreiranje Quartus projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-quartus-projekta)
-  - [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)
-  - [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)
-- [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md)
-  - [Kopiranje konfiguracionog fajla na FAT32](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) 
-- [Izgradnja Linux sistema upotrebom Buildroot-a](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md)
+1. [Opis](#Zadatak)
+2. [Instalacija](#instalacija)
+3. [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md)</br>
+  3.1.   [Kreiranje Quartus projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-quartus-projekta)</br>
+  3.2.   [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)</br>
+  3.3.   [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)</br>
+4. [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md)</br>
+  4.1. [Kopiranje konfiguracionog fajla na FAT32](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) 
+5. [Izgradnja Linux sistema upotrebom Buildroot-a](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md)
 
   
 # Zadatak
