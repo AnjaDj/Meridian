@@ -56,7 +56,7 @@ Nakon zavrsetka procesa **Generisanja** dobili smo:
 Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softvera
 
 ## Proces kompajliranja dizajna
-Dobicemo sledecu notifikaciju:</br>
+- Dobicemo sledecu notifikaciju:</br>
 <img width="491" height="303" alt="image(1)" src="https://github.com/user-attachments/assets/be1408ed-46a3-492f-8af5-abf8932238da" />
 
 - Kako smo prethodno komandom **Generate** izgenerisali **synthesis** fajl potreban za proces kompilacije sistema u Quartus Prime projektu, moramo ga dodati
