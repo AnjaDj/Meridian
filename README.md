@@ -1,7 +1,7 @@
 ## Sadržaj
 - [Opis](#Zadatak)
 - [Instalacija](#instalacija)
-- [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardvera.md)
+- [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md)
   - [Kreiranje Quartus projekta](/docs/Realizacija_hardvera.md#kreiranje-quartus-projekta)
   - [Kreiranje Qsys projekta](/docs/Realizacija_hardvera.md#kreiranje-qsys-projekta)
   - [Kompajliranje dizajna](/docs/Realizacija_hardvera.md#proces-kompajliranja-dizajna)
