@@ -31,6 +31,11 @@ Otvorite projekat u *Intel Quartus Prime* alatu (**File->Open Project->meridian.
     - Nakon podesavanja, idite na **Generate**
 ![image](https://github.com/user-attachments/assets/1f75236a-f734-4ee5-ab87-8b87045ae8be)
 
+
+Sada je fajl za **konfiguraciju FPGA Fabric**-a spreman i potrebno ga je kopirati na **na FAT particiju na SD kartici** i taj proces je opisan u odjeljku ispod. Medjutim,
+kako jos uvijek nemamo spremnu **SD karticu**, ovdje cemo stati i prvo cemo pripremiti SD karticu i izbildati kompletan sistem, pa cemo se naknadno
+vratiti na kopiranje **.rbf**-a na **FAT** particiju.
+
 ## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
 
 Prije prelaska na korak kopiranja fajlova na specificnu particiju, korisno je upoznati se sa ocekivanom strukturom
