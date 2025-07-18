@@ -6,11 +6,15 @@
 - Instaliran [*Quartus Prime*](https://www.intel.com/content/www/us/en/software-kit/669553/intel-quartus-prime-lite-edition-design-software-version-17-0-for-linux.html) sa *Intel® Cyclone® V Device Support* i *Nios® II EDS*
 - Instaliran [*SoC EDS*](https://www.intel.com/content/www/us/en/software-kit/669533/intel-soc-fpga-embedded-development-suite-soc-eds-standard-edition-software-version-17-0-for-linux.html)
 
-## Kreiranje hardverskog sistema pomocu Quartus Prime alata
+## Kreiranje hardverskog dijela sistema pomocu Quartus Prime alata
 
 ### Kreiranje Quartus projekta
+Pokrecemo *Quartus Prime* na Linux-u
+```
+$ ./intelFPGA_lite/17.0/quartus/bin/quartus
+```
 Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
-![image](https://github.com/user-attachments/assets/32862dc9-652e-4638-97cb-cf21b400e574) </br>
+<img width="483" height="326" alt="image" src="https://github.com/user-attachments/assets/45b0ad86-b3e7-4424-a509-f9c5dc97e41c" /></br>
 
 Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu kao na slici ispod:
 ![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)
