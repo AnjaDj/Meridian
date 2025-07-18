@@ -8,3 +8,7 @@
 - inicijalizuje **DDR kontroler** kako bi se omogucila komunikacija sa **eksternom DDR** memorijom
 - nakon sto se SPL ucita u internu SRAM, izvrsice se osnovna konfiguracija HPS-s a zatim ce
 **secondary stage bootloader (U-Boot)** biti ucitan u eksternu DRR
+
+  Za bildanje SPL-a koristicemo alat **BSP-Editor** koji dolazi uz **Intel Embedded Development Suite (EDS)**.
+
+   
