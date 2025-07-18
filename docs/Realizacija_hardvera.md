@@ -19,7 +19,7 @@ Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
 Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu kao na slici ispod:
 ![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)
 
-Konacno dobijamo **meridian.qpf** sa [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
+Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
 
 ### Kreiranje Qsys projekta
 
