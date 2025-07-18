@@ -6,7 +6,7 @@
   3.2.   [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)</br>
   3.3.   [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)</br>
 4. [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md)
-5. jos nez kao da te nazovem
+5. [Izgradnja bootloadera](/docs/Podesavanje_U-Boota_i_SPLa.md)
 6. [Izgradnja Linux sistema upotrebom Buildroot-a](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md)
 
   
