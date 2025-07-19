@@ -32,5 +32,4 @@
     <img width="1005" height="514" alt="image(3)" src="https://github.com/user-attachments/assets/29caaac5-7146-452d-be9f-653e090fa3e8" />
   - Potrebno je selektovati **BOOT_FROM_SDMMC, FAT_SUPPORT** ukoliko to vec nije uradjeno, te ici na Generate
     <img width="1263" height="673" alt="image(6)" src="https://github.com/user-attachments/assets/b82278ac-388b-4f4d-93cf-d5d5c265b9fa" />
-
-   
+  - Sada su **handoff** fajlovi generisani
