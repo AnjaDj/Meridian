@@ -58,9 +58,20 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 </p>
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
-Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardvera.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces kompilacije **Processing->Start compilation**.
-Ovaj korak ce nam dati fajl **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan
-u [vodicu](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**
+Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardvera.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces</br>
+kompilacije **Processing->Start compilation**. 
+
+
+Nakon kompilacije dizajna, dobicemo **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u [vodicu](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**.
+
+
+Zatim je potrebno da izgradimo **Linux sistem**, te cemo u tu svrhu koristiti **Buildroot** koji nam omogucava da istovremeno izbildamo
+- toolchain
+- bootloader
+- Linux kernel
+- rootfs</br>
+Uputstva kako da se izgradi [bootloader](/docs/SPL+U-Boot.md) i [Linux OS](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md) su data na prilozenim linkovima u okviru [docs](/docs) direktorijuma.
+
 
 ### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
 
