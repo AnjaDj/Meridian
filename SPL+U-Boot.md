@@ -11,16 +11,16 @@
 
   Za bildanje SPL-a koristicemo alat **BSP-Editor** koji dolazi uz **Intel Embedded Development Suite (EDS)**
   - pokrenite **embedded command shell**
-    ```
+    ```bash
     cd intelFPGA_lite/17.0/embedded
     ./embedded_command_shell.sh
     ```
   - Pozicionirajte se na direktorijum projekta
-    ```
+    ```bash
     $ cd path-to-project-dir
     ```
   - Generisanje **BSP** fajlova 
-    ```
+    ```bash
     bsp-create-settings --type spl --bsp-dir build --preloader-settings-dir hps_isw_handoff/soc_system_hps_0/ --settings build/settings.bsp
     ```
     <img width="1342" height="406" alt="image(2)" src="https://github.com/user-attachments/assets/5877df41-2644-4815-82cc-3f8ab52852bb" />
