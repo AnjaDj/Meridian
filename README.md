@@ -22,7 +22,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 </p>
 <p align="center"><i><b>Slika 1 </b>: Sema 5CSEMA5F31C6 CycloneV SoC</i></p>
 
-## [Realizacija-hardvera](/docs/Realizacija_hardvera.md) 💻⚙️
+## [Realizacija-hardvera](/docs/Realizacija_hardverskog_dijela_sistema.md) 💻⚙️
 
 Prvi korak jeste da realizujemo hardverski dio sistema i to pomocu ***Qsys*** alata u okviru ***Quartus Prime***-a, a nas sistem ce se sastojati od:
 1. **Clock Source** izvora takst signala od *50MHz*
