@@ -55,10 +55,16 @@
     ```
  
     U konkretno mom slucaju, komanda je
-    ```
+    ```bash
     ./arch/arm/mach-socfpga/qts-filter.sh cyclone5 /home/anja/Desktop/meridian_v02/hw/quartus/ /home/anja/Desktop/meridian_v02/hw/quartus/build/ /home/anja/Desktop/meridian_v02/hw/quartus/u-boot-compatible headers/
     ```
- 
+
+    Ovo ce generisati 4 fajla:
+    - *iocsr_config.h*
+    - *pinmux_config.h*
+    - *pll_config.h*
+    - *sdram_config.h* </br>
+    koji trebaju biti kopirani u **qts** poddirektorijum  **board** direkotrijuma (`u-boot/board/terasic/de1-soc/qts`)
 
 
 
