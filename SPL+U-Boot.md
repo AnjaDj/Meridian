@@ -39,20 +39,30 @@
     cd u-boot
     git checkout v2025.04
     ```
-  - Da bismo mogli ispravno da konfigurišemo i kroskompajliramo *U-Boot*, potrebno je da eksportujemo
-    putanju do kroskompajlera i da postavimo varijablu `CROSS_COMPILE` da odgovara prefiksu našeg
-    kroskompajlera. U tom smislu, najlakše je koristiti prethodno pomenutu skriptu `set-environment.sh`
-    koja se nalazi u `scripts` folderu u repozitorijumu kursa
+  - Koristimo skriptu `qts-filter.sh`
     ```bash
-    source ./set-environment.sh`
+    $ ./arch/arm/mach-socfpga/qts-filter.sh <soc_type> <input_qts_dir> <input_bsp_dir> <output_dir>
     ```
-  - Za *DE1_SoC* ploču već postoji predefinisana konfiguracija pod nazivom `socfpga_de1_soc_defconfig`,
-    pa ćemo nju postaviti kao polaznu *U-Boot* konfiguraciju.
-    ```bash
-    make socfpga_de1_soc_defconfig`
+
     ```
-  - Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke dodatne opcije u
-    konfiguraciji. S obzirom da *DE1-SoC* ploča ne sadrži **EEPROM** zapohranjivanje fizičke **MAC adrese**,
-    potrebno je da u konfiguraciji omogućimo opciju **Random ethaddr if unset** koja se nalazi u okviru **Networking support** kategorije
-    
-  - Konacno pokrecemo `make`
+    soc_type      - Type of SoC, either 'cyclone5' or 'arria5'.
+    input_qts_dir - Directory with compiled Quartus project
+                    and containing the Quartus project file (QPF).
+    input_bsp_dir - Directory with generated bsp containing
+                    the settings.bsp file.
+    output_dir    - Directory to store the U-Boot compatible
+                    headers.
+    ```
+ 
+    U konkretno mom slucaju, komanda je
+    ```
+    ./arch/arm/mach-socfpga/qts-filter.sh cyclone5 /home/anja/Desktop/meridian_v02/hw/quartus/ /home/anja/Desktop/meridian_v02/hw/quartus/build/ /home/anja/Desktop/meridian_v02/hw/quartus/u-boot-compatible headers/
+    ```
+ 
+
+
+
+
+
+
+
