@@ -29,7 +29,7 @@ Prvi korak jeste da realizujemo hardverski dio sistema i to pomocu ***Qsys*** al
 2. **AlteraV/CycloneV HPS**
 3. **System Peripheral ID**
 
-Kompletan vodac za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartus-a** dat je [ovdje](/docs/Realizacija_hardvera.md), a u nastavcu cemo se dotaci samo najbitnijih tacaka.</br>
+Kompletan vodac za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartus-a** dat je [ovdje](/docs/Realizacija_hardverskog_dijela_sistema.md), a u nastavcu cemo se dotaci samo najbitnijih tacaka.</br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c6c00afe-a715-402d-a3eb-ae2d53a5833d"/>
 </p>
@@ -58,7 +58,7 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 </p>
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
-Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardvera.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces 
+Nakon sto smo ispratili sve korake navedene u [vodicu](/docs/Realizacija_hardverskog_dijela_sistema.md) za realizaciju hardverskod dijela sistema, trebalo bi da je uspjesno zavrsen proces 
 kompilacije **Processing->Start compilation**. 
 
 
