@@ -71,7 +71,8 @@
     u-boot$ git add board/terasic/de1-soc/qts/*.h
     u-boot$ git diff --cached > board/terasic/de1-soc/patches/de1-soc-handoff.patch
     ```
-    
+    <img width="1007" height="400" alt="image(7)" src="https://github.com/user-attachments/assets/a8f935e4-1ceb-4856-abea-643b453246c3" />
+
 
 
 
