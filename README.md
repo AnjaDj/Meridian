@@ -24,7 +24,7 @@ povezan na **FPGA** dio CycloneV chip-a. Dakle, signali HPS periferija (konkretn
 
 ## [Realizacija-hardvera](/docs/Realizacija_hardvera.md) 💻⚙️
 
-Hardver realizujemo pomocu *Qsys* alata u okviru *Quartus Prime*-a, a nas sistem ce se sastojati od:
+Prvi korak jeste da realizujemo hardverski dio sistema i to pomocu ***Qsys*** alata u okviru ***Quartus Prime***-a, a nas sistem ce se sastojati od:
 1. **Clock Source** izvora takst signala od *50MHz*
 2. **AlteraV/CycloneV HPS**
 3. **System Peripheral ID**
@@ -50,10 +50,6 @@ Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledec
 |    -    |      HPS I/O  RGMII                            |          EMAC1            |
 |    -    |      HPS I/O  4-bit Data                       |          SDIO0            |
 
-U okviru *Qsys* alata, nakon selekcije funkcija pojedinih pinova, dobijamo sledecu *Peripherals Mux Table* za HPS:
-![image](https://github.com/user-attachments/assets/4f58e6f7-6b5a-43e0-a63b-8360cde7324b)
-<p align="center"><i><b>Slika 3 </b>: Peripherals Mux Table</i></p>
-</br>
 
 Kako **HPS** koristi eksternu DDR3, eksportujemo **hps_0_ddr** *Conduit* za pristup toj memoriji, te koristimo sledeci [preset](presets/de1-soc-hps-ddr.qprs) za efikasnije
 podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS eksportovali **hps_0_io** *Conduit*.
