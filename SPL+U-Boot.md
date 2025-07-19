@@ -59,12 +59,19 @@
     ./arch/arm/mach-socfpga/qts-filter.sh cyclone5 /home/anja/Desktop/meridian_v02/hw/quartus/ /home/anja/Desktop/meridian_v02/hw/quartus/build/ /home/anja/Desktop/meridian_v02/hw/quartus/u-boot-compatible headers/
     ```
 
-    Ovo ce generisati 4 fajla:
+    Ovo ce generisati 4 fajla koji trebaju biti kopirani u **qts** poddirektorijum  **board** direkotrijuma (`u-boot/board/terasic/de1-soc/qts`):
     - *iocsr_config.h*
     - *pinmux_config.h*
     - *pll_config.h*
     - *sdram_config.h* </br>
-    koji trebaju biti kopirani u **qts** poddirektorijum  **board** direkotrijuma (`u-boot/board/terasic/de1-soc/qts`)
+    
+    ```bash
+    u-boot-compatible headers$ cp *.h ~/u-boot/board/terasic/de1-soc/qts/
+    u-boot-compatible headers$ cd ~/u-boot
+    u-boot$ git add board/terasic/de1-soc/qts/*.h
+    u-boot$ git diff --cached > board/terasic/de1-soc/patches/de1-soc-handoff.patch
+    ```
+    
 
 
 
