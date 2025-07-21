@@ -19,9 +19,13 @@ potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj k
 U nasem slucaju, organizacija particija sa ocekivanim tipom i sadrzajem na svakoj od particija ce biti kao na slici ispod
 <img width="2514" height="995" alt="image" src="https://github.com/user-attachments/assets/64a544b4-8357-41a3-8121-0ed78d8c7a50" />
 
-Prvi korak jeste da se umetne SD kartica u citac te da se `unmount`-uju sve particije
+Prvi korak jeste da se umetne SD kartica u citac razvojnog racunara i da se identifikuje
+sam uredjaj
 ```bash
 lsblk
+```
+U mom slucaju, SD kartica je prepoznata kao `/dev/sda` i potrebno ju je `unmount`-ovati
+```
 sudo umount /dev/sda1
 sudo umount /dev/sda2
 sudo umount /dev/sda3
