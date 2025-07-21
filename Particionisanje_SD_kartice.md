@@ -1,5 +1,4 @@
-
-## Priprema SD kartice
+# Particionisanje SD kartice
 
 Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa SD kartice,
 potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj koju očekuje
