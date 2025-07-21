@@ -42,11 +42,26 @@ U našem slučaju, interesantne su nam sljedeće komande:
 - `t` kojom definišemo tip particije i
 - `w` kojom se kreirana tabela upisuje na disk i završava proces njegovog particionisanja</br>
 
-Dodajemo `raw` particiju tipa `0xA2` na kojoj će da se nalazi **SPL** i **U-Boot**. Proces započinjemo komandom `n` za dodavanje nove particije. Biramo primary tip particije (`p`), definišemo broj particije tako da bude `3`, prihvatamo podrazumijevanu vrijednost prvog sektora (pritiskom na taster `Enter` i definišemo posljednji sektor particije (`4095`). Na taj način dobijamo particiju veličine 1MB (`2048` sektora veličine `512` bajtova). Interaktivna sesija za kriranje ove particije je prikazana ispod.
+Dodajemo `raw` particiju tipa `0xA2` na kojoj će da se nalazi **SPL** i **U-Boot**. Proces započinjemo komandom `n` za dodavanje nove particije. Biramo primary tip particije (`p`), definišemo broj particije tako da bude `3`, prihvatamo podrazumijevanu vrijednost prvog sektora (pritiskom na taster `Enter` i definišemo posljednji sektor particije (`4095`). Na taj način dobijamo particiju veličine `1MB` (`2048` sektora veličine `512` bajtova). Interaktivna sesija za kriranje ove particije je prikazana ispod.
+```bash
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 3
+First sector (2048-30228479, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-30228479, default 30228479): 4095
 
-
-
-
+Created a new partition 3 of type 'Linux' and of size 1 MiB.
+```
+Vidimo da je pariticija podrazumijevano tipa `Linux`, što nama ne odgovara, jer treba da bude tipa `0xA2`. Da bismo to promijenili, pokrećemo komandu `t` za promjenu tipa aktuelne particije.
+```bash
+Command (m for help): t
+Selected partition 3
+Hex code or alias (type L to list all): a2
+Changed type of partition 'Linux' to 'unknown'.
+```
 
 
 
