@@ -6,7 +6,7 @@ potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj k
 **BootROM** kod **Cyclone V** čipa.
 
 <p align="center">
-  <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/26a360b4-7ead-4094-b9aa d43e67a85cfa" />
+  <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/432c1639-7754-4778-af14-cc7d98619365" />
 </p>
 <p align="center"><i><b>Slika 1 </b>: Organizacija SPL-a na SD/MMC kartici</i></p>
 
