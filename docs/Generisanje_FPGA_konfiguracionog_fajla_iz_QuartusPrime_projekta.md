@@ -56,15 +56,6 @@ Proces kopiranja fajla na **FAT32** je sledeci:
 4. Kopiramo fajl `sudo cp socfpga.rbf /mnt/mydisk/`
 5. Odmontiramo particiju `sudo umount /mnt/mydisk`
 
-Ukoliko zelimo da provjerimo da li je kopiranje zaista i izvrseno, mozemo umetnuti SD karticu nazad u plocu, pokrenuti je i uci u U-Boot konzolu:
-1. Koritimo komandu `fatls` kojoj moramo proslijediti naziv uređaja (`mmc`), broj uređaja (`0`), broj particije (`1`) i putanju do foldera čiji sadržaj želimo da izlistamo (u našem slučaju to je korjeni folder /)</br>
-`fatls mmc 0:1 /`
-2. Ako fajl nije prikazan ili ne može da se učita, pokrecemo `mmc rescan` a zatim ponovo `fatls mmc 0:1 /`
-3. Sada ćemo učitati ovaj tekstualni fajl u RAM na lokaciju 0x01000000 </br>
-`fatload mmc 0:1 0x01000000 socfpga.rbf`
-4. Koristimo komandu md (memory dump) koja nam prikazuje sadržaj memorije na specificiranoj lokaciji</br>
-`md 0x01000000`
-
 ## Reference
-[link1](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) </br>
-[link2](https://github.com/robseb/rsyocto/blob/rsYocto-1.041/doc/guides/6_newFPGAconf.md)
+[StackOverflow](https://stackoverflow.com/questions/28799960/how-to-generate-rbf-files-in-altera-quartus) - *How to generate .rbf files in Altera Quartus?* </br>
+[Github-robseb](https://github.com/robseb/rsyocto/blob/rsYocto-1.041/doc/guides/6_newFPGAconf.md) - *Developing a new FPGA configuration with Intel Quartus Prime*
