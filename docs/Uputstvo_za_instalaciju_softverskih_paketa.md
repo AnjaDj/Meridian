@@ -17,7 +17,6 @@ Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski al
    - *Intel® Quartus® Prime (includes Nios II EDS)*
    - *Intel® Cyclone® V device support*</br>
    
-   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/da9e66a6-9fbd-404e-8ea3-1e81d6f75b36" /></br>
 
 Nakon sto smo skinuli `Quartus-lite-17.0.0.595-linux.tar` arhivu potrebno ju je raspakovati i instalirati zeljene alate
    ```bash
