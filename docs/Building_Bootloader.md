@@ -1,5 +1,7 @@
 # Konfiguracija i kompajliranje U-Boot-a
 
+**SoC EDS** je ukinut proizvod koji **Altera** više ne podrzava.
+
 Prvo je potrebno da preuzmemo *U-Boot* izvorni kod, koristicemo officijalni Intel SOCFPGA U-Boot repozitorijum
 ```bash
 git clone https://github.com/altera-opensource/u-boot-socfpga
