@@ -1,8 +1,8 @@
 # Instalacija Intel Quartus Prime na Linux-u
 
-1. [Download Quartus Prime Lite 22.1_std](https://www.intel.com/content/www/us/en/software-kit/757261/intel-quartus-prime-lite-edition-design-software-version-22-1-for-linux.html)
+1. [Download Quartus Prime Lite 17.0_](https://www.intel.com/content/www/us/en/software-kit/669553/intel-quartus-prime-lite-edition-design-software-version-17-0-for-linux.html)
+   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/e555a0a4-a333-46fe-80f4-3566670643a2" /></br>
 
-   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/e29c339d-855c-4c0b-bd99-3e229504fb43" /></br>
 
    Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
    - *Intel® Quartus® Prime (includes Nios II EDS)*
