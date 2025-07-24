@@ -12,7 +12,7 @@ Sa stranice [Download Quartus Prime Lite 24.1](https://www.intel.com/content/www
 **Intel Quartus Prime Installer** kao na slici ispod
 
 
-<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br>
+<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br></br></br></br>
 <p align="center"><i><b>Slika 2 </b>: Zvanicni Intel sajt za preuzimanje Quartus Prime softverskog paketa</i></p>
 
 
