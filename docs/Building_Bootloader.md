@@ -1,5 +1,10 @@
 # Konfiguracija i kompajliranje U-Boot-a
 
+**SoC EDS** je kolekcija alata za razvoj softvera za HPS dio SoC-a i uključuje:
+- `bsp-editor` ,alat koji koristi izlaz iz `Qsys`-a za generisanje `hps_isw_handoff` i konfiguraciju za`preloader`
+- `generate_hps_preloader`, skripta koja pravi SPL i device tree konfiguraciju
+- `ARM DS-5` debugger
+
 **SoC EDS** zvanično postoji samo do verzije 20.1. i izbacuje se iz upotrebe za novije verzije **Quartus**-a.</br>
 
 Trenutno dostupne edicije [**Intel® SoC FPGA Embedded Development Suite**](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct&f:os-rdc=%5BLinux*%5D): 
@@ -9,4 +14,5 @@ Trenutno dostupne edicije [**Intel® SoC FPGA Embedded Development Suite**](http
 <img width="1443" height="142" alt="image" src="https://github.com/user-attachments/assets/ab8b8ba4-e217-4ad0-acc7-7e805ff6fe48" /></br>
 
 
-Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**, **SoC EDS** nije podrzan za nasu verziju, ali nije ni neophodan jer su sve funkcionalnosti prebacene na **U-Boot** skriptu.
+ 
+Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**, **SoC EDS** nije podrzan za nasu verziju, ali nije ni neophodan jer su sve funkcionalnosti koje nama trebaju prebacene na zvanični `u-boot-socfpga` repozitorijum.
