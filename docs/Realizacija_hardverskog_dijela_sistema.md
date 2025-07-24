@@ -6,7 +6,7 @@
 ## Kreiranje Quartus projekta
 Pokrecemo *Quartus Prime* na Linux-u
 ```
-$ ./intelFPGA_lite/17.0/quartus/bin/quartus
+$ ./intelFPGA_lite/24.1std/quartus/bin/quartus
 ```
 Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
 <img width="483" height="326" alt="image" src="https://github.com/user-attachments/assets/45b0ad86-b3e7-4424-a509-f9c5dc97e41c" /></br>
