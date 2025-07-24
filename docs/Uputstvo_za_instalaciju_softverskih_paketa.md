@@ -3,7 +3,7 @@
   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/e29c339d-855c-4c0b-bd99-3e229504fb43" /></br>
 - Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
   - *Intel® Quartus® Prime (includes Nios II EDS)*
-  -  Intel® Cyclone® V device support
+  -  *Intel® Cyclone® V device support*
 
   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/da9e66a6-9fbd-404e-8ea3-1e81d6f75b36" /></br>
 
