@@ -8,7 +8,8 @@ Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski al
 ## Instalacija Intel Quartus Prime na Linux-u
 
 [Download Quartus Prime Lite 24.1](https://www.intel.com/content/www/us/en/software-kit/849769/intel-quartus-prime-lite-edition-design-software-version-24-1-for-linux.html)
-<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br>
+<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br></br>
+
 
 
 Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
@@ -21,4 +22,14 @@ Nakon sto smo skinuli `qinst-lite-linux-24.1std-1077.run` potrebno je da promije
 cd ~/Downloads
 sudo chmod +x qinst-lite-linux-24.1std-1077.run
 ./qinst-lite-linux-24.1std-1077.run
+```
+Pojavice se interaktivni prozor u kome treba da
+- selektujemo sve alate za instalaciju
+- navedemo direktorijum za instalaciju selektovanih alata
+<img width="876" height="548" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br></br>
+
+Nakon zavrsetka procesa instalacije, *Quartus* alati su spremni za koristenje a sam **Quartus Prime** pokrecemo iz terminala komandom 
+```bash
+cd ~
+./intelFPGA_lite/24.1std/quartus/bin/quartus
 ```
