@@ -16,12 +16,12 @@ Sa stranice [Download Quartus Prime Lite 24.1](https://www.intel.com/content/www
 <p align="center"><i><b>Slika 2 </b>: Zvanicni Intel sajt za preuzimanje Quartus Prime softverskog paketa</i></p>
 
 
-Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
+Ako za downloads birate opciju **Individual Files**, potrebno je preuzeti
 - *Intel® Quartus® Prime (includes Nios II EDS)*
 - *Intel® Cyclone® V device support*</br>
    
 
-Nakon sto smo skinuli `qinst-lite-linux-24.1std-1077.run` potrebno je da promijenimo permisije za `.run` fajl te da ga pokrenemo 
+Nakon sto smo preuzeli `qinst-lite-linux-24.1std-1077.run` potrebno je da promijenimo permisije za `.run` fajl te da ga pokrenemo 
 ```bash
 cd ~/Downloads
 sudo chmod +x qinst-lite-linux-24.1std-1077.run
@@ -33,7 +33,7 @@ Pojavice se interaktivni prozor u kome treba da
 <img width="876" height="548" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br></br>
 <p align="center"><i><b>Slika 3 </b>: Intel Quartus Prime Installer prozor</i></p>
 
-Nakon zavrsetka procesa instalacije, *Quartus* alati su spremni za koristenje a sam **Quartus Prime** pokrecemo iz terminala komandom 
+Nakon zavrsetka procesa instalacije, *Quartus* softverski paket je spreman za koristenje a sam **Quartus Prime** pokrecemo iz terminala komandom 
 ```bash
 cd ~
 ./intelFPGA_lite/24.1std/quartus/bin/quartus
