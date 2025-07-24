@@ -1,67 +1,22 @@
 # Instalacija softversih paketa
 
 Na razvojnoj masini se koristi Linux **22.04.1-Ubuntu**. </br>
-
-Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to
-- **Intel Quartus Prime Lite 24.1_std**
-
-
-------------------------------------------------------------
-
------------------------------------------------------------
-
------------------------------------------------------------
+Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to **Intel Quartus Prime Lite 24.1_std**</br>
+<img width="1321" height="109" alt="image" align="left" src="https://github.com/user-attachments/assets/d1a7b638-65c2-472e-89ce-37c3de4c67bc" /></br></br></br></br>
 
 
-Na razvojnoj masini se koristi Linux **22.04.1-Ubuntu**. </br>
-Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to u verziji 17.0
-- **Intel Quartus Prime Lite**
-- **Intel SoC FPGA EDS**
+## Instalacija Intel Quartus Prime na Linux-u
 
+[Download Quartus Prime Lite 24.1](https://www.intel.com/content/www/us/en/software-kit/849769/intel-quartus-prime-lite-edition-design-software-version-24-1-for-linux.html)
 
+<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br>
 
-# Instalacija Intel Quartus Prime na Linux-u
-
-1. [Download Quartus Prime Lite 17.0_](https://www.intel.com/content/www/us/en/software-kit/669553/intel-quartus-prime-lite-edition-design-software-version-17-0-for-linux.html)
-   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/e555a0a4-a333-46fe-80f4-3566670643a2" /></br>
-
-
-   Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
-   - *Intel® Quartus® Prime (includes Nios II EDS)*
-   - *Intel® Cyclone® V device support*</br>
+Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
+- *Intel® Quartus® Prime (includes Nios II EDS)*
+- *Intel® Cyclone® V device support*</br>
    
 
-Nakon sto smo skinuli `Quartus-lite-17.0.0.595-linux.tar` arhivu potrebno ju je raspakovati i instalirati zeljene alate
-   ```bash
-   cd ~/Downloads
-   tar -xvf Quartus-lite-17.0.0.595-linux.tar
-   ./setup.sh
-   ```
-   Nakon sto je skripta pokrenuta dobicete interaktivni prozor gdje trebate odabrati lokaciju za instaltaciju **Quartus**-a
-   te selektvati dodatne opcije za instalaciju</br>
-   <img width="678" height="191" alt="image" src="https://github.com/user-attachments/assets/c73a8648-fe87-45fc-8f69-02bd8e849115" /></br>
-   <img width="673" height="327" alt="image" src="https://github.com/user-attachments/assets/1874ce37-91c2-4e98-ba6a-a19c7c495ce7" />
-
-
-Sada je **Quartus** instaliran i spreman za korsitenje, a pokrece se iz terminala kao
+Nakon sto smo skinuli `qinst-lite-linux-24.1std-1077.run` 
 ```bash
-cd ~
-./intelFPGA_lite/17.0/quartus/bin/quartus
+
 ```
-
-# Instalacija Intel SoC FPGA EDS v17.0 na Linux-u
-
-- [Download Intel EDS 17.0](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct)
-  <img width="1408" height="84" alt="image" src="https://github.com/user-attachments/assets/1f927338-9a27-4fec-915a-d1a6046c72bf" />
-  <img width="1170" height="410" alt="image" src="https://github.com/user-attachments/assets/0b133284-9260-42b6-8b10-77f31f1d7394" />
-
-- Pokrenite sledece Linux shell komande
-  ```bash
-  cd ~/Downloads
-  sudo chmod +x SoCEDSSetup-17.0.0.595-linux.run
-  ./SoCEDSSetup-17.0.0.595-linux.run
-  ```
-  <img width="678" height="191" alt="image" src="https://github.com/user-attachments/assets/20f27c94-9862-47cd-b6ce-bcea7b05a0bd" />
-
-
-- Nakon zavrsene instalacije trebalo bi da dobijete `embedded` folder u okviru `intelFPGA_lite/17.0` foldera
