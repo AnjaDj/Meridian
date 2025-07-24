@@ -12,7 +12,7 @@ Sa stranice [Download Quartus Prime Lite 24.1](https://www.intel.com/content/www
 **Intel Quartus Prime Installer** kao na slici ispod
 
 
-<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br></br>
+<img width="1321" height="400" alt="image" align="left" src="https://github.com/user-attachments/assets/bda07bd0-e457-4201-aca2-a291f885927e" /></br>
 <p align="center"><i><b>Slika 2 </b>: Zvanicni Intel sajt za preuzimanje Quartus Prime softverskog paketa</i></p>
 
 
@@ -30,7 +30,7 @@ sudo chmod +x qinst-lite-linux-24.1std-1077.run
 Pojavice se interaktivni prozor u kome treba da
 - selektujemo sve alate za instalaciju
 - navedemo direktorijum za instalaciju selektovanih alata
-<img width="876" height="548" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br></br>
+<img width="876" height="548" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br>
 <p align="center"><i><b>Slika 3 </b>: Intel Quartus Prime Installer prozor</i></p>
 
 Nakon zavrsetka procesa instalacije, *Quartus* softverski paket je spreman za koristenje a sam **Quartus Prime** pokrecemo iz terminala komandom 
