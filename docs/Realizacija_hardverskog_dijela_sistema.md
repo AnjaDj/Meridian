@@ -13,7 +13,7 @@ Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
 <p align="left"><i><b>Slika 2 </b>: New Project Wizard prozor Directory, Name, TopLevel Entity</i></p>
 
 Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu kao na slici ispod:
-![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)
+![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)</br>
 <p align="center"><i><b>Slika 3 </b>: New Project Wizard prozor Family, Device & Board Settings</i></p>
 
 Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
@@ -29,7 +29,7 @@ U okviru **IP Catalog** tab-a biramo da dodamo sledece kommponente:
 
 Sada cemo podesiti neke od parametara **HPS**-a.
 
-Ovdje smo omogucili sve **AXI Bridge**-eve i postavili ih kao **32bit**-ne, mada nije neophodno. Ali ako Linux aplikacija pokusa da pristupi disable-ovanom bridge-u desice se **Kernel panic**, tako da smo omogucili sva tri interfejsa.
+Ovdje smo omogucili sve **AXI Bridge**-eve i postavili ih kao **32bit**-ne, mada nije neophodno. Ali ako Linux aplikacija pokusa da pristupi disable-ovanom bridge-u desice se **Kernel panic**, tako da smo omogucili sva tri interfejsa.</br>
 ![image](https://github.com/user-attachments/assets/08954620-0a9b-40fe-8e4a-112784d9e352)</br>
 
 Dalje, prelazimo na **Peripheral Pins** tab, gdje biramo sledece:</br>
@@ -44,7 +44,7 @@ Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispo
 
 Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata koje smo dodali u nas sistem, idemo na **System->Assign Base Addresses** i da generisemo 
 nas hardverski sistem **Generate->Generate HDL**</br>
-![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)
+![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)</br>
 
 Nakon zavrsetka procesa **Generisanja** dobili smo:
 - **soc_system.sopcinfo**
@@ -63,7 +63,7 @@ Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softve
 
 - Kako smo prethodno komandom **Generate** izgenerisali **synthesis** fajl potreban za proces kompilacije sistema u Quartus Prime projektu, moramo ga dodati
 u sam projekat **Project->Add/Remove Files in Project->** </br>
-![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)
+![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)</br>
 
 
 - Krovni VHDL dizajn je dat kao [meridian_top.vhd](../vhd/meridian_top.vhd)
