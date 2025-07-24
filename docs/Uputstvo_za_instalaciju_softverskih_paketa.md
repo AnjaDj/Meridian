@@ -10,10 +10,10 @@
    
    <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/da9e66a6-9fbd-404e-8ea3-1e81d6f75b36" /></br>
 
-Nakon sto smo skinuli `Quartus-lite-22.1std.0.915-linux.tar` arhivu potrebno ju je raspakovati i instalirati zeljene alate
+Nakon sto smo skinuli `Quartus-lite-17.0.0.595-linux.tar` arhivu potrebno ju je raspakovati i instalirati zeljene alate
    ```bash
    cd ~/Downloads
-   tar -xvf Quartus-lite-22.1std.0.915-linux.tar
+   tar -xvf Quartus-lite-17.0.0.595-linux.tar
    ./setup.sh
    ```
    Nakon sto je skripta pokrenuta dobicete interaktivni prozor gdje trebate odabrati lokaciju za instaltaciju **Quartus**-a
