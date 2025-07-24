@@ -18,7 +18,7 @@ Sa stranice [Download Quartus Prime Lite 24.1](https://www.intel.com/content/www
 
 Ako za downloads birate opciju **Individual Files**, potrebno je preuzeti
 - *Intel® Quartus® Prime (includes Nios II EDS)*
-- *Intel® Cyclone® V device support*</br>
+- *Intel® Cyclone® V device support (DE1-SoC ploca koristi CycloneV)*</br>
    
 
 Nakon sto smo preuzeli `qinst-lite-linux-24.1std-1077.run` potrebno je da promijenimo permisije za `.run` fajl te da ga pokrenemo 
