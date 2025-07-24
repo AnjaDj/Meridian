@@ -1,14 +1,6 @@
 # Konfiguracija i kompajliranje U-Boot-a
 
-**SoC EDS** je ukinut proizvod koji **Altera** više ne podrzava.
-
-Prvo je potrebno da preuzmemo *U-Boot* izvorni kod, koristicemo officijalni Intel SOCFPGA U-Boot repozitorijum
-```bash
-git clone https://github.com/altera-opensource/u-boot-socfpga
-cd u-boot-socfpga
-git checkout 2022.04
-```
-
->[!NOTE]
-> Treba voditi racuna na koju granu se radi `checkout`. Grane sa `RC` labelom u svom nazivu (poput
-> `socfpga_agilex5-23.1_RC`) su razvojne grane, dok su one bez `RC` sufiksa stabilne.
+U trenutku pisanja ovog teksta, dostupne verzije [**Intel SoC EDS**](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct&f:os-rdc=%5BLinux*%5D) softvera su
+- *Intel SoC FPGA EDS **Standard** Edition Software (17.0 to 20.1)*
+- *Intel SoC FPGA EDS **Pro** Edition Software (17.0 to 20.1)*
+<img width="1443" height="142" alt="image" src="https://github.com/user-attachments/assets/ab8b8ba4-e217-4ad0-acc7-7e805ff6fe48" />
