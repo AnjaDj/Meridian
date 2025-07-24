@@ -11,9 +11,21 @@
    <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/da9e66a6-9fbd-404e-8ea3-1e81d6f75b36" /></br>
 
 2. **Nios® II EDS** zahtijeva manuelnu instalaciju  [**Eclipse IDE**](https://www.eclipse.org/downloads/packages/)
-  <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/9e0ac074-251c-4111-9f6a-79b590451846" />
-Posto smo skinuli **Eclipse IDE** u formatu `.tar.gz` sada cemo
+   
+   <img width="755" height="283" alt="image" src="https://github.com/user-attachments/assets/9e0ac074-251c-4111-9f6a-79b590451846" />
+   
+   Posto smo skinuli **Eclipse IDE** u formatu `.tar.gz` porebno je raspakovati arhivu i spremiti **eclipse** za rad na nasem Linuxu
+   ```bash
+   cd ~/Downloads
+   tar -xvzf eclipse-cpp-2025-06-R-linux-gtk-x86_64.tar.gz
+   ```
+   Prethodna komanda ce napraviti folder `eclipse` koji cemo premjestiti na sistemsko mjesto
+   ```bash
+   sudo mv eclipse /opt/eclipse
+   ``` 
 
+
+   
 
 
 
