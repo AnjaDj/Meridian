@@ -31,9 +31,9 @@
    ./setup.sh
    ```
    Nakon sto je skripta pokrenuta dobicete interaktivni prozor gdje trebate odabrati lokaciju za instaltaciju **Quartus**-a
-   te selektvati dodatne opcije za instalaciju
-   <img width="673" height="184" alt="Screenshot from 2025-07-24 14-19-20" src="https://github.com/user-attachments/assets/1f99baa4-fe6c-46d2-be16-cec23586418c" />
-<img width="673" height="347" alt="Screenshot from 2025-07-24 14-20-09" src="https://github.com/user-attachments/assets/2a3fbe8b-9e93-48ee-9f3f-072f2b5542c3" />
+   te selektvati dodatne opcije za instalaciju</br>
+   <img width="673" height="184" alt="Screenshot from 2025-07-24 14-19-20" src="https://github.com/user-attachments/assets/1f99baa4-fe6c-46d2-be16-cec23586418c" /></br>
+   <img width="673" height="347" alt="Screenshot from 2025-07-24 14-20-09" src="https://github.com/user-attachments/assets/2a3fbe8b-9e93-48ee-9f3f-072f2b5542c3" />
 
    
 
@@ -42,7 +42,7 @@
 
 
 --------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------------------
 
 
 # Instalacija Intel EDS v17.0 na Linuxu
