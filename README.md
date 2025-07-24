@@ -67,10 +67,11 @@ Nakon kompilacije dizajna, dobicemo **output_files/meridian_top.sof**, koji cemo
 
 Sada je potrebno da izgradimo **embedded Linux sistem**. U sklopu ovog repozitorijuma objasnjena su 2 nacina
 za kompletnu izgradjnu jednog embedded sistema i to:
-- koristenjem **Buildroot**-a (istovremeno build-amo sve dijelove sistema)
+- [koristenjem **Buildroot**-a](/docs/Buildroot.md) (istovremeno build-amo sve dijelove sistema)
 - pojedinacnom izgradnjom svakog dijela sistema
 
-
+Iako je proces izgradnje sistema pomocu **Buildroot**-a opisan u sklopu repozitorijuma, drzacemo se rucnog sastavljanja **Embedded Linux sistema** bez korišćenja automatizovanih **build** sistema kao što su **Buildroot**, **Yocto** i slicno. Preuzecemo *source code* **bootloader**-a i **kernel**-a, konfigurisati ga,
+kompajlirati i integrisati sa ostatkom sistema. 
 
 
 
