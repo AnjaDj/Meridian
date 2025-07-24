@@ -31,9 +31,11 @@ Sada cemo podesiti neke od parametara **HPS**-a.
 
 Ovdje smo omogucili sve **AXI Bridge**-eve i postavili ih kao **32bit**-ne, mada nije neophodno. Ali ako Linux aplikacija pokusa da pristupi disable-ovanom bridge-u desice se **Kernel panic**, tako da smo omogucili sva tri interfejsa.</br>
 ![image](https://github.com/user-attachments/assets/08954620-0a9b-40fe-8e4a-112784d9e352)</br>
+<p align="left"><i><b>Slika 4 </b>: Podesavanje parametara HPS-a</i></p>
 
 Dalje, prelazimo na **Peripheral Pins** tab, gdje biramo sledece:</br>
 ![image](https://github.com/user-attachments/assets/72a974f6-d8d9-4ad1-b1b2-d9b0c04a426b) </br>
+<p align="left"><i><b>Slika 5 </b>: Podesavanje parametara HPS-a</i></p>
 Dodatno, selektujemo **QSPI_SS1** kao **GPIO_35** i **TRACE_D4/TRACE_D5** kao **GPIO_53/GPIO_54** u sklopu **Peripherals Mux Table**.
 
 Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc-hps-ddr](../presets/de1-soc-hps-ddr.qprs) te kliknemo **Apply**.
@@ -41,6 +43,7 @@ Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc
 
 Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
 ![image](https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705) </br>
+<p align="center"><i><b>Slika 6 </b>: Povezivanje komponenata </i></p>
 
 Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata koje smo dodali u nas sistem, idemo na **System->Assign Base Addresses** i da generisemo 
 nas hardverski sistem **Generate->Generate HDL**</br>
