@@ -10,9 +10,11 @@ $ ./intelFPGA_lite/24.1std/quartus/bin/quartus
 ```
 Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
 <img width="483" height="326" alt="image" src="https://github.com/user-attachments/assets/45b0ad86-b3e7-4424-a509-f9c5dc97e41c" /></br>
+<p align="left"><i><b>Slika 2 </b>: New Project Wizard prozor Directory, Name, TopLevel Entity</i></p>
 
 Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu kao na slici ispod:
 ![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)
+<p align="center"><i><b>Slika 3 </b>: New Project Wizard prozor Family, Device & Board Settings</i></p>
 
 Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
 
