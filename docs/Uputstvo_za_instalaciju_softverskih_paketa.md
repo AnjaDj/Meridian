@@ -1,6 +1,19 @@
 # Instalacija softversih paketa
 
 Na razvojnoj masini se koristi Linux **22.04.1-Ubuntu**. </br>
+
+Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to
+- **Intel Quartus Prime Lite 24.1_std**
+
+
+------------------------------------------------------------
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+
+Na razvojnoj masini se koristi Linux **22.04.1-Ubuntu**. </br>
 Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to u verziji 17.0
 - **Intel Quartus Prime Lite**
 - **Intel SoC FPGA EDS**
