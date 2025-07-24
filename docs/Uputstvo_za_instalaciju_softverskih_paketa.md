@@ -50,3 +50,4 @@ cd ~
   ```
   <img width="681" height="215" alt="image" src="https://github.com/user-attachments/assets/a12c4eb5-3bb9-4476-8f5f-a8937b54ceae" />
 
+- Dobicete `embedded` folder 
