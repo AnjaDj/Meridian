@@ -48,6 +48,7 @@ cd ~
   sudo chmod +x SoCEDSSetup-17.0.0.595-linux.run
   ./SoCEDSSetup-17.0.0.595-linux.run
   ```
-  <img width="681" height="215" alt="image" src="https://github.com/user-attachments/assets/a12c4eb5-3bb9-4476-8f5f-a8937b54ceae" />
+  <img width="678" height="191" alt="image" src="https://github.com/user-attachments/assets/20f27c94-9862-47cd-b6ce-bcea7b05a0bd" />
+
 
 - Nakon zavrsene instalacije trebalo bi da dobijete `embedded` folder 
