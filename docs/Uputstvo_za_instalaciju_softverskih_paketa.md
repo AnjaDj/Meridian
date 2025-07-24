@@ -45,9 +45,8 @@ cd ~
 - Pokrenite sledece Linux shell komande
   ```bash
   cd ~/Downloads
-  ./SoCEDSSetup-17.X.X.XXX-linux.run
+  sudo chmod +x SoCEDSSetup-17.0.0.595-linux.run
+  ./SoCEDSSetup-17.0.0.595-linux.run
   ```
-- Na kraju instalacije pojavice se prozor *Launch DS-5 installation* koji nije obavezan da se check-ira
-  <img width="674" height="177" alt="image" src="https://github.com/user-attachments/assets/b7439fa8-c277-4ee6-ab4a-52a9f42cb941" />
-
+  <img width="681" height="215" alt="image" src="https://github.com/user-attachments/assets/a12c4eb5-3bb9-4476-8f5f-a8937b54ceae" />
 
