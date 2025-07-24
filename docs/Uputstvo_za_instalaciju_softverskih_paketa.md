@@ -26,7 +26,7 @@ Nakon sto smo skinuli `Quartus-lite-17.0.0.595-linux.tar` arhivu potrebno ju je 
    ```
    Nakon sto je skripta pokrenuta dobicete interaktivni prozor gdje trebate odabrati lokaciju za instaltaciju **Quartus**-a
    te selektvati dodatne opcije za instalaciju</br>
-   <img width="673" height="184" alt="Screenshot from 2025-07-24 14-19-20" src="https://github.com/user-attachments/assets/1f99baa4-fe6c-46d2-be16-cec23586418c" /></br>
+   <img width="678" height="191" alt="image" src="https://github.com/user-attachments/assets/c73a8648-fe87-45fc-8f69-02bd8e849115" /></br>
    <img width="673" height="327" alt="image" src="https://github.com/user-attachments/assets/1874ce37-91c2-4e98-ba6a-a19c7c495ce7" />
 
 
