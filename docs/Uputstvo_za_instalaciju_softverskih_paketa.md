@@ -28,12 +28,13 @@ Nakon sto smo skinuli `Quartus-lite-17.0.0.595-linux.tar` arhivu potrebno ju je 
    Nakon sto je skripta pokrenuta dobicete interaktivni prozor gdje trebate odabrati lokaciju za instaltaciju **Quartus**-a
    te selektvati dodatne opcije za instalaciju</br>
    <img width="673" height="184" alt="Screenshot from 2025-07-24 14-19-20" src="https://github.com/user-attachments/assets/1f99baa4-fe6c-46d2-be16-cec23586418c" /></br>
-   <img width="673" height="347" alt="Screenshot from 2025-07-24 14-20-09" src="https://github.com/user-attachments/assets/2a3fbe8b-9e93-48ee-9f3f-072f2b5542c3" />
+   <img width="673" height="327" alt="image" src="https://github.com/user-attachments/assets/1874ce37-91c2-4e98-ba6a-a19c7c495ce7" />
+
 
 Sada je **Quartus** instaliran i spreman za korsitenje, a pokrece se iz terminala kao
 ```bash
 cd ~
-./intelFPGA_lite/22.1std/quartus/bin/quartus
+./intelFPGA_lite/17.0/quartus/bin/quartus
 ```
 
 # Instalacija Intel SoC FPGA EDS v17.0 na Linux-u
