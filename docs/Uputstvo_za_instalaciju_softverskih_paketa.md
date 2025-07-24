@@ -1,3 +1,24 @@
+# Instalacija Intel Quartus Prime na Linux-u
+- [Download Quartus Prime Lite 22.1_std](https://www.intel.com/content/www/us/en/software-kit/757261/intel-quartus-prime-lite-edition-design-software-version-22-1-for-linux.html)
+  <img width="755" height="504" alt="image" src="https://github.com/user-attachments/assets/4993a73c-6329-4e99-a975-c425efdd5b02" /></br>
+- Ako za downloads birate opciju **Individual Files**, potrebno je skinuti
+  - *Intel® Quartus® Prime (includes Nios II EDS)*
+  -  Intel® Cyclone® V device support
+<img width="969" height="472" alt="image" src="https://github.com/user-attachments/assets/da9e66a6-9fbd-404e-8ea3-1e81d6f75b36" /></br>
+
+- **Nios® II EDS** zahtijeva manuelnu instalaciju  [**Eclipse IDE**](https://www.eclipse.org/downloads/packages/)
+  <img width="863" height="121" alt="image" src="https://github.com/user-attachments/assets/9e0ac074-251c-4111-9f6a-79b590451846" />
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
 # Instalacija Intel EDS v17.0 na Linuxu
 
 - [Download Intel EDS](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct)
