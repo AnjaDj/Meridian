@@ -41,14 +41,6 @@ cd ~
 ./intelFPGA_lite/22.1std/quartus/bin/quartus
 ```
 
-
-
-
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-
-
 # Instalacija Intel EDS v17.0 na Linuxu
 
 - [Download Intel EDS](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct)
