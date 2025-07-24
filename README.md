@@ -33,7 +33,7 @@ Kompletan vodac za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartu
 </p>
 <p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
-### ➙ Podesavanje HPS dijela?
+### Podesavanje HPS dijela?
 
 Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledeci nacin :
 
@@ -63,28 +63,12 @@ kompilacije **Processing->Start compilation**.
 Nakon kompilacije dizajna, dobicemo **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u [vodicu](/docs/Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**.
 
 
-Zatim je potrebno da izgradimo **Linux sistem**, te cemo u tu svrhu koristiti **Buildroot** koji nam omogucava da istovremeno izbildamo
-- toolchain
-- bootloader
-- Linux kernel
-- rootfs
+## Izgradnja embedded Linux sistema
 
-Uputstva kako da se izgradi [bootloader](/docs/SPL+U-Boot.md) i [Linux OS](docs/Generisanje_sistema_koriscenjem_Buildroot_alata.md) su data na prilozenim linkovima u okviru [docs](/docs) direktorijuma.
-
-
-### ➙ Upravljanje periferijama povezanim na FPGA Fabric iz HPS-a?
-
-
-**HPS** dio SoC-a koristi **AXI magistralu** dok **FPGA Fabric** koristi **Avalon magistralu**. </br></br>
-Ako je neophodno da **HPS** ima pristup periferijama koje se nalaze na **FPGA Fabric**-u, instanciramo komponentu *PIO (Parallel Input/Output)* koja ce obezbijediti konekciju sa *GPIO konektorom*. Instanciranom *PIO* komponentom cemo pristupiti iz HPS-a preko ***Lightweight HPS-to-FPGA*** interfejsa.
-
-Vise o dostupnim interfejsima za medjukomunikaciju uzmedju *Hard Processor System*-a i *FPGA Fabric*-a se moze naci na [linku](https://haoxinshengic.com/interconnection-structure-between-fpga-and-hps/) .
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3a4e3280-7254-49fc-9a70-348a42c5ef2e" alt="Description" width="500" height="400"/>
-</p>
-<p align="center"><i><b>Slika 5 </b>: Interfejsi izmedju FPGA Fabric-a i HPS-a</i></p>
-
+Sada je potrebno da izgradimo **embedded Linux sistem**. U sklopu ovog repozitorijuma objasnjena su 2 nacina
+za kompletnu izgradjnu jednog embedded sistema i to:
+- koristenjem **Buildroot**-a (istovremeno build-amo sve dijelove sistema)
+- pojedinacnom izgradnjom svakog dijela sistema
 
 
 
