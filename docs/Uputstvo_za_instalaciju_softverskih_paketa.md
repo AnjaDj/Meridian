@@ -27,14 +27,16 @@ cd ~
 ./intelFPGA_lite/22.1std/quartus/bin/quartus
 ```
 
-# Instalacija Intel EDS v17.0 na Linuxu
+# Instalacija Intel SoC FPGA EDS v17.0 na Linux-u
 
-- [Download Intel EDS](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct)
-  <img width="1478" height="85" alt="image" src="https://github.com/user-attachments/assets/d7c25604-de62-4c08-901f-f5e7d3ad3457" />
+- [Download Intel EDS 17.0](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct)
+  <img width="1408" height="84" alt="image" src="https://github.com/user-attachments/assets/1f927338-9a27-4fec-915a-d1a6046c72bf" />
+  <img width="1170" height="410" alt="image" src="https://github.com/user-attachments/assets/0b133284-9260-42b6-8b10-77f31f1d7394" />
+
 - Pokrenite sledece Linux shell komande
-  ```
-  chmod +x SoCEDSSetup-17.X.X.XXX-linux.run
-  sudo ./SoCEDSSetup-17.X.X.XXX-linux.run
+  ```bash
+  cd ~/Downloads
+  ./SoCEDSSetup-17.X.X.XXX-linux.run
   ```
 - Na kraju instalacije pojavice se prozor *Launch DS-5 installation* koji nije obavezan da se check-ira
   <img width="674" height="177" alt="image" src="https://github.com/user-attachments/assets/b7439fa8-c277-4ee6-ab4a-52a9f42cb941" />
