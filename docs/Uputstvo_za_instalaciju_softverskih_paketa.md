@@ -51,4 +51,4 @@ cd ~
   <img width="678" height="191" alt="image" src="https://github.com/user-attachments/assets/20f27c94-9862-47cd-b6ce-bcea7b05a0bd" />
 
 
-- Nakon zavrsene instalacije trebalo bi da dobijete `embedded` folder 
+- Nakon zavrsene instalacije trebalo bi da dobijete `embedded` folder u okviru `intelFPGA_lite/17.0` foldera
