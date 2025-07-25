@@ -39,14 +39,26 @@ python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/s
 <img width="1627" height="131" alt="image" src="https://github.com/user-attachments/assets/596a118d-957a-4533-a134-a045aa77bba6" />
 
 Nakon izvsenja `u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator/cv_bsp_generator.py` skripte, u 
-`u-boot-socfpga/board/terasic/de1-soc/qts` direktorijumu ce se naci sledeci fajlovi:
+`u-boot-socfpga/board/terasic/de1-soc/qts` direktorijumu ce se naci sledeci fajlovi koji ce prepisati stari sadrzaj:
 - iocsr_config.h
 - pll_config.h
 - pinmux_config.h
 - sdram_config.h
 
+Sada cemo konfigurisati U-Boot. Da bismo mogli ispravno da konfigurišemo i kroskompajliramo U-Boot, 
+potrebno je da eksportujemo putanju do **kroskompajlera** i da postavimo varijablu `CROSS_COMPILE` da 
+odgovara prefiksu našeg kroskompajlera. U tom smislu, najlakše je koristiti skriptu 
+[set-environment.sh](../scripts/set-environment.sh) koja se nalazi u scripts folderu u repozitorijumu kursa.
+```bash
+source ./set-environment.sh
+```
 
-
+Za **DE1-SoC** ploču već postoji predefinisana konfiguracija pod nazivom `socfpga_de1_soc_defconfig`,
+pa ćemo nju postaviti kao polaznu U-Boot konfiguraciju.
+```bash
+make socfpga_de1_soc_defconfig`
+```
+Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke dodatne opcije u konfiguraciji.
 
 
 
