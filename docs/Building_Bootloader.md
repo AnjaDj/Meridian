@@ -56,7 +56,7 @@ source ./set-environment.sh
 Za **DE1-SoC** ploču već postoji predefinisana konfiguracija pod nazivom `socfpga_de1_soc_defconfig`,
 pa ćemo nju postaviti kao polaznu U-Boot konfiguraciju.
 ```bash
-make socfpga_de1_soc_defconfig`
+make socfpga_de1_soc_defconfig
 ```
 Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke dodatne opcije u konfiguraciji.
 
