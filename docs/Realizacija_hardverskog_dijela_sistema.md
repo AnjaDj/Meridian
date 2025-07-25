@@ -48,13 +48,17 @@ Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc
 
 
 Konacan izgled sistema, nakon povezivanja bi trebao da izgleda kao na slici ispod</br>
-![image](https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705) </br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/917b4f16-de92-4d0e-813a-f75312560705" width="800" height="800" alt="image" aligh="center">
+</p>
 <p align="center"><i><b>Slika 6 </b>: Povezivanje komponenata </i></p>
 
 Ostaje nam jos samo da dodijelimo bazne adrese signalima pojedinih komponenata koje smo dodali u nas sistem, idemo na **System->Assign Base Addresses** i da generisemo 
 nas hardverski sistem **Generate->Generate HDL**</br>
-![image](https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f)</br>
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e2ef0992-4ed6-4376-90ed-e4dadb21a72f" width="800" height="800" alt="image" aligh="center">
+</p>
+    
 Nakon zavrsetka procesa **Generisanja** dobili smo:
 - **soc_system.sopcinfo**
   -   XML fajl sa kompletnim opisom sistema (komponente, konekcije, parametri)
@@ -68,11 +72,11 @@ Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softve
 
 ## Proces kompajliranja dizajna
 - Dobicemo sledecu notifikaciju:</br>
-<img width="491" height="303" alt="image(1)" src="https://github.com/user-attachments/assets/be1408ed-46a3-492f-8af5-abf8932238da" />
+  <img width="491" height="303" alt="image(1)" src="https://github.com/user-attachments/assets/be1408ed-46a3-492f-8af5-abf8932238da" />
 
 - Kako smo prethodno komandom **Generate** izgenerisali **synthesis** fajl potreban za proces kompilacije sistema u Quartus Prime projektu, moramo ga dodati
-u sam projekat **Project->Add/Remove Files in Project->** </br>
-![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)</br>
+  u sam projekat **Project->Add/Remove Files in Project->** </br>
+  ![image](https://github.com/user-attachments/assets/0c3527f9-e2bd-401d-98ef-f8fb437dbe58)</br>
 
 
 - Krovni VHDL dizajn je dat kao [meridian_top.vhd](../vhd/meridian_top.vhd)
