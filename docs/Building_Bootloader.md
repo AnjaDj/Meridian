@@ -18,14 +18,37 @@ Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**
 
 
 Zvanicni *Intel SOCFPGA U-Boot* repozitorijum je lociran na [https://github.com/altera-opensource/u-boot-socfpga](https://github.com/altera-opensource/u-boot-socfpga) i trebamo ga klonirati. Kada je rijec o izboru grane na koju cemo se `checkout`-ovati treba voditi racuna o tome da su grane oznacene kao `RC` namijenjene je za internu aktivnu razvojnu upotrebu i rani pristup novim `feature`-ima, bez zvanicne korisničke podrske.
-Grana na koju cemo mi raditi `checkout` je stabilna `2022.04`
+Grana na koju cemo mi raditi `checkout` je stabilna `2022.01`
 ```bash
 git clone https://github.com/altera-opensource/u-boot-socfpga
 cd u-boot-socfpga
-git checkout socfpga_v2022.04
+git checkout socfpga_v2025.01
 ```
 <p>
   <img width="848" height="447" alt="image" src="https://github.com/user-attachments/assets/1ee794ea-dc1b-435a-ae42-b7ed8878fccf">
 </p>
 <p align="center"><i><b>Slika 2 </b>: CycloneV build flow </i></p>
-Nakon zavrsetka procesa kompilacije dizajna, *intel Quartus* je generisao **handoff** folder `hps_isw_handoff/soc_system_hps_0`
+
+Nakon zavrsetka procesa kompilacije dizajna, *Intel Quartus* je generisao **handoff** folder `hps_isw_handoff/soc_system_hps_0`
+sa `.h .c .xml` fajlovima. Fajlovi unutar tog **handoff** foldera ce biti ulaz za `cv_bsp_generator.py` skriptu iz [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijuma , a izlaz ce biti 4 u-boot kompatibilna fajla koja cemo kopirati u `/boards/terasic/de1-soc/qts/` direktorijum.
+```bash
+cd ~/u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator
+python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
+                              -o ../../../../board/terasic/de1-soc/qts
+```
+<img width="1627" height="131" alt="image" src="https://github.com/user-attachments/assets/596a118d-957a-4533-a134-a045aa77bba6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
