@@ -30,7 +30,7 @@ sudo chmod +x qinst-lite-linux-24.1std-1077.run
 Pojavice se interaktivni prozor u kome treba da
 - selektujemo sve alate za instalaciju
 - navedemo direktorijum za instalaciju selektovanih alata
-<img width="876" height="548" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br>
+<img width="1321" height="600" alt="image" src="https://github.com/user-attachments/assets/8de7c022-bd21-4613-af8e-c2089cd7b22a" /></br>
 <p align="center"><i><b>Slika 3 </b>: Intel Quartus Prime Installer prozor</i></p>
 
 Nakon zavrsetka procesa instalacije, *Quartus* softverski paket je spreman za koristenje a sam **Quartus Prime** pokrecemo iz terminala komandom 
