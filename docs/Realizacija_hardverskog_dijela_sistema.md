@@ -8,13 +8,19 @@ Pokrecemo *Quartus Prime* na Linux-u
 ```
 $ ./intelFPGA_lite/24.1std/quartus/bin/quartus
 ```
-Prvo je potrebno da kreiramo projekat **File->New Proect Wizard** </br>
-<img width="483" height="326" alt="image" src="https://github.com/user-attachments/assets/45b0ad86-b3e7-4424-a509-f9c5dc97e41c" /></br>
-<p align="left"><i><b>Slika 2 </b>: New Project Wizard prozor Directory, Name, TopLevel Entity</i></p>
+Prvo je potrebno da kreiramo novi projekat i to cemo uraditi birajuci opciju **File->New Proect Wizard** kao na slici ispod</br>
+<p align="center">
+  <img width="600" height="500" alt="image" aligh="center" src="https://github.com/user-attachments/assets/45b0ad86-b3e7-4424-a509-f9c5dc97e41c" /></br>
+</p>
+<p align="center"><i><b>Slika 2 </b>: New Project Wizard prozor Directory, Name, TopLevel Entity</i></p>
 
-Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu kao na slici ispod:
-![image](https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e)</br>
+Zatim biramo opciju **Empty Project**, te podesavamo parametre vezane za koristenu **DE1-SoC** plocu. Bitno je odabrati tacan model CyclonV SoC-a
+a u nasem slucaju to je `5CSEMA5F31C6`:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c008605a-fd0a-4a5c-a515-7b70b8dc6c0e" alt="Description" width="700" height="800"/>
+</p>
 <p align="center"><i><b>Slika 3 </b>: New Project Wizard prozor Family, Device & Board Settings</i></p>
+
 
 Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
 
