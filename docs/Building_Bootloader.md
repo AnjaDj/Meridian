@@ -30,7 +30,7 @@ git checkout socfpga_v2025.01
 <p align="center"><i><b>Slika 2 </b>: CycloneV build flow </i></p>
 
 Nakon zavrsetka procesa kompilacije dizajna, *Intel Quartus* je generisao **handoff** folder `hps_isw_handoff/soc_system_hps_0`
-sa `.h .c .xml` fajlovima. Fajlovi unutar tog **handoff** foldera ce biti ulaz za `cv_bsp_generator.py` skriptu iz [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijuma , a izlaz ce biti 4 u-boot kompatibilna fajla koja cemo kopirati u `/boards/terasic/de1-soc/qts/` direktorijum.
+sa `.h .c .xml` fajlovima. Fajlovi unutar tog **handoff** foldera ce biti ulaz za `cv_bsp_generator.py` skriptu iz [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijuma , a izlaz ce biti 4 u-boot kompatibilna fajla koja ce se kopirati u `/boards/terasic/de1-soc/qts/` direktorijum.
 ```bash
 cd ~/u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator
 python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
@@ -38,9 +38,12 @@ python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/s
 ```
 <img width="1627" height="131" alt="image" src="https://github.com/user-attachments/assets/596a118d-957a-4533-a134-a045aa77bba6" />
 
-
-
-
+Nakon izvsenja `u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator/cv_bsp_generator.py` skripte, u 
+`u-boot-socfpga/board/terasic/de1-soc/qts` direktorijumu ce se naci sledeci fajlovi:
+- iocsr_config.h
+- pll_config.h
+- pinmux_config.h
+- sdram_config.h
 
 
 
