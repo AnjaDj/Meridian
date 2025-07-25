@@ -26,4 +26,8 @@ Grana na koju cemo mi raditi `checkout` je stabilna `2022.04`
 ```bash
 git checkout socfpga_v2022.04
 ```
+<p>
+  <img width="848" height="447" alt="image" src="https://github.com/user-attachments/assets/1ee794ea-dc1b-435a-ae42-b7ed8878fccf" />
+</p>
 
+Nakon zavrsetka procesa kompilacije dizajna, *intel Quartus* je generisao **handoff** folder `hps_isw_handoff/soc_system_hps_0`
