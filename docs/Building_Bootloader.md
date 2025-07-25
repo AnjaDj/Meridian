@@ -11,7 +11,8 @@ Trenutno dostupne edicije [**Intel® SoC FPGA Embedded Development Suite**](http
 - *Intel SoC FPGA EDS **Standard** Edition Software (17.0 to 20.1)*
 - *Intel SoC FPGA EDS **Pro** Edition Software (17.0 to 20.1)*</br>
 
-<img width="1443" height="142" alt="image" src="https://github.com/user-attachments/assets/ab8b8ba4-e217-4ad0-acc7-7e805ff6fe48" /></br></br>
+<img width="1443" height="142" alt="image" src="https://github.com/user-attachments/assets/ab8b8ba4-e217-4ad0-acc7-7e805ff6fe48" /></br>
+<p align="center"><i><b>Slika 1 </b>: Intel® SoC EDS edicije </i></p>
 
 Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**, **SoC EDS** nije podrzan za nasu verziju, ali nije ni neophodan jer su sve funkcionalnosti koje nama trebaju prebacene na zvanični [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijum.
 
@@ -27,7 +28,7 @@ Grana na koju cemo mi raditi `checkout` je stabilna `2022.04`
 git checkout socfpga_v2022.04
 ```
 <p>
-  <img width="848" height="447" alt="image" src="https://github.com/user-attachments/assets/1ee794ea-dc1b-435a-ae42-b7ed8878fccf" />
+  <img width="848" height="447" alt="image" src="https://github.com/user-attachments/assets/1ee794ea-dc1b-435a-ae42-b7ed8878fccf">
 </p>
-
+<p align="center"><i><b>Slika 2 </b>: CycloneV build flow </i></p>
 Nakon zavrsetka procesa kompilacije dizajna, *intel Quartus* je generisao **handoff** folder `hps_isw_handoff/soc_system_hps_0`
