@@ -14,4 +14,4 @@ Trenutno dostupne edicije [**Intel® SoC FPGA Embedded Development Suite**](http
 
 
  
-Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**, **SoC EDS** nije podrzan za nasu verziju, ali nije ni neophodan jer su sve funkcionalnosti koje nama trebaju prebacene na zvanični `u-boot-socfpga` repozitorijum.
+Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**, **SoC EDS** nije podrzan za nasu verziju, ali nije ni neophodan jer su sve funkcionalnosti koje nama trebaju prebacene na zvanični [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijum.
