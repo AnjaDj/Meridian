@@ -61,7 +61,9 @@ make socfpga_de1_soc_defconfig
 ```
 Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke dodatne opcije u konfiguraciji.
 
+S obzirom da **DE1-SoC** ploča ne sadrži EEPROM zapohranjivanje fizičke MAC adrese, potrebno je da u konfiguraciji omogućimo opciju **Random ethaddr if unset** koja se nalazi u okviru **Networking support** kategorije.
 
+Sada pokrecemo komandu `make` kako bismo kroskompajlirali U-Boot.
 
 
 
