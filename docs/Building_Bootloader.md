@@ -63,7 +63,15 @@ Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke doda
 
 S obzirom da **DE1-SoC** ploča ne sadrži EEPROM zapohranjivanje fizičke MAC adrese, potrebno je da u konfiguraciji omogućimo opciju **Random ethaddr if unset** koja se nalazi u okviru **Networking support** kategorije.
 
-Sada pokrecemo komandu `make` kako bismo kroskompajlirali U-Boot.
+Sada pokrecemo komandu `make` kako bismo kroskompajlirali U-Boot. Dobili smo 
+
+|         File          |                      Description                             |
+|-----------------------|--------------------------------------------------------------|
+| spl/u-boot-spl	      | SPL ELF **executable** | 
+| u-boot	              | U-Boot ELF **executable**| 
+| u-boot-with-spl.sfp	  | Bootable file: four copies of SPL and one copy on U-Boot image| 
+
+
 
 
 
