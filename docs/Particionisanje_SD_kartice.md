@@ -114,15 +114,14 @@ sudo mkfs.ext4 -L rootfs /dev/sda2
 ```
 
 
-------------------------------------------------
+## Brisanje sadrzaja karice
 
-Ako želiš da potpuno obrišeš prethodni sadržaj sa particionisane SD kartice (uključujući sve particije, filesystem-e i podatke)
-1. Potpuno brisanje celog uređaja (/dev/sdX) 🔥
-   Ova metoda briše sve particije i podatke (kao da si uzela novu karticu iz kutije):
-   ```bash
-   sudo dd if=/dev/zero of=/dev/sdX bs=1M status=progress
-   ```
-   Zamijeni **sdX** sa imenom tvoje kartice (npr. mmcblk0 ili sdb – bez broja na kraju!).
+Ako želiš da potpuno obrišeš prethodni sadržaj sa particionisane SD kartice
+(uključujući sve particije, filesystem-e i podatke):
+```bash
+sudo dd if=/dev/zero of=/dev/sdX bs=1M status=progress
+```
+Zamijeni **sdX** sa imenom tvoje kartice (npr. mmcblk0 ili sdb – bez broja na kraju!).
 
 
 
