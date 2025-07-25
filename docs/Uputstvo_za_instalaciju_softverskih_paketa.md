@@ -1,7 +1,7 @@
 # Instalacija softversih paketa
 
 Na razvojnoj masini se koristi Linux **22.04.1-Ubuntu**. </br></br>
-Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski alati](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to **Intel Quartus Prime Lite 24.1_std**</br>
+Za potrebe realizacije ovog projekta, bice nam potrebni [**Intel** softverski paketi](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct) i to **Intel Quartus Prime Lite 24.1std**</br>
 <img width="1321" height="109" alt="image" align="left" src="https://github.com/user-attachments/assets/d1a7b638-65c2-472e-89ce-37c3de4c67bc" /></br></br></br></br>
 <p align="center"><i><b>Slika 1 </b>: FPGA Software Download Center</i></p>
 
