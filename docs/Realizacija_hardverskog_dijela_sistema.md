@@ -42,6 +42,7 @@ Ovdje smo omogucili sve **AXI Bridge**-eve i postavili ih kao **32bit**-ne, mada
 Dalje, prelazimo na **Peripheral Pins** tab, gdje biramo sledece:</br>
 ![image](https://github.com/user-attachments/assets/72a974f6-d8d9-4ad1-b1b2-d9b0c04a426b) </br>
 <p align="left"><i><b>Slika 5 </b>: Podesavanje parametara HPS-a</i></p>
+
 Dodatno, selektujemo **QSPI_SS1** kao **GPIO_35** i **TRACE_D4/TRACE_D5** kao **GPIO_53/GPIO_54** u sklopu **Peripherals Mux Table**.
 
 Nakon sto otvorimo **SDRAM** tab, idemo na **View->Presets**, odaberemo [de1-soc-hps-ddr](../presets/de1-soc-hps-ddr.qprs) te kliknemo **Apply**.
