@@ -35,7 +35,7 @@ Kompletan vodac za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartu
 
 ### Podesavanje HPS dijela?
 
-Analizirajuci [fajl](docs/DE1-SoC_schematic.pdf) podesili smo *PinMux* na sledeci nacin :
+Analizirajuci [semu CycloneV SoC](docs/DE1-SoC_schematic.pdf)-a podesili smo *PinMux* na sledeci nacin :
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
