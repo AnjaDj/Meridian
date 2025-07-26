@@ -79,5 +79,4 @@ Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartic
   <img src="https://github.com/user-attachments/assets/d3afb018-5cdf-4295-8511-c4c3bb61aa88" width="350" height="450">
 <p>
 
-
-
+Sada mozemo pristupiti [konfiguraciji i kros-kompajliranju U-Boot-a](docs/Building_Bootloader.md). 
