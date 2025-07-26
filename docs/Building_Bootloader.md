@@ -65,13 +65,18 @@ S obzirom da **DE1-SoC** ploča ne sadrži EEPROM zapohranjivanje fizičke MAC a
 
 Sada pokrecemo komandu `make` kako bismo kroskompajlirali U-Boot. U korjenom u-boot-socfpga direkotrijumu smo dobili 
 
-|         File          |                      Description                             |
-|-----------------------|--------------------------------------------------------------|
-| spl/u-boot-spl	      | SPL ELF **executable** | 
-| u-boot	              | U-Boot ELF **executable**| 
-| u-boot-with-spl.sfp	  | Bootable file: four copies of SPL and one copy on U-Boot image| 
+|         File            |                      Description                             |
+|-------------------------|--------------------------------------------------------------|
+| `spl/u-boot-spl`	      | SPL ELF **executable** | 
+| `u-boot`	              | U-Boot ELF **executable**| 
+| `u-boot-with-spl.sfp`	  | Bootable file: four copies of SPL and one copy on U-Boot image| 
 
-
+`u-boot-with-spl.sfp`, koji se nalazi u korjenom direktorijumu **U-Boot** izvornog koda koji 
+objedinjuje **4 SPL** kopije iza kojih slijedi **U-Boot binarna slika**. Ovaj fajl ćemo 
+da prekopiramo na particiju 3 tipa **0xA2**, sljedećom komandom:
+```bash
+sudo dd if=u-boot-with-spl.sfp of=/dev/sdb3 bs=512
+```
 
 
 
