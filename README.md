@@ -74,5 +74,8 @@ Iako je proces izgradnje sistema pomocu **Buildroot**-a opisan u sklopu repozito
 kompajlirati i integrisati sa ostatkom sistema. 
 
 
-
+Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartice, potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj koju očekuje **BootROM** kod **CycloneV** čipa.
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/d3afb018-5cdf-4295-8511-c4c3bb61aa88" width="500" height="700">
+<p>
 
