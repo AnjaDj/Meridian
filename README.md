@@ -63,7 +63,7 @@ kompilacije **Processing->Start compilation**.
 Nakon kompilacije dizajna, dobicemo **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u vodicu za generisanje [**FPGA konfiguracionog fajla**](/docs/Generisanje_FPGA_konfiguracionog_fajla.md).
 
 
-## Izgradnja embedded Linux sistema 🐧
+## Izgradnja embedded Linux sistema <img width="40" height="50" alt="image" src="https://github.com/user-attachments/assets/7b4c88f0-3d18-48c7-bf7a-7d46a32c4df7">
 
 Sada je potrebno da izgradimo **embedded Linux sistem**. U sklopu ovog repozitorijuma objasnjena su 2 nacina
 za kompletnu izgradjnu jednog embedded sistema i to:
