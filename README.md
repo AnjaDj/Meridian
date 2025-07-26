@@ -89,5 +89,8 @@ sudo dd if=u-boot-with-spl.sfp of=/dev/sdb3 bs=512
 ```
 stavite karticu u slot na ploci, povežite UART-USB kabl sam PC računarom, podesite serijski terminal na PC-u i uključite napajanje na ploči. Na serijskom terminalu dobijamo sledeci ispis:
 ```bash
-
+U-Boot SPL 2025.01-gcd3a9044d661-dirty (Jul 25 2025 - 16:04:54 +0200)
+Trying to boot from MMC1
+mmc_load_image_raw_sector: mmc block read error
+Trying to boot from UART
 ```
