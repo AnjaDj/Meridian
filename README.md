@@ -42,8 +42,8 @@ Analizirajuci [semu CycloneV SoC](docs/DE1-SoC_schematic.pdf)-a podesili smo *Pi
 |   C25   |   TRACE_D1/SPIS0_MOSI/**UART0_TX**/HPS_GPIO50  |       UART0_TX            |
 |   B25   |   TRACE_D0/SPIS0_CLK/**UART0_RX**/HPS_GPIO49   |       UART0_RX            |
 |         |                                                |                           |
-|    -    |      FPGA mode=Full                            |          I2C2             |
-|    -    |      FPGA mode=Full                            |          SPIM0            |
+|    -    |      FPGA mode Full                            |          I2C2             |
+|    -    |      FPGA mode Full                            |          SPIM0            |
 |         |                                                |                           |
 |    -    |      HPS I/O  RGMII                            |          EMAC1            |
 |    -    |      HPS I/O  4-bit Data                       |          SDIO0            |
