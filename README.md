@@ -74,8 +74,10 @@ Iako je proces izgradnje sistema pomocu **Buildroot**-a opisan u sklopu repozito
 kompajlirati i integrisati sa ostatkom sistema. 
 
 
-Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartice, potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj koju očekuje **BootROM** kod **CycloneV** čipa.
+Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartice, potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj koju očekuje **BootROM** kod **CycloneV** čipa. S tim u vezi treba ispratiti uputstvo za [paritcionisanje SD kartice](/docs/Particionisanje_SD_kartice.md) kako bi ista poprimila strukturu kao sa slike ispod:
 <p align="left">
   <img src="https://github.com/user-attachments/assets/d3afb018-5cdf-4295-8511-c4c3bb61aa88" width="350" height="450">
 <p>
+
+
 
