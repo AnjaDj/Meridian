@@ -33,7 +33,7 @@ Nakon zavrsetka procesa kompilacije dizajna, *Intel Quartus* je generisao **hand
 sa `.h .c .xml` fajlovima. Fajlovi unutar tog **handoff** foldera ce biti ulaz za `cv_bsp_generator.py` skriptu iz [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijuma , a izlaz ce biti 4 u-boot kompatibilna fajla koja ce se kopirati u `/boards/terasic/de1-soc/qts/` direktorijum.
 ```bash
 cd ~/u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator
-python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
+python3 ./cv_bsp_generator.py -i ~/Desktop/de1_soc_meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
                               -o ../../../../board/terasic/de1-soc/qts
 ```
 <img width="1627" height="131" alt="image" src="https://github.com/user-attachments/assets/596a118d-957a-4533-a134-a045aa77bba6" />
