@@ -48,6 +48,8 @@ Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nad
 - patch fajl koji je nastao primjenom `cv_bsp_generator` skripte nad fajlovima iz **handoff** foldera (pratiti uputstvo za izgradnju [UBoot-a](UBoot.md))
 - konfiguracioni rbf fajl ([uputstvo za generisanje .rbf](Generisanje_FPGA_konfiguracionog_fajla.md)) 
 
+Da biste generisali `.patch` fajl potrebno je ispratiti uputstvo za [konfiguraciju UBoot-a](UBoot.md), dok je za kreiranje default kernel configuration fajla 
+potrebno ispratiti uputstvo za [konfiguraciju Linux kernela](Linux.md).
 
 Kako predefinisana konfiguracija ne postoji za DE1-SoC ploču, koristicemo predefinisanu konfiguraciju
 za DE10-nano plocu jer su vrlo slicne. 
