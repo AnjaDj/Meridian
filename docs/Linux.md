@@ -38,5 +38,5 @@ make -j 4
 
 Ako smo izabrali da koristimo **Buildroot** alat za izgradnju Linux embedded sistema, dovoljno je samo da prekopiramo prethodno kreiranu konfiguraciju kernela za DE1-SoC plocu u direktorijum sa izvornim kodom `buildroot`-a
 ```
-scp ~/linux-socfpga/arch/arm/configs/de1_soc_defconfig ~/buildroot/boards/terasic/de1soc_cyclone5
+scp ~/linux-socfpga/arch/arm/configs/de1_soc_defconfig ~/buildroot/board/terasic/de1soc_cyclone5
 ```
