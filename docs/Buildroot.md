@@ -142,7 +142,7 @@ sudo dd if=sdcard.img of=/dev/sda bs=1M
 >Prije korišćenja komande dd potrebno je da demontirate fajl sisteme particija SD kartice (ukoliko su montirane). Putanju do foldera koji predstavlja tačku montiranja particija SD kartice možete prikazati komandom lsblk. Kao i ranije, vodite računa da ovom komandom možete napraviti štetu na fajl sistemu razvojnog računara ako ne specificirate odgovarajući uređaj.
 
 Ostaje jos samo jedan korak prije nego budemo spremni da SD karticu umetnemo u slot na DE1-SoC ploči i pokrenemo izvršavanje.
-Taj korak jeste kopiranje **rbf** fajla na FAT32 particiju SD kartice, sto je opisano u [ovom](Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) odjeljku.
+Taj korak jeste kopiranje **rbf** fajla na FAT32 particiju SD kartice, sto je opisano u [ovom](Generisanje_FPGA_konfiguracionog_fajla.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) odjeljku.
 
 
 
