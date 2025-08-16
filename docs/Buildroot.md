@@ -113,6 +113,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Size of environment** opciju na 8192
 
 <img width="964" height="544" alt="image" src="https://github.com/user-attachments/assets/606262d1-70a2-4d73-a7b8-a21dfdbad223" />
+<img width="780" height="568" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" />
 
 Nakon sto smo izvrsili prilagodjenje polazne radne konfiguracije koja je bila u potpunosti prilagodjena **DE10-nano** platformi,
 mozemo u **menuconfig**-u ici na **Save**. 
