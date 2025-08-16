@@ -46,6 +46,7 @@ Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nad
 - fajl kojim opisujemo **strukturu SD kartice** koja je pogodna za našu platformu ([genimage.cfg](../buildroot/board/terasic/de1soc_cyclone5/genimage.cfg))
 - fajl kojim opisujemo U-Boot okruženje (umjesto podrazumijevanog sadržaja koji je ugrađen u sam izvorni kod bootloader-a) ([boot-env.txt](../buildroot/board/terasic/de1soc_cyclone5/boot-env.txt))
 - patch fajl koji je nastao primjenom `cv_bsp_generator` skripte nad fajlovima iz **handoff** foldera (pratiti uputstvo za izgradnju [UBoot-a](UBoot.md))
+- konfiguracioni rbf fajl ([uputstvo za generisanje .rbf](Generisanje_FPGA_konfiguracionog_fajla.md)) 
 
 
 Kako predefinisana konfiguracija ne postoji za DE1-SoC ploču, koristicemo predefinisanu konfiguraciju
