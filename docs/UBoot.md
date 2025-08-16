@@ -45,6 +45,12 @@ Nakon izvsenja `u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator/cv_bsp_gen
 - pinmux_config.h
 - sdram_config.h
 
+Ukoliko je potrebno možemo napraviti i patch fajl koji sadrži razlike između dvije verzije fajlova
+```
+cd ~/u-boot-socfpga/board/terasic/de1-soc/qts
+git diff > de1-soc-handoff.patch
+```
+
 Sada cemo konfigurisati U-Boot. Da bismo mogli ispravno da konfigurišemo i kroskompajliramo U-Boot, 
 potrebno je da eksportujemo putanju do **kroskompajlera** i da postavimo varijablu `CROSS_COMPILE` da 
 odgovara prefiksu našeg kroskompajlera. U tom smislu, najlakše je koristiti skriptu 
