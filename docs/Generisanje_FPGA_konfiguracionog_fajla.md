@@ -47,6 +47,10 @@ U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 <img width="2514" height="995" alt="image" src="https://github.com/user-attachments/assets/17cf4f84-7979-4ec7-9ef3-997c8783763c" />
 <p align="center"><i>Ocekivana organizacija particija na SD kartici sa ocekivanim sadrzajem</i></p>
 
+Ukoliko zelimo biti sigurni u strukturu kartice, mozemo pokrenuti `sudo fdisk -l` i dobicemo sledeci ispis:
+<img width="572" height="231" alt="image" src="https://github.com/user-attachments/assets/1507b651-d34d-4857-b37f-a5ce44b94a5b" />
+
+
 Potrebno je kopirati **socfpga.rbf** fajl na **FAT32** particiju, gdje se nalaze i **zImage** i **DTB**.
 
 Proces kopiranja fajla na **FAT32** je sledeci:
