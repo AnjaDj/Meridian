@@ -45,12 +45,17 @@ Nakon izvsenja `u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator/cv_bsp_gen
 - pinmux_config.h
 - sdram_config.h
 
-Ukoliko je potrebno možemo napraviti i patch fajl koji sadrži razlike između dvije verzije fajlova
+Sada je potrebno da se odlucimo da li cemo koristiti **Buildroot** za izgradnju Linux embedded sistema ili cemo sami sastavljati
+sistema bez korišćenja automatizovanih build sistema. 
+Ukoliko se odlucimo za koristenje **Buildroot**-a, potrebno je napraviti patch fajl koji sadrži razlike između dvije verzije fajlova.
+Nakon kreiranja patch fajla, isti cemo prekopirati u direktorijum sa izvornim kodom `buildroot`-a, i tu posao vezan za podesavanje U-Boota staje. 
 ```
 cd ~/u-boot-socfpga/board/terasic/de1-soc/qts
 git diff > de1-soc-handoff.patch
+scp de1-soc-handoff.patch ~/buildroot/board/terasic/de1soc_cyclone5/patch
 ```
 
+Ukoliko izaberemo da sistem gradimo rucno, potrebno je do kraja ispratiti ovaj fajl.
 Sada cemo konfigurisati U-Boot. Da bismo mogli ispravno da konfigurišemo i kroskompajliramo U-Boot, 
 potrebno je da eksportujemo putanju do **kroskompajlera** i da postavimo varijablu `CROSS_COMPILE` da 
 odgovara prefiksu našeg kroskompajlera. U tom smislu, najlakše je koristiti skriptu 
