@@ -112,6 +112,7 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Source files for environment** opciju na **board/terasic/de1soc_cyclone5/boot-env.txt** 
     - postavite **Size of environment** opciju na 8192
 
+<img width="964" height="544" alt="image" src="https://github.com/user-attachments/assets/606262d1-70a2-4d73-a7b8-a21dfdbad223" />
 
 Nakon sto smo izvrsili prilagodjenje polazne radne konfiguracije koja je bila u potpunosti prilagodjena **DE10-nano** platformi,
 mozemo u **menuconfig**-u ici na **Save**. 
