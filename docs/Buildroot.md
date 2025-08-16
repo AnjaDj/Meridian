@@ -85,7 +85,8 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Configuration file path** opciju na **board/terasic/de1soc_cyclone5/de1_soc_defconfig**
     - obrišite sadržaj opcije **In-Tree Device Tree Source file names**
     - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts**
-    - uključite opciju **Linux Kernel Tools**&rarr;**iio**
+    - uključite opciju **Linux Kernel Tools**&rarr;**iio**</br>
+      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/606262d1-70a2-4d73-a7b8-a21dfdbad223" />
 
 - U okviru **Target packages**:
     - uključite opciju **Hardware handling**&rarr;**evtest**
@@ -104,7 +105,8 @@ za DE10-nano plocu jer su vrlo slicne.
     - uključite opciju **U-Boot needs dtc**
     - u okviru **U-Boot binary format** isključite opciju **u-boot.bin** i uključite opciju **u-boot.img**
     - uključite opciju **Install U-Boot SPL binary image**
-    - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**
+    - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**</br>
+      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" />
 
 - U okviru **Host utilities**:
     - uključite opciju **host u-boot tools**
@@ -112,8 +114,6 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Source files for environment** opciju na **board/terasic/de1soc_cyclone5/boot-env.txt** 
     - postavite **Size of environment** opciju na 8192
 
-<img width="964" height="544" alt="image" src="https://github.com/user-attachments/assets/606262d1-70a2-4d73-a7b8-a21dfdbad223" />
-<img width="780" height="568" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" />
 
 Nakon sto smo izvrsili prilagodjenje polazne radne konfiguracije koja je bila u potpunosti prilagodjena **DE10-nano** platformi,
 mozemo u **menuconfig**-u ici na **Save**. 
