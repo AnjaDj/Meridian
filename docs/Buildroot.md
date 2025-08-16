@@ -25,11 +25,11 @@ Buildroot može da generiše:
 
 ## Generisanje sistema korišćenjem Buildroot alata
 
-Kloniramo repozitorijum **buildroot**-a i prebacujemo se na najnoviju granu. U trenutku pisanja ovog vodica, to je grana 2025.05
+Kloniramo repozitorijum **buildroot**-a i prebacujemo se na granu 2024.02
 ```
 git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
-git checkout 2025.05
+git checkout 2024.02
 ```
 
 Potvrdite da na razvojnom računaru imate instalirane sve [obavezne softverske pakete](https://buildroot.org/downloads/manual/manual.html#requirement-mandatory).
