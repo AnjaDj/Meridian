@@ -95,7 +95,7 @@ za DE10-nano plocu jer su vrlo slicne.
 - U okviru **Bootloaders**:
     - isključite opciju **Barebox**
     - uključite opciju **U-Boot**
-    - postavite vrijednost opcije **U-Boot version** (**2025.04**)
+    - postavite vrijednost opcije **U-Boot version** (**2024.01**)
     - postavite **Custom U-Boot patches** na **board/terasic/de1soc_cyclone5/patches/de1-soc-handoff.patch**
     - postavite **U-Boot configuration** opciju na **Using an in-tree board defconfig file**
     - postavite **Board defconfig** opciju na **socfpga_de1_soc**
