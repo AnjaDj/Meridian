@@ -85,7 +85,7 @@ Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartic
 Sada mozemo pristupiti [konfiguraciji i kros-kompajliranju U-Boot-a](docs/UBoot.md). 
 Nakon sto smo kopirali bootable fajl koji objedinjuje 4 kopije SPL-a i U-Boot binarnu sliku na 0xA2 raw particiju komandom
 ```bash
-sudo dd if=u-boot-with-spl.sfp of=/dev/sdb3 bs=512
+sudo dd if=u-boot-with-spl.sfp of=/dev/sda3 bs=512
 ```
 stavite karticu u slot na ploci, povežite UART-USB kabl sam PC računarom, podesite serijski terminal na PC-u i uključite napajanje na ploči. Na serijskom terminalu dobijamo sledeci ispis:
 ```bash
