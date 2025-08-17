@@ -22,7 +22,7 @@ a u nasem slucaju to je `5CSEMA5F31C6`:
 <p align="center"><i><b>Slika 3 </b>: New Project Wizard prozor Family, Device & Board Settings</i></p>
 
 
-Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
+Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
 
 ## Kreiranje Qsys projekta
 
