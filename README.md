@@ -101,3 +101,5 @@ Out:   serial
 Err:   serial
 Model: Terasic DE1-SoC
 ```
+
+Na red dolazi konfiguracija i kroskompajliranje Linux kernela sto je detaljno objasnjeno u sklopu fajla [konfiguracija Linux kernela](docs/Linux.md)
