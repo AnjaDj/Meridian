@@ -73,9 +73,7 @@ za kompletnu izgradjnu jednog embedded sistema i to:
 - [koristenjem **Buildroot**-a](/docs/Buildroot.md) (istovremeno build-amo sve dijelove sistema)
 - pojedinacnom izgradnjom svakog dijela sistema
 
-Iako je proces izgradnje sistema pomocu **Buildroot**-a opisan u sklopu repozitorijuma, drzacemo se rucnog sastavljanja **Embedded Linux sistema** bez korišćenja automatizovanih **build** sistema kao što su **Buildroot**, **Yocto** i slicno. Preuzecemo *source code* **bootloader**-a i **kernel**-a, konfigurisati ga,
-kompajlirati i integrisati sa ostatkom sistema. 
-
+Ukoliko se odlucimo za rucno sastavljanje **Embedded Linux sistema** bez korišćenja automatizovanih **build** sistema kao što su **Buildroot**, **Yocto** i slicno, postupak je sledeci.
 
 Da bi sistem mogao ispravno da se pokrene na **DE1-SoC** ploči sa **SD** kartice, potrebno je da obezbijedimo da organizacija particija na kartici odgovara onoj koju očekuje **BootROM** kod **CycloneV** čipa. S tim u vezi treba ispratiti uputstvo za [paritcionisanje SD kartice](/docs/Particionisanje_SD_kartice.md) kako bi ista poprimila strukturu kao sa slike ispod:
 <p align="left">
@@ -89,8 +87,17 @@ sudo dd if=u-boot-with-spl.sfp of=/dev/sda3 bs=512
 ```
 stavite karticu u slot na ploci, povežite UART-USB kabl sam PC računarom, podesite serijski terminal na PC-u i uključite napajanje na ploči. Na serijskom terminalu dobijamo sledeci ispis:
 ```bash
-U-Boot SPL 2025.01-gcd3a9044d661-dirty (Jul 25 2025 - 16:04:54 +0200)
-Trying to boot from MMC1
-mmc_load_image_raw_sector: mmc block read error
-Trying to boot from UART
+U-Boot 2024.01 (Jul 30 2025 - 15:52:25 +0200)
+
+CPU:   Altera SoCFPGA Platform
+FPGA:  Altera Cyclone V, SE/A5 or SX/C5 or ST/D5, version 0x0
+BOOT:  SD/MMC Internal Transceiver (3.0V)
+DRAM:  1 GiB
+Core:  27 devices, 15 uclasses, devicetree: separate
+MMC:   dwmmc0@ff704000: 0
+Loading Environment from MMC... OK
+In:    serial
+Out:   serial
+Err:   serial
+Model: Terasic DE1-SoC
 ```
