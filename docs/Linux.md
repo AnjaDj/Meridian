@@ -124,11 +124,6 @@ kompajliranja, komandom `make install` instaliramo konfigurisane alate na lokaci
 u opciji **Destination path for 'make install'**. Dovoljno je da definišemo lokaciju odredišnog
 foldera, a *BusyBox* će kreirati sve neophodne foldere ukoliko već nisu kreirani.
 
-> [!TIP]
-> *BusyBox* kompajlira sve alate u jedan binarni fajl koji se kopira na lokaciju `rootfs/bin/busybox`.
-Svi ostali fajlovi su zapravo simbolički linkovi koji pokazuju na ovaj binarni fajl, što možete
-provjeriti npr. komandom `ls -l rootfs/bin/`.
-
 Sada kada smo instalirali sve neophodne alate za pokretanje i rad sa *Linux* sistemom, potrebno je
 da ih dostavimo ciljnoj platformi. Jedan način je da kompletan *root* fajl sistem kopiramo na EXT4
 particiju na SD kartici, ali daleko felksibilniji i brži način je korišćenjem NFS protokola.
