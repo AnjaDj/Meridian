@@ -91,7 +91,6 @@ U tu svrhu najbolje je koristiti *BusyBox* projekat.
 ## *Busybox*: konfiguracija i kompajliranje
 
 Prvo ćemo preuzeti *BusyBox* izvorni kod i prebaciti se na stabilnu verziju `1_36_stable`:
-
 ```
 git clone https://git.busybox.net/busybox
 cd busybox/
@@ -100,28 +99,25 @@ git checkout 1_36_stable
 
 Zatim ćemo postaviti podrazumijevanu konfiguraciju koja uključuje alate koje tipično koristi
 većina korisnika.
-
 ```
 make defconfig
 ```
 
 Za dodatnu konfiguraciju pokrećemo meni za konfiguraciju *BusyBox* opcija.
-
 ```
 make menuconfig
 ```
 
-Zasad ćemo u okviru **Settings** pod kategorijom **Build Options** definisati opciju
+U okviru **Settings** pod kategorijom **Build Options** definisati opciju
 **Cross compiler prefix** tako da odgovara prefiksu našeg kompajlera (npr. `arm-linux-`),
 a pod kategorijom **Installation Options** definisati opciju **Destination path for 'make install'**
 tako da pokazuje na lokaciju foldera u kojem se nalazi naš *root* fajl sistem (npr. `../rootfs`).
+Omogućite opciju **Build static binary (no shared libs)**
+koja se nalazi pod **Settings** u okviru **Build Options** kategorije.
  
-Prije kompajliranja, potrebno je da eksportujemo putanju do *toolchain*-a korišćenjem skripte koju
-smo koristili u ranijim vježbama.
+Prije kompajliranja, potrebno je da eksportujemo putanju do *toolchain*-a korišćenjem skripte 
+[set-environment.sh](../scripts/set-environment.sh)
 
-> [!NOTE]
-> Pomenuta skripta takođe postavlja i prefiks kompajlera u varijabli `CROSS_COMPILE`, tako da
-podešavanje opcije **Cross compiler prefix** nije obavezno u našem slučaju.
 
 Sada je dovoljno pokrenuti komandu `make` za kroskompajliranje *BusyBox* projekta. Po završetku
 kompajliranja, komandom `make install` instaliramo konfigurisane alate na lokaciju specificiranu
