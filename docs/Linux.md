@@ -130,14 +130,12 @@ particiju na SD kartici, ali daleko felksibilniji i brži način je korišćenje
 
 ## Instalacija i konfiguracija NFS servera
 
-Prvo je potrebno instalirati NFS server. Na *Ubuntu 22.04* distribuciji koristimo sljedeću komandu:
-
+Prvo je potrebno instalirati NFS server. Na razvojnom racunaru koristimo sljedeću komandu:
 ```
 sudo apt install nfs-kernel-server
 ```
 
 Nakon instalacije, server će se automatski pokrenuti, ali njegov status možete provjeriti komandom
-
 ```
 sudo service nfs-kernel-server status
 ```
@@ -147,26 +145,20 @@ Ekvivalentno, stanje servera možete kontrolisati komandama `start`, `stop` i `r
 Da bi naš *staging* direktorijum bio vidljiv na ciljnoj platformi, potrebno je da ga dodamo
 u listu eksportovanih foldera NFS servera. U tom smislu, trebamo editovati fajl `/etc/exports`
 tako što ćemo dodati liniju
-
 ```
 /home/<user>/rootfs <client_ip_addr>(rw,no_root_squash,no_subtree_check)
 ```
 
-pri čemu `<client_ip_addr>` treba zamijeniti sa stvarnom IP adresom klijenta (ciljna platforma),
-npr. 192.168.21.200, a `<user>` sa stvarnim korisničkim imenom.
+pri čemu `<client_ip_addr>` treba zamijeniti sa stvarnom IP adresom targeta (ciljna platforma),
+npr. 192.168.1.200, a `<user>` sa stvarnim korisničkim imenom.
 
 > [!IMPORTANT]
 > Svi parametri moraju da se nalaze u jednoj liniji, a između IP adrese i NFS parametara navedenih
 u zagradi ne smije da se nalazi prazan prostor (čak ni razmak).
 
-> [!TIP]
-> Umjesto IP adrese može da se stavi `*`, čime se dozvoljava pristup NFS serveru svim klijentima koji
-se nalaze u istoj mreži. Ovo je korisna opcija ukoliko više klijenata koristi isti *root* fajl sistem.
-U našem slučaju je bolje specificirati IP adresu klijenta.
 
 Konačno, da bi se promjene u `/etc/exports` fajlu propagirale do server, potrebno ga je restartovati
 ili pokrenuti sljedeću komandu:
-
 ```
 sudo exportfs -r
 ```
