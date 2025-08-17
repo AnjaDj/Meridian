@@ -25,6 +25,15 @@ U sklopu kategorije **Boot options**, pronađite opciju **Default kernel command
 Ispod ove opcije će se pojaviti nova stavka pod nazivom **Kernel command line type**, koju trebate postaviti na **Use bootloader kernel arguments if available**.
 Na ovaj način definišemo da kernel dobija argumente komandne linije isključivo od bootloader-a (konfiguracioni parametar CONFIG_CMDLINE_FROM_BOOTLOADER).
 
+Ukoliko se odlucimo da omogucimo podizanje sistema preko NFS servera, provjerite konfiguraciju kernela i potvrdite da su omogućene sljedeće opcije:
+- `CONFIG_NFS_FS`: opcija **File systems→Network File Systems→NFS client support** u konfiguraciji koja omogućava podršku za komunikaciju sa NFS klijentom,
+- `CONFIG_ROOT_NFS`: opcija **File systems→Network File Systems→Root file system on NFS** u konfiguraciji koja omogućava podizanje sistema kada se root fajl sistem nalazi na NFS serveru
+- `CONFIG_IP_PNP`: opcija **Networking support→Networking options→IP: kernel level autoconfiguration** u konfiguraciji koja omogućava dodjeljivanje IP adrese tokom rane faze podizanja sistema, prije montiranja root fajl sistema
+- `CONFIG_DEVTMPFS`: opcija **Device Drivers→Generic Driver Options→Maintain a devtmpfs filesystem to mount at /dev** u konfiguraciji koja kreira instancu devtmpfs fajl sistema u ranoj fazi podizanja sistema i
+- `CONFIG_DEVTMPFS_MOUNT`: opcija **Device Drivers→Generic Driver Options→Automount devtmpfs at /dev, after the kernel mounted the rootfs** u konfiguraciji koja govori kernelu da automatski montira devtmpfs virtuelni fajl sistem nakon montiranja root fajl sistema.
+
+
+
 Sada možemo sačuvati trenutnu konfiguraciju kernela kao predefinisanu za DE1-SoC ploču
 ```
 make savedefconfig
