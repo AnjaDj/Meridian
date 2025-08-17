@@ -6,7 +6,12 @@
   3.2.   [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)</br>
   3.3.   [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)</br>
 4. [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla.md)
-5. [Priprema SD kartice](docs/Particionisanje_SD_kartice.md)
+5. [Koristenje Buildroot alata za izgradnju Linux embedded sistema](docs/Buildroot.md)
+6. Rucno sastavljanje Linux embedded sistema
+  6.1.   [Priprema SD kartice](docs/Particionisanje_SD_kartice.md)
+  6.2.   [Konfiguracija i kroskompajliranje U-Boot-a](docs/UBoot.md)
+  6.3.   [Konfiguracija i kroskompajliranje Linux kernela](docs/Linux.md)
+
   
 # Zadatak
 Integrisati termalnu kameru [**Meridian-MI1602**](https://www.meridianinno.com/products) na infrastrukturu [**DE1-SoC**](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836) platforme.
