@@ -41,7 +41,6 @@ Kada zavrsimo sa time, vracamo se na [Kopiranje konfiguracionog rbf fajla na FAT
 
 ## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
 
-Ukoliko smo se odlucili za rucno sastavljanje sistema, onda je potrebno da i mi sami rucno particionisemo karticu.
 Prije prelaska na korak kopiranja fajlova na specificnu particiju, korisno je upoznati se sa ocekivanom strukturom
 SD kartice za nasu DE1-SoC platformu. Vise o tome sse moze naci u sledecem [vodicu](bla).
 U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
