@@ -54,6 +54,7 @@ cd ~/u-boot-socfpga/board/terasic/de1-soc/qts
 git diff > de1-soc-handoff.patch
 scp de1-soc-handoff.patch ~/buildroot/board/terasic/de1soc_cyclone5/patch
 ```
+Ako smo se odlucili za **Buildroot**, ostatak uputstva u ovom fajlu za nas vise ne vazi i prebacujemo se na [kreiranje konfiguracije za Linux kernel](Linux.md)
 
 Ukoliko izaberemo da sistem gradimo rucno, potrebno je do kraja ispratiti ovaj fajl.
 Sada cemo konfigurisati U-Boot. Da bismo mogli ispravno da konfigurišemo i kroskompajliramo U-Boot, 
