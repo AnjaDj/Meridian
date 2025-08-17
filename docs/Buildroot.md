@@ -25,11 +25,11 @@ Buildroot može da generiše:
 
 ## Generisanje sistema korišćenjem Buildroot alata
 
-Kloniramo repozitorijum **buildroot**-a i prebacujemo se na najnoviju granu. U trenutku pisanja ovog vodica, to je grana 2025.05
+Kloniramo repozitorijum **buildroot**-a i prebacujemo se na granu 2024.02
 ```
 git clone https://gitlab.com/buildroot.org/buildroot.git
 cd buildroot
-git checkout 2025.05
+git checkout 2024.02
 ```
 
 Potvrdite da na razvojnom računaru imate instalirane sve [obavezne softverske pakete](https://buildroot.org/downloads/manual/manual.html#requirement-mandatory).
@@ -45,7 +45,11 @@ Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nad
 - **Default kernel configuration file** ([de1_soc_defconfig](../buildroot/board/terasic/de1soc_cyclone5/de1_soc_defconfig))
 - fajl kojim opisujemo **strukturu SD kartice** koja je pogodna za našu platformu ([genimage.cfg](../buildroot/board/terasic/de1soc_cyclone5/genimage.cfg))
 - fajl kojim opisujemo U-Boot okruženje (umjesto podrazumijevanog sadržaja koji je ugrađen u sam izvorni kod bootloader-a) ([boot-env.txt](../buildroot/board/terasic/de1soc_cyclone5/boot-env.txt))
+- patch fajl koji je nastao primjenom `cv_bsp_generator` skripte nad fajlovima iz **handoff** foldera (pratiti uputstvo za izgradnju [UBoot-a](UBoot.md))
+- konfiguracioni rbf fajl ([uputstvo za generisanje .rbf](Generisanje_FPGA_konfiguracionog_fajla.md)) 
 
+Da biste generisali `.patch` fajl potrebno je ispratiti uputstvo za [konfiguraciju UBoot-a](UBoot.md), dok je za kreiranje default kernel configuration fajla 
+potrebno ispratiti uputstvo za [konfiguraciju Linux kernela](Linux.md).
 
 Kako predefinisana konfiguracija ne postoji za DE1-SoC ploču, koristicemo predefinisanu konfiguraciju
 za DE10-nano plocu jer su vrlo slicne. 
@@ -83,7 +87,8 @@ za DE10-nano plocu jer su vrlo slicne.
     - postavite **Configuration file path** opciju na **board/terasic/de1soc_cyclone5/de1_soc_defconfig**
     - obrišite sadržaj opcije **In-Tree Device Tree Source file names**
     - postavite **Out-of-tree Device Tree Source file names** opciju na **board/terasic/de1soc_cyclone5/socfpga_cyclone5_de1_soc.dts**
-    - uključite opciju **Linux Kernel Tools**&rarr;**iio**
+    - uključite opciju **Linux Kernel Tools**&rarr;**iio**</br>
+      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/606262d1-70a2-4d73-a7b8-a21dfdbad223" />
 
 - U okviru **Target packages**:
     - uključite opciju **Hardware handling**&rarr;**evtest**
@@ -95,14 +100,15 @@ za DE10-nano plocu jer su vrlo slicne.
 - U okviru **Bootloaders**:
     - isključite opciju **Barebox**
     - uključite opciju **U-Boot**
-    - postavite vrijednost opcije **U-Boot version** (**2025.04**)
+    - postavite vrijednost opcije **U-Boot version** (**2024.01**)
     - postavite **Custom U-Boot patches** na **board/terasic/de1soc_cyclone5/patches/de1-soc-handoff.patch**
     - postavite **U-Boot configuration** opciju na **Using an in-tree board defconfig file**
     - postavite **Board defconfig** opciju na **socfpga_de1_soc**
     - uključite opciju **U-Boot needs dtc**
     - u okviru **U-Boot binary format** isključite opciju **u-boot.bin** i uključite opciju **u-boot.img**
     - uključite opciju **Install U-Boot SPL binary image**
-    - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**
+    - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**</br>
+      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" />
 
 - U okviru **Host utilities**:
     - uključite opciju **host u-boot tools**
@@ -138,7 +144,7 @@ sudo dd if=sdcard.img of=/dev/sda bs=1M
 >Prije korišćenja komande dd potrebno je da demontirate fajl sisteme particija SD kartice (ukoliko su montirane). Putanju do foldera koji predstavlja tačku montiranja particija SD kartice možete prikazati komandom lsblk. Kao i ranije, vodite računa da ovom komandom možete napraviti štetu na fajl sistemu razvojnog računara ako ne specificirate odgovarajući uređaj.
 
 Ostaje jos samo jedan korak prije nego budemo spremni da SD karticu umetnemo u slot na DE1-SoC ploči i pokrenemo izvršavanje.
-Taj korak jeste kopiranje **rbf** fajla na FAT32 particiju SD kartice, sto je opisano u [ovom](Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) odjeljku.
+Taj korak jeste kopiranje **rbf** fajla na FAT32 particiju SD kartice, sto je opisano u [ovom](Generisanje_FPGA_konfiguracionog_fajla.md#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici) odjeljku.
 
 
 

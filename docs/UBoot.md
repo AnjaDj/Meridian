@@ -1,7 +1,7 @@
 # Konfiguracija i kompajliranje U-Boot-a
 
 Ukoliko koristite **Quartus Prime Pro 19.2**, **Quartus Prime Standard 18.1** ili starije verzije, za razvoj 
-**preloader**-a bice vam potreban [**Intel® SoC FPGA Embedded Development Suite**](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct&f:os-rdc=%5BLinux*%5D).</br>
+**preloader**-a moze se koristiti [**Intel® SoC FPGA Embedded Development Suite**](https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=standard&platform=linux&download_manager=direct&f:os-rdc=%5BLinux*%5D).</br>
 
 Pocevsi od `SoC EDS Pro 19.3` i ` SoC EDS Standard 19.1` **bootloader source code** je izbacen iz **SoC EDS** paketa 
 tako da se za izgradnju **bootloader**-a treba koristiti **source code** sa zvanicnog Altera repozitorijuma [u-boot-socfpga](https://github.com/altera-opensource/u-boot-socfpga).
@@ -18,11 +18,11 @@ Kako smo za **Quartus** verziju izabrali **Quartus Prime Lite edition 24.01std**
 
 
 Zvanicni *Intel SOCFPGA U-Boot* repozitorijum je lociran na [https://github.com/altera-opensource/u-boot-socfpga](https://github.com/altera-opensource/u-boot-socfpga) i trebamo ga klonirati. Kada je rijec o izboru grane na koju cemo se `checkout`-ovati treba voditi racuna o tome da su grane oznacene kao `RC` namijenjene je za internu aktivnu razvojnu upotrebu i rani pristup novim `feature`-ima, bez zvanicne korisničke podrske.
-Grana na koju cemo mi raditi `checkout` je stabilna `2022.01`
+Grana na koju cemo mi raditi `checkout` je stabilna `2024.01`
 ```bash
 git clone https://github.com/altera-opensource/u-boot-socfpga
 cd u-boot-socfpga
-git checkout socfpga_v2025.01
+git checkout socfpga_v2024.01
 ```
 <p>
   <img width="848" height="447" alt="image" src="https://github.com/user-attachments/assets/1ee794ea-dc1b-435a-ae42-b7ed8878fccf">
@@ -33,7 +33,7 @@ Nakon zavrsetka procesa kompilacije dizajna, *Intel Quartus* je generisao **hand
 sa `.h .c .xml` fajlovima. Fajlovi unutar tog **handoff** foldera ce biti ulaz za `cv_bsp_generator.py` skriptu iz [`u-boot-socfpga`](https://github.com/altera-opensource/u-boot-socfpga) repozitorijuma , a izlaz ce biti 4 u-boot kompatibilna fajla koja ce se kopirati u `/boards/terasic/de1-soc/qts/` direktorijum.
 ```bash
 cd ~/u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator
-python3 ./cv_bsp_generator.py -i ~/Desktop/meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
+python3 ./cv_bsp_generator.py -i ~/Desktop/de1_soc_meridian/hw/quartus/hps_isw_handoff/soc_system_hps_0 \
                               -o ../../../../board/terasic/de1-soc/qts
 ```
 <img width="1627" height="131" alt="image" src="https://github.com/user-attachments/assets/596a118d-957a-4533-a134-a045aa77bba6" />
@@ -45,6 +45,18 @@ Nakon izvsenja `u-boot-socfpga/arch/arm/mach-socfpga/cv_bsp_generator/cv_bsp_gen
 - pinmux_config.h
 - sdram_config.h
 
+Sada je potrebno da se odlucimo da li cemo koristiti **Buildroot** za izgradnju Linux embedded sistema ili cemo sami sastavljati
+sistema bez korišćenja automatizovanih build sistema. 
+Ukoliko se odlucimo za koristenje **Buildroot**-a, potrebno je napraviti patch fajl koji sadrži razlike između dvije verzije fajlova.
+Nakon kreiranja patch fajla, isti cemo prekopirati u direktorijum sa izvornim kodom `buildroot`-a, i tu posao vezan za podesavanje U-Boota staje. 
+```
+cd ~/u-boot-socfpga/board/terasic/de1-soc/qts
+git diff > de1-soc-handoff.patch
+scp de1-soc-handoff.patch ~/buildroot/board/terasic/de1soc_cyclone5/patch
+```
+Ako smo se odlucili za **Buildroot**, ostatak uputstva u ovom fajlu za nas vise ne vazi i prebacujemo se na [kreiranje konfiguracije za Linux kernel](Linux.md)
+
+Ukoliko izaberemo da sistem gradimo rucno, potrebno je do kraja ispratiti ovaj fajl.
 Sada cemo konfigurisati U-Boot. Da bismo mogli ispravno da konfigurišemo i kroskompajliramo U-Boot, 
 potrebno je da eksportujemo putanju do **kroskompajlera** i da postavimo varijablu `CROSS_COMPILE` da 
 odgovara prefiksu našeg kroskompajlera. U tom smislu, najlakše je koristiti skriptu 
@@ -56,11 +68,27 @@ source ./set-environment.sh
 Za **DE1-SoC** ploču već postoji predefinisana konfiguracija pod nazivom `socfpga_de1_soc_defconfig`,
 pa ćemo nju postaviti kao polaznu U-Boot konfiguraciju.
 ```bash
-make socfpga_de1_soc_defconfig`
+cd u-boot-socfpga
+make socfpga_de1_soc_defconfig
 ```
 Sada možemo pokrenuti komandu `make menuconfig` kako bismo definisali neke dodatne opcije u konfiguraciji.
 
+S obzirom da **DE1-SoC** ploča ne sadrži EEPROM zapohranjivanje fizičke MAC adrese, potrebno je da u konfiguraciji omogućimo opciju **Random ethaddr if unset** koja se nalazi u okviru **Networking support** kategorije.
 
+Sada pokrecemo komandu `make` kako bismo kroskompajlirali U-Boot. U korjenom u-boot-socfpga direkotrijumu smo dobili 
+
+|         File            |                      Description                             |
+|-------------------------|--------------------------------------------------------------|
+| `spl/u-boot-spl`	      | SPL ELF **executable** | 
+| `u-boot`	              | U-Boot ELF **executable**| 
+| `u-boot-with-spl.sfp`	  | Bootable file: four copies of SPL and one copy on U-Boot image| 
+
+`u-boot-with-spl.sfp`, koji se nalazi u korjenom direktorijumu **U-Boot** izvornog koda koji 
+objedinjuje **4 SPL** kopije iza kojih slijedi **U-Boot binarna slika**. Ovaj fajl ćemo 
+da prekopiramo na particiju 3 tipa **0xA2**, sljedećom komandom:
+```bash
+sudo dd if=u-boot-with-spl.sfp of=/dev/sdb3 bs=512
+```
 
 
 

@@ -112,3 +112,31 @@ Ostaje još da formatiramo `FAT32` i `EXT4` particiju. U tu svrhu koristimo slje
 sudo mkfs.vfat -n boot /dev/sda1
 sudo mkfs.ext4 -L rootfs /dev/sda2
 ```
+
+
+## Brisanje sadrzaja karice
+
+Ako želiš da potpuno obrišeš prethodni sadržaj sa particionisane SD kartice
+(uključujući sve particije, filesystem-e i podatke):
+```bash
+sudo dd if=/dev/zero of=/dev/sdX bs=1M status=progress
+```
+Zamijeni **sdX** sa imenom tvoje kartice (npr. mmcblk0 ili sdb – bez broja na kraju!).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

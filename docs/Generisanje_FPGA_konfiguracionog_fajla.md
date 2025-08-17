@@ -36,7 +36,7 @@ Sada je fajl za **konfiguraciju FPGA Fabric**-a spreman i potrebno ga je kopirat
 kako jos uvijek nemamo spremnu **SD karticu**, ovdje cemo stati i prvo cemo pripremiti SD karticu i izbildati kompletan sistem, pa cemo se naknadno
 vratiti na kopiranje **.rbf**-a na **FAT** particiju. 
 
-Dakle, sada se prebacujemo na [izgradnju bootloadera](SPL+U-Boot.md) i [izgradnju Linux sistema](Generisanje_sistema_koriscenjem_Buildroot_alata.md).
+Dakle, sada se prebacujemo na [izgradnju bootloadera](UBoot.md) i [izgradnju Linux sistema](Linux.md).
 Kada zavrsimo sa time, vracamo se na [Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici](#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici)
 
 ## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
@@ -46,6 +46,10 @@ SD kartice za nasu DE1-SoC platformu. Vise o tome sse moze naci u sledecem [vodi
 U nasem slucaju struktura particija na SD kartici je kao na slici:</br>
 <img width="2514" height="995" alt="image" src="https://github.com/user-attachments/assets/17cf4f84-7979-4ec7-9ef3-997c8783763c" />
 <p align="center"><i>Ocekivana organizacija particija na SD kartici sa ocekivanim sadrzajem</i></p>
+
+Ukoliko zelimo biti sigurni u strukturu kartice, mozemo pokrenuti `sudo fdisk -l` i dobicemo sledeci ispis:
+<img width="572" height="231" alt="image" src="https://github.com/user-attachments/assets/1507b651-d34d-4857-b37f-a5ce44b94a5b" />
+
 
 Potrebno je kopirati **socfpga.rbf** fajl na **FAT32** particiju, gdje se nalaze i **zImage** i **DTB**.
 

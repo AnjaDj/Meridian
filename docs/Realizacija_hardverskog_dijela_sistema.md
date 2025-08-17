@@ -22,7 +22,7 @@ a u nasem slucaju to je `5CSEMA5F31C6`:
 <p align="center"><i><b>Slika 3 </b>: New Project Wizard prozor Family, Device & Board Settings</i></p>
 
 
-Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** - [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
+Konacno dobijamo *Quartus Prime* projektni fajl **meridian.qpf**, za koji cemo kreirati **top-level VHDL dizajn** sa **File->New->VHDL File** [**meridian_top.vhd**](../vhd/meridian_top.vhd) kao krovnim VHDL dizajnom.
 
 ## Kreiranje Qsys projekta
 
@@ -92,7 +92,7 @@ Sada mozemo zatvoriti **Qsys** i nastaviti rad u okviru **Quartus Prime** softve
 
 Sada kada je kompilacija naseg VHDL dizajna uspjesno zavrsena, dobili smo **output_files/meridian_top.sof** koji je potrebno konvertovati
 u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan
-u [vodicu](Generisanje_FPGA_konfiguracionog_fajla_iz_QuartusPrime_projekta.md) za generisanje **FPGA konfiguracionog fajla**
+u [vodicu](Generisanje_FPGA_konfiguracionog_fajla.md) za generisanje **FPGA konfiguracionog fajla**
 
 
 
