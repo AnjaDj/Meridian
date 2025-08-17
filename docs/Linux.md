@@ -171,3 +171,33 @@ ili pokrenuti sljedeću komandu:
 ```
 sudo exportfs -r
 ```
+
+
+## Podizanje *Linux* kernela korišćenjem NFS *root* fajl sistema
+
+Ostaje još da promijenimo *U-Boot* varijablu `bootargs` preko koje prosljeđujemo argumente komandne linije kernelu.
+Povežite serijski terminal na ploči sa PC računarom, napajanje ploče i Ethernet kabl, a zatim uključite ploču.
+Prekinite proces podizanja sistema kako biste dobili pristup *U-Boot* konzoli, a zatim dodajte sljedeće argumente
+(npr. korišćenjem komande `editenv bootargs`)
+
+```
+root=/dev/nfs nfsroot=<server_ip>:/home/<user>/rootfs,nfsvers=3,tcp rw
+```
+
+gdje su: `<user>` korisničko ime, `<server_ip>` IP adresa NFS servera i `<client_ip>` IP adresa ploče.
+
+Nakon editovanja, komandna linija bi trebalo da ima izgled ekvivalentan sljedećem primjeru:
+
+```
+=> printenv bootargs
+bootargs=console=ttyS0,115200n8 ip=192.168.21.200 root=/dev/nfs nfsroot=192.168.21.101:/home/mknezic/rootfs,nfsvers=3,tcp rw
+```
+
+Sačuvajte izmjene komandom `saveenv`
+
+```
+=> saveenv
+Saving Environment to MMC... Writing to MMC(0)... OK
+```
+
+a zatim ponovo pokrenite sistem.
