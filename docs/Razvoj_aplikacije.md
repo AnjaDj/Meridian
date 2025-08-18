@@ -25,7 +25,7 @@ Nas periferni uredjaj je povezan na I2C2 magistralu sa adresom `0x40`, sto potvr
 ## Testiranje SPI
 
 U Linuxu, SPI uređaji se obično koriste preko drajvera u `kernel space`-u. Ali ako zelimo da direktno komuniciramo iz `user space`-a bez posebnog drajvera, koristi se `spidev`.
-`spidev` je Linux kernel drajver koji omogućava korisničkom prostoru da komunicira sa SPI uređajima preko fajlova u `/dev/`.
+`spidev` je **opšti SPI kernel drajver** koji omogućava da bilo koji SPI uređaj (koji nema svoj specifični kernel drajver) bude dostupan u user space-u. On izlaže SPI uređaj kao fajl u `/dev`, tako da aplikacije mogu da šalju i primaju podatke direktno, bez pisanja posebnog kernel drajvera za svaku periferiju.
 
 Kada je `spidev` omogućen u kernelu i pravilno definisan u `Device Tree` trebali bismo dobiti fajl u `/dev/` poput:
 ```bash
@@ -34,7 +34,18 @@ Kada je `spidev` omogućen u kernelu i pravilno definisan u `Device Tree` trebal
 gde `0` znači SPI kontroler broj 0, a `.0` je chip select (CS) linija.
 
 >[!NOTE]
-> `spidev` je **opšti SPI drajver** koji izlaže SPI uređaj kao fajl u `/dev`, tako da aplikacije mogu da šalju i primaju podatke direktno, bez pisanja posebnog kernel drajvera za svaku periferiju.
+> `spidev` nazivamo **opstim drajverom** jer on ne zna nista o specificnoj periferiji (da li je to senzor, DAC, flash memorija, ...) ali pruza mehanizam da
+> se iz user-space citaju/salju podaci
+
+
+
+
+
+
+
+
+
+
 
 
 
