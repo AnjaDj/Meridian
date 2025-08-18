@@ -33,6 +33,9 @@ Kada je `spidev` omogućen u kernelu i pravilno definisan u `Device Tree` trebal
 ```
 gde `0` znači SPI kontroler broj 0, a `.0` je chip select (CS) linija.
 
+>[!NOTE]
+> `spidev` je **opšti SPI drajver** koji izlaže SPI uređaj kao fajl u `/dev`, tako da aplikacije mogu da šalju i primaju podatke direktno, bez pisanja posebnog kernel drajvera za svaku periferiju.
+
 
 
 
