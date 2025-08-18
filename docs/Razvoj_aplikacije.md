@@ -1,3 +1,4 @@
+## Testiranje I2C
 Alatka `i2cdetect`  omogućava detekciju I2C uređaja na magistrali.
 Mozemo izlistati sve I2C magistrale (kontrolera) koje kernel trenutno vidi
 ```bash
@@ -20,3 +21,16 @@ Nas periferni uredjaj je povezan na I2C2 magistralu sa adresom `0x40`, sto potvr
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 70: -- -- -- -- -- -- -- --
 ```
+
+## Testiranje SPI
+
+U Linuxu, SPI uređaji se obično koriste preko drajvera u `kernel space`-u. Ali ako zelimo da direktno komuniciramo iz `user space`-a bez posebnog drajvera, koristi se `spidev`.
+`spidev` je Linux kernel drajver koji omogućava korisničkom prostoru da komunicira sa SPI uređajima preko fajlova u `/dev/`.
+
+Na Linux targetima se za testiranje SPI uređaja često koristi `spidev_test` program koji dolazi uz Linux kernel source kod.
+Koristi se da bi se proverilo da li SPI drajver (`spidev`) i SPI magistrala rade ispravno.
+spidev je Linux kernel drajver koji omogućava korisničkom prostoru (user-space) da komunicira sa SPI uređajima preko fajlova u /dev/.
+
+
+
+
