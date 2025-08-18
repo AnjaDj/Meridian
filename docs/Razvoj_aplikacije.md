@@ -27,6 +27,16 @@ Nas periferni uredjaj je povezan na I2C2 magistralu sa adresom `0x40`, sto potvr
 U Linuxu, SPI uređaji se obično koriste preko drajvera u `kernel space`-u. Ali ako zelimo da direktno komuniciramo iz `user space`-a bez posebnog drajvera, koristi se `spidev`.
 `spidev` je Linux kernel drajver koji omogućava korisničkom prostoru da komunicira sa SPI uređajima preko fajlova u `/dev/`.
 
+Kada je `spidev` omogućen u kernelu i pravilno definisan u `Device Tree` trebali bismo dobiti fajl u `/dev/` poput:
+```bash
+/dev/spidev0.0
+```
+gde `0` znači SPI kontroler broj 0, a `.0` je chip select (CS) linija.
+
+
+
+
+
 Na Linux targetima se za testiranje SPI uređaja često koristi `spidev_test` program koji dolazi uz Linux kernel source kod.
 Koristi se da bi se proverilo da li SPI drajver (`spidev`) i SPI magistrala rade ispravno.
 spidev je Linux kernel drajver koji omogućava korisničkom prostoru (user-space) da komunicira sa SPI uređajima preko fajlova u /dev/.
