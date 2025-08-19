@@ -1,12 +1,15 @@
 ## MI48E4 Thermal Image Processor (TIP) Board
 
-**MI1602M5S Camera Module** je termalni senzor za snimanje slika od 160x120x2B dugotalasnog infracrvenog zracenja.</br>
-**MI48E4 Thermal Image Processor** je procesor za kontrolu *low-level* signala za snimanje sirovih podataka iz termovizijskog niza i obezbjedjuje standardne interfejse
-za komunikaciju sa *host*-om.</br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c013d57-1f88-454c-9bc4-fbac36245350" alt="Description">
+</p>
+<p align="center"><i><b>Slika 1 </b>: Panther EVK board </i></p>
 
-**MI1602M5S Camera Module** i **MI48E4 Thermal Image Processor** se nalaze na **MI48E4 Thermal Image Processor Board**, sto se moze vidjeti na Slici 1</br>
-<img width="368" height="495" alt="image" src="https://github.com/user-attachments/assets/4099b1ae-59fa-453e-87df-3472a835e5d1" /></br>
-<p align="left"><i><b>Slika 1 </b>: Panther EVK board </i></p>
+Na Slici 1 je prikazan MI48E4 TIP Board sa **MI1602M5S Camera Module** i **MI48E4 Thermal Image Processor** na sebi.</br>
+**MI1602M5S Camera Module** je termalni senzor za snimanje slika od 160x120x2B dugotalasnog infracrvenog zracenja.</br>
+**MI48E4 Thermal Image Processor** je procesor za kontrolu *low-level* signala za snimanje sirovih podataka iz termovizijskog niza i obezbjedjuje standardne interfejse za komunikaciju sa *host*-om.</br>
+
+
 
 
 
