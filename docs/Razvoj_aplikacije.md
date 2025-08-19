@@ -23,7 +23,10 @@ b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
 | Registar | Adresa registra | Vrijednost | Opis |
 |----------|-----------------|------------|------|
 | MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
-| FRAME_MODE | 0xB1 | 0x21 | akvizicija pojedinacnog frame-a bez zaglavlja |
+| FRAME_MODE | 0xB1 | 0x21 | Single Frame Mode bez zaglavlja |
+| FRAME_MODE | 0xB1 | 0x01 | Single Frame Mode sa zaglavljem |
+| FRAME_MODE | 0xB1 | 0x22 | Continuous Capture Mode bez zaglavlja |
+| FRAME_MODE | 0xB1 | 0x02 | Continuous Capture Mode sa zaglavljem |
 
 <p align="center">
  <img width="710" height="539" alt="image" src="https://github.com/user-attachments/assets/23f00d33-5469-45de-b53f-ded981e07cac" />
