@@ -87,8 +87,8 @@ spidev je Linux kernel drajver koji omogućava korisničkom prostoru (user-space
 
 ## Razvoj aplikacije
 
-Posto za **MI48E4** periferiju ne postoji Linux kernel drajver, necemo ga odmah ni pisati nego cemo prvo testirati kameru kroz `user-space` aplikaciju.</br>
+Posto za **MI48E4** periferiju ne postoji Linux kernel drajver, necemo ga odmah ni pisati nego cemo prvo testirati kameru kroz `user-space` aplikaciju.
 Koristicemo postojece opste Linux kernel drajvere 
-- `spidev`   , opsti Linux kernel drajver koji izlaze I2C uredjaje kroz fajl `/dev/i2c-{bus}`
-- `i2c-dev`  , opsti Linux kernel drajver koji izlaze SPI uredjaje kroz fajl `/dev/spidevX.Y`
+- `spidev`   , opsti Linux kernel drajver koji izlaze I2C uredjaje kroz fajl `/dev/spidevX.Y`
+- `i2c-dev`  , opsti Linux kernel drajver koji izlaze SPI uredjaje kroz fajl `/dev/i2c-{bus}`
 
