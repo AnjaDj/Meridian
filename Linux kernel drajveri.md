@@ -32,7 +32,27 @@ make menuconfig
 ```
 **Device Drivers→Industrial I/O support→Accelerometers→Analog Devices ADXL345 3-Axis Digital Accelerometer I2C Driver** postavimo na `<M>` kako bi drajver bio definisan
 kao moduo a ne da bude ugradjen u sliku kernela.
+Nakon konfiguracije, možemo da ponovo kroskompajliramo kernel komandom `make`.
+
+Drajver za akcelerometar ADXL345 kompajliran kao **kernel modul**. Da bi učitali ovaj kernel modul, potrebno je da pronađemo njegov *alias*, koji se nalazi u fajlu `modules.alias`. Izlistavanjem sadržaja ovog fajla dobijamo sljedeće informacije:
 ```
-make
+~ # cat /lib/modules/6.1.38-etfbl-lab+/modules.alias
+# Aliases extracted from modules themselves.
+alias platform:altera_ilc altera_ilc
+alias of:N*T*Caltr,ilc-1.0C* altera_ilc
+alias of:N*T*Caltr,ilc-1.0 altera_ilc
+[...]
+alias i2c:adxl375 adxl345_i2c
+alias i2c:adxl345 adxl345_i2c
+alias of:N*T*Cadi,adxl375C* adxl345_i2c
+alias of:N*T*Cadi,adxl375 adxl345_i2c
+alias of:N*T*Cadi,adxl345C* adxl345_i2c
+alias of:N*T*Cadi,adxl345 adxl345_i2c
+alias acpi*:ADS0345:* adxl345_i2c
 ```
+Iz prikazane liste se jasno vidi da naš drajver ima alias `i2c:adxl345`, koji koristimo pri učitavanju kernel modula komandom `modprobe`.
+```
+modprobe i2c:adxl345
+```
+
 
