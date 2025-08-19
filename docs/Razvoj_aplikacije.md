@@ -9,7 +9,21 @@ Na Slici 1 je prikazan MI48E4 TIP Board sa **MI1602M5S Camera Module** i **MI48E
 **MI1602M5S Camera Module** je termalni senzor za snimanje slika od 160x120x2B dugotalasnog infracrvenog zracenja.</br>
 **MI48E4 Thermal Image Processor** je procesor za kontrolu *low-level* signala za snimanje sirovih podataka iz termovizijskog niza i obezbjedjuje standardne interfejse za komunikaciju sa *host*-om.</br>
 
+**Panther EVK board** se moze povezati na</br>
+a)  nezavisni kompjuterski sistem ili mobilni uredjaj preko **USB** interfejsa </br>
+b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
 
+<p align="center">
+ <img width="578" height="431" alt="image" src="https://github.com/user-attachments/assets/47a873bf-d334-463a-83de-58c5cc0aee99" />
+</p>
+<p align="center"><i><b>Slika 2 </b>: Konceptualni dijagram 2 nacina povezivanja Panthera EVK board </i></p>
+
+## MI48E4 TIP Registarska Mapa
+
+| Registar | Adresa registra | Vrijednost | Opis |
+|----------|-----------------|------------|------|
+| MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
+| FRAME_MODE | 0xB1 | 0x21 | akvizicija pojedinacnog frame-a bez zaglavlja |
 
 
 
