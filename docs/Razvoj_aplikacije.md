@@ -30,7 +30,7 @@ b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
 | STATUS | 0xB6 | 0x02 | Readout too slow in Continuous Capture Mode |
 | STATUS | 0xB6 | 0x04 | Error detected on the SenXor interface during power up of the MI48E4 |
 | STATUS | 0xB6 | 0x08 | Communication error on the SenXor interface during thermal data capture |
-| STATUS | 0xB6 | 0x10 |  |
+| STATUS | 0xB6 | 0x10 | Data is ready for reading |
 | STATUS | 0xB6 | 0x20 | MI48xx is still booting up |
 
 <p align="center">
@@ -42,6 +42,11 @@ b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
  <img width="697" height="701" alt="image" src="https://github.com/user-attachments/assets/87df0741-d897-423b-a97d-d0e251f415f2" />
 </p>
 <p align="center"><i><b>Slika 4 </b>: Status Register </i></p>
+
+<p align="center">
+ <img width="692" height="223" alt="image" src="https://github.com/user-attachments/assets/3d835768-30a0-4dbf-b77b-5f6c95640452" />
+</p>
+<p align="center"><i><b>Slika 5 </b>: DATA_READY timing </i></p>
 
 Jedan temperaturni frejm se sastoji od 160x120 rijeci tj. 160x120x2 bajtova (svaka rijec je 2B). Tokom transfera prvo se prenosi bit najvece tezine (BE).
 Svaka rijec predstavlja temperaturu jednog piksela i predstavljena je kao 16-bit unsigned integer u jedinici 0.1K. Tako na primjer, ako primimo 16-bit rijec 0x0bc1 to ce odgovarati tepmeraturi 300.9K
