@@ -55,3 +55,7 @@ Iz prikazane liste se jasno vidi da naš drajver ima alias `i2c:adxl345`, koji k
 modprobe i2c:adxl345
 ```
 Da je drajver bio konfigurisan kao dio Linux kernela (`<*>`), onda ne bi bilo potrebe za ucitavanjem jer bi on vec bio ucitan u radnu memoriju.
+
+
+Jednom kada je Linux kernel drajver ucitan u radnu memoriju (bilo kao Linux kernel moduo ili ugradjen u kernel image), dolazimo do “filozofije” Linuxa: sve je fajl.
+
