@@ -38,8 +38,7 @@ Svaka rijec predstavlja temperaturu jednog piksela i predstavljena je kao 16-bit
 
 ## Testiranje I2C konekcije
 
-Periferija i embedded target sistem ce komunicirati preko I2C interfejsa s ciljem da se postave odgovarajuce konfiguracione vrijednosti u registrima periferije. S tim u vezi neophodno je provjeriti da li
-Linux sistem vidi nas I2C uredjaj ili ne.
+Periferija i DE1-SoC sistem ce komunicirati preko I2C interfejsa s ciljem da se postave odgovarajuce konfiguracione vrijednosti u registrima periferije zarad njene konfiguracije i kontrole. S tim u vezi neophodno je provjeriti da li Linux sistem vidi nas I2C uredjaj ili ne.
 
 Alatka `i2cdetect`  omogućava detekciju I2C uređaja na magistrali.
 Mozemo izlistati sve I2C magistrale (kontrolera) koje kernel trenutno vidi
