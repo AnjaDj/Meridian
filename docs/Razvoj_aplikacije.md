@@ -80,24 +80,15 @@ gde `0` znači SPI kontroler broj 0, a `.0` je chip select (CS) linija.
 > `spidev` nazivamo **opstim drajverom** jer on ne zna nista o specificnoj periferiji (da li je to senzor, DAC, flash memorija, ...) ali pruza mehanizam da
 > se iz `user-space` citaju i salju podaci
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Na Linux targetima se za testiranje SPI uređaja često koristi `spidev_test` program koji dolazi uz Linux kernel source kod.
 Koristi se da bi se proverilo da li SPI drajver (`spidev`) i SPI magistrala rade ispravno.
 spidev je Linux kernel drajver koji omogućava korisničkom prostoru (user-space) da komunicira sa SPI uređajima preko fajlova u /dev/.
 
 
+## Razvoj aplikacije
 
+Posto za **MI48E4** periferiju ne postoji Linux kernel drajver, necemo ga odmah ni pisati nego cemo prvo testirati kameru kroz `user-space` aplikaciju.</br>
+Koristicemo postojece opste Linux kernel drajvere 
+- `spidev`   , opsti Linux kernel drajver koji izlaze I2C uredjaje kroz fajl `/dev/i2c-{bus}`
+- `i2c-dev`  , opsti Linux kernel drajver koji izlaze SPI uredjaje kroz fajl `/dev/spidevX.Y`
 
