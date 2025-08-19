@@ -31,8 +31,8 @@ b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
 <p align="center"><i><b>Slika 3 </b>: Thermal Data Frame format </i></p>
 
 
-
-
+Jedan temperaturni frejm se sastoji od 160x120 rijeci tj. 160x120x2 bajtova (svaka rijec je 2B). Tokom transfera prvo se prenosi bit najvece tezine (BE).
+Svaka rijec predstavlja temperaturu jednog piksela i predstavljena je kao 16-bit unsigned integer u jedinici 0.1K
 
 
 
