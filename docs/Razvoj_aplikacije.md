@@ -25,6 +25,15 @@ b)  embedded platformu preko **I2C** i **SPI** interfejsa </br>
 | MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
 | FRAME_MODE | 0xB1 | 0x21 | akvizicija pojedinacnog frame-a bez zaglavlja |
 
+<p align="center">
+ <img width="710" height="539" alt="image" src="https://github.com/user-attachments/assets/23f00d33-5469-45de-b53f-ded981e07cac" />
+</p>
+<p align="center"><i><b>Slika 3 </b>: Thermal Data Frame format </i></p>
+
+
+
+
+
 
 
 ## Testiranje I2C
