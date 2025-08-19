@@ -57,5 +57,10 @@ modprobe i2c:adxl345
 Da je drajver bio konfigurisan kao dio Linux kernela (`<*>`), onda ne bi bilo potrebe za ucitavanjem jer bi on vec bio ucitan u radnu memoriju.
 
 
-Jednom kada je Linux kernel drajver ucitan u radnu memoriju (bilo kao Linux kernel moduo ili ugradjen u kernel image), dolazimo do “filozofije” Linuxa: sve je fajl.
+Jednom kada je Linux kernel drajver ucitan u radnu memoriju (bilo kao Linux kernel moduo ili ugradjen u kernel image), dolazimo do filozofije Linuxa: **sve je fajl**.
+Kada je drajver ucitan u radnu memoriju, kernel registruje uredjaj kroz **device model** (najčešće kao char device, block device ili preko nekog subsistema tipa net, v4l2, input, hwmon…). Kernel tada u /dev/ napravi odgovarajući fajl uređaja (device node) poput
+- `/dev/spidevX.Y`
+- `/dev/2c-{bus}`
+- `/dev/ttyS0`
+- 
 
