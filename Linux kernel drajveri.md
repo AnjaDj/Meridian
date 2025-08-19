@@ -22,3 +22,17 @@ Kad konfigurišeš kernel (`make menuconfig`), za svaki drajver imaš tri opcije
    - Učitaš ga ručno `insmod` ili `modprobe`
    - Prednost: fleksibilnost, možeš ga update-ovati bez rekompajliranja cijelog kernela
    - Mana: uređaj neće biti odmah dostupan u very-early fazi boot-a (npr. kad ti treba rootfs)
+
+
+Evo kako mozemo podesiti konfiguraciju Linux kernela sa ADXL345 akcelerometrom kao drajver modulom
+```
+cd linux-socfpga
+source setup.sh
+make menuconfig
+```
+**Device Drivers→Industrial I/O support→Accelerometers→Analog Devices ADXL345 3-Axis Digital Accelerometer I2C Driver** postavimo na `<M>` kako bi drajver bio definisan
+kao moduo a ne da bude ugradjen u sliku kernela.
+```
+make
+```
+
