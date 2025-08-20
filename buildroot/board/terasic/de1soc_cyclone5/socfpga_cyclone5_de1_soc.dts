@@ -53,6 +53,7 @@
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
 	};
+ 
 };
 
 &gmac1 {
@@ -83,11 +84,6 @@
 
 &i2c0{
 	status = "okay";
-	clock-frequency = <100000>;
-	
-	thermalcam@40{
-		reg = <0x40>;
-	}
 };
 
 &i2c1{
@@ -96,45 +92,22 @@
 
 &i2c2{
 	status = "okay";
+	clock-frequency = <100000>;
+
+	thermalcam@40{
+        compatible = "meridian,mi48e4";		/* string koji kernel koristi da pronadje odgovarajuci drajver za ovaj uredjaj*/
+        reg = <0x40>;						
+    };
 };
 
 &spi0 {
 	status = "okay";
-    #address-cells = <1>;
-    #size-cells = <0>;
 
-	spidev1: spidev@0 {
-		    compatible        = "rohm,dh2228fv";
-			reg               = <0>;
-			spi-max-frequency = <100000000>;
+	spidev@0 {
+		compatible = "rohm,dh2228fv";
+		reg = <0>;
+		spi-max-frequency = <1000000>;
 	};
-};
-
-&fpga_bridge0 {
-	status = "okay";
-	#address-cells = <1>;
-	#size-cells    = <1>;
-
-	sysid_qsys: sysid@10000000 {
-		compatible = "altr,sysid-17.0", "altr,sysid-1.0";
-		reg        = <0x10000000 0x8>;
-		id         = <0>;
-		timestamp  = <1751827185>;
-	};
-};
-
-&fpga_bridge1 {
-	status = "okay";
-
-	#address-cells = <1>;
-	#size-cells    = <1>;
-};
-
-&fpga_bridge2 {
-	status = "okay";
-	
-	#address-cells = <1>;
-	#size-cells    = <1>;
 };
 
 &mmc0 {
