@@ -144,8 +144,8 @@ def spi_open(bus, cs, speed=1000000, mode=0, bpw=16):
     return spi
 
 def spi_read_frame_row(spi, size_bytes):
-    dummy = [0x0000] * size_bytes
-    row = spi.xfer2(dummy)  # SPI transfer
+    dummy = [0x0000] * size_bytes               # 160x2B dummy podataka
+    row = spi.xfer2(dummy)                      # SPI transfer
     frame_row = bytearray()
     for word in row:
         frame_row += word.to_bytes(2, 'big')
@@ -175,5 +175,4 @@ if __name__ == "__main__":
     os.close(i2c_fd)
 
     print("Frame snimljen u image.bin")
-
 ```
