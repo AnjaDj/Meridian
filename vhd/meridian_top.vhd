@@ -223,9 +223,6 @@ begin
         -- sda0_o    <= GPIO_0(3);                         -- čitanje sa linije
 
         scl_iobuf : alt_iobuf
-          generic map (
-            io_standard => "3.3-V LVTTL"   
-          )
           port map (
             i  => '0',          -- vrijednost kad je izlaz aktivan
             oe => scl0_o_e,     -- enable izlaza (iz tvog HPS I2C kontrolera)
@@ -234,9 +231,6 @@ begin
           );
 
         sda_iobuf : alt_iobuf
-          generic map (
-            io_standard => "3.3-V LVTTL"
-          )
           port map (
             i  => '0',
             oe => sda0_o_e,
