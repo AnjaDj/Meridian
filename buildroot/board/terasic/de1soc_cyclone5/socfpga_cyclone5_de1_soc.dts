@@ -84,6 +84,12 @@
 
 &i2c0{
 	status = "okay";
+	clock-frequency = <100000>;
+
+	thermalcam@40{
+        compatible = "meridian,mi48e4";		/* string koji kernel koristi da pronadje odgovarajuci drajver za ovaj uredjaj*/
+        reg = <0x40>;						
+    };
 };
 
 &i2c1{
@@ -92,12 +98,6 @@
 
 &i2c2{
 	status = "okay";
-	clock-frequency = <100000>;
-
-	thermalcam@40{
-        compatible = "meridian,mi48e4";		/* string koji kernel koristi da pronadje odgovarajuci drajver za ovaj uredjaj*/
-        reg = <0x40>;						
-    };
 };
 
 &spi0 {

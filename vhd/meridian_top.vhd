@@ -18,6 +18,9 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+library altera;
+use altera.altera_primitives_components.all;
+
 entity de1_soc_meridian_top is
     port(
         -- CLOCK
@@ -71,10 +74,10 @@ end entity de1_soc_meridian_top;
 
 architecture rtl of de1_soc_meridian_top is
 
-    signal scl2_o       : std_logic;
-    signal scl2_o_e     : std_logic;
-    signal sda2_o       : std_logic;
-    signal sda2_o_e     : std_logic;
+    signal scl0_o       : std_logic;
+    signal scl0_o_e     : std_logic;
+    signal sda0_o       : std_logic;
+    signal sda0_o_e     : std_logic;
 
     signal spi0_clk     : std_logic;
     signal spi0_mosi    : std_logic;
@@ -101,10 +104,10 @@ architecture rtl of de1_soc_meridian_top is
             hps_0_ddr_mem_dm                  : out   std_logic_vector(3 downto 0);                     -- mem_dm
             hps_0_ddr_oct_rzqin               : in    std_logic                     := 'X';             -- oct_rzqin
             
-			hps_0_i2c2_scl_in_clk             : in    std_logic                     := 'X';             -- clk
-            hps_0_i2c2_clk_clk                : out   std_logic;                                        -- clk
-            hps_0_i2c2_out_data               : out   std_logic;                                        -- out_data
-            hps_0_i2c2_sda                    : in    std_logic                     := 'X';             -- sda				
+				hps_0_i2c0_scl_in_clk             : in    std_logic                     := 'X';             -- clk
+            hps_0_i2c0_clk_clk                : out   std_logic;                                        -- clk
+            hps_0_i2c0_out_data               : out   std_logic;                                        -- out_data
+            hps_0_i2c0_sda                    : in    std_logic                     := 'X';             -- sda				
 				
             hps_0_io_hps_io_emac1_inst_TX_CLK : out   std_logic;                                        -- hps_io_emac1_inst_TX_CLK
             hps_0_io_hps_io_emac1_inst_TXD0   : out   std_logic;                                        -- hps_io_emac1_inst_TXD0
@@ -166,8 +169,8 @@ begin
             hps_0_ddr_mem_dm                      	=> HPS_DDR3_DM,
             hps_0_ddr_oct_rzqin                   	=> HPS_DDR3_RZQ,
 
-            hps_0_i2c2_out_data                         => sda2_o_e,
-            hps_0_i2c2_sda                              => sda2_o,
+            hps_0_i2c0_out_data                         => sda0_o_e,
+            hps_0_i2c0_sda                              => sda0_o,
 
             hps_0_io_hps_io_emac1_inst_TX_CLK     	=> HPS_ENET_GTX_CLK,
             hps_0_io_hps_io_emac1_inst_TXD0       	=> HPS_ENET_TX_DATA(0),
@@ -207,18 +210,41 @@ begin
             hps_0_spim0_ss_2_n                          => open,
             hps_0_spim0_ss_3_n                          => open,
             hps_0_spim0_sclk_out_clk                    => spi0_clk,
-            hps_0_i2c2_scl_in_clk                       => scl2_o,
-            hps_0_i2c2_clk_clk                          => scl2_o_e
+            hps_0_i2c0_scl_in_clk                       => scl0_o,
+            hps_0_i2c0_clk_clk                          => scl0_o_e
         );
 
         -- SCL linija dodati pull-up od 4.7k - 10k na 3.3V
-        GPIO_0(1) <= 'Z' when scl2_o_e = '0' else '0';
-        scl2_o    <= GPIO_0(1);
+        -- GPIO_0(1) <= 'Z' when scl0_o_e = '0' else '0';
+        -- scl0_o    <= GPIO_0(1);
 
         -- SDA linija dodati pull-up od 4.7k - 10k na 3.3V
-        GPIO_0(3) <= 'Z' when sda2_o_e = '0' else '0';  -- HPS šalje '0' kada je OE='1'; inače 'Z'
-        sda2_o    <= GPIO_0(3);                         -- čitanje sa linije
+        -- GPIO_0(3) <= 'Z' when sda0_o_e = '0' else '0';  -- HPS šalje '0' kada je OE='1'; inače 'Z'
+        -- sda0_o    <= GPIO_0(3);                         -- čitanje sa linije
 
+        scl_iobuf : alt_iobuf
+          generic map (
+            io_standard => "3.3-V LVTTL"   
+          )
+          port map (
+            i  => '0',          -- vrijednost kad je izlaz aktivan
+            oe => scl0_o_e,     -- enable izlaza (iz tvog HPS I2C kontrolera)
+            io => GPIO_0(1),    -- fizički pin na headeru
+            o  => scl0_o        -- povratni ulaz u logiku
+          );
+
+        sda_iobuf : alt_iobuf
+          generic map (
+            io_standard => "3.3-V LVTTL"
+          )
+          port map (
+            i  => '0',
+            oe => sda0_o_e,
+            io => GPIO_0(0),
+            o  => sda0_o
+          );
+
+	 
         -- SPI clock
         GPIO_0(4) <= spi0_clk;
 
