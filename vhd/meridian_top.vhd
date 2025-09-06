@@ -224,10 +224,10 @@ begin
 
         scl_iobuf : alt_iobuf
           port map (
-            i  => '0',          -- vrijednost kad je izlaz aktivan
-            oe => scl0_o_e,     -- enable izlaza (iz tvog HPS I2C kontrolera)
-            io => GPIO_0(1),    -- fizički pin na headeru
-            o  => scl0_o        -- povratni ulaz u logiku
+            i  => '0',         
+            oe => scl0_o_e,    
+            io => GPIO_0(1),    
+            o  => scl0_o        
           );
 
         sda_iobuf : alt_iobuf
