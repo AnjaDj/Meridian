@@ -32,12 +32,18 @@ Otvorite projekat u *Intel Quartus Prime* alatu (**File->Open Project->meridian.
 ![image](https://github.com/user-attachments/assets/1f75236a-f734-4ee5-ab87-8b87045ae8be)
 
 
-Sada je fajl za **konfiguraciju FPGA Fabric**-a spreman i potrebno ga je kopirati na **na FAT particiju na SD kartici** i taj proces je opisan u odjeljku ispod. Medjutim,
-kako jos uvijek nemamo spremnu **SD karticu** niti *bootloader*, ovdje cemo stati i prvo cemo pripremiti SD karticu i izbildati kompletan sistem, pa cemo se naknadno
-vratiti na kopiranje **.rbf**-a na **FAT** particiju. 
+Sada je fajl za **konfiguraciju FPGA Fabric**-a spreman i potrebno ga je kopirati **na FAT particiju SD kartice**.
+Ukoliko smo se odlučili da koristimo *Buildroot*, u tom slučaju je dovoljno da do kraja ispratimo uputsvo sa [ovog linka](Buildroot.md), jer je problem kopiranja **.rbf**-a 
+elegantno riješen pomoću [fajla za opisivanje strukture SD kartice](..buildroot/board/terasic/de1soc_cyclone5/genimage.cfg).</br>
+<img width="632" height="285" alt="image" src="https://github.com/user-attachments/assets/9b5b13e1-bd2c-468b-ac04-5f308fbf5dd2" /></br>
 
-Dakle, sada se prebacujemo na [izgradnju bootloadera](UBoot.md) i [izgradnju Linux sistema](Linux.md).
-Kada zavrsimo sa time, vracamo se na [Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici](#kopiranje-konfiguracionog-rbf-fajla-na-fat-particiju-na-sd-kartici)
+Ako smo se ipak odlucili da rucno gradimo cijeli sistem bez alata za automatizaciju procesa, u tom slucaju cemo morati ispratiti sledeci redoslijed akcija:
+- [Kreiranje i particionisanje SD kartice](Particionisanje_SD_kartice.md)
+- [Konfiguracija i kroskompajliranje U-Boot-a](UBoot.md)
+- [Konfiguracija i kroskompajliranje Linux kernela](Linux.md)
+- [Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici](#kopiranje_konfiguracionog_rbf_fajla_na_fat_particiju_na_sd_kartici)
+
+
 
 ## Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici
 
