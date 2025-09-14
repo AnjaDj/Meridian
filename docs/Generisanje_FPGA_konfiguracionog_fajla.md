@@ -34,7 +34,7 @@ Otvorite projekat u *Intel Quartus Prime* alatu (**File->Open Project->meridian.
 
 Sada je fajl za **konfiguraciju FPGA Fabric**-a spreman i potrebno ga je kopirati **na FAT particiju SD kartice**.
 Ukoliko smo se odlučili da koristimo *Buildroot*, u tom slučaju je dovoljno da do kraja ispratimo uputsvo sa [ovog linka](Buildroot.md), jer je problem kopiranja **.rbf**-a 
-elegantno riješen pomoću [fajla za opisivanje strukture SD kartice](..buildroot/board/terasic/de1soc_cyclone5/genimage.cfg).</br>
+elegantno riješen pomoću [fajla za opisivanje strukture SD kartice](../buildroot/board/terasic/de1soc_cyclone5/genimage.cfg).</br>
 <img width="632" height="285" alt="image" src="https://github.com/user-attachments/assets/9b5b13e1-bd2c-468b-ac04-5f308fbf5dd2" /></br>
 
 Ako smo se ipak odlucili da rucno gradimo cijeli sistem bez alata za automatizaciju procesa, u tom slucaju cemo morati ispratiti sledeci redoslijed akcija:
