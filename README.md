@@ -161,3 +161,40 @@ done
 with open("zeroes.bin", "wb") as f:
     f.write(b'\x00' * 320)
 ```
+
+
+Vizuelizacija dobijenih termalnih podataka kao *heatmap* slika se moze postici koristenjem sledece python skripte
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# File path
+filename = 'image.bin'
+
+# Image dimensions
+width = 160
+height = 120
+num_pixels = width * height
+
+# Read binary file (MSB first, i.e., big-endian unsigned short)
+with open(filename, 'rb') as f:
+    data = np.frombuffer(f.read(), dtype='u2')  # '>u2' = big-endian uint16
+
+# Sanity check
+assert data.size == num_pixels, f"Expected {num_pixels} pixels, got {data.size}"
+
+# Reshape to 2D array (height x width)
+image = data.reshape((height, width))
+
+# Convert from deciKelvin to Celsius for easier interpretation (optional)
+# Kelvin = deciKelvin / 10.0
+# Celsius = Kelvin - 273.15
+image_celsius = (image / 10.0) - 273.15
+
+# Plot heatmap
+plt.imshow(image_celsius, cmap='inferno')
+plt.colorbar(label='Temperature (°C)')
+plt.title('Thermal Image Heatmap')
+plt.axis('off')
+plt.show()
+```
