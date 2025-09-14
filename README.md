@@ -158,7 +158,7 @@ done
 
 > [!NOTE]
 > Prethodna skripta podrazumjeva postojanje *zeroes.bin* fajla (320 nula) koji ce se slati preko SPI *Panther EVK* modulu,
-> kako bismo zauzvrat dobili jedan red frejma. Da bi se kreirao *zeroes.bin* fajl, moze se koristiti sledeca
+> kako bismo zauzvrat dobili jedan red termalnog frejma (termalna slika se sastoji od 120 redova i 160 kolona, 2B za svako polje ). Da bi se generisao *zeroes.bin* fajl, moze se koristiti sledeca
 > python skripta
 ```python
 with open("zeroes.bin", "wb") as f:
@@ -166,7 +166,7 @@ with open("zeroes.bin", "wb") as f:
 ```
 
 
-Vizuelizacija dobijenih termalnih podataka kao *heatmap* slika se moze postici koristenjem sledece python skripte
+Vizuelizacija dobijenih termalnih podataka kao *heatmap* slika se moze postici koristenjem sledece Python skripte
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
