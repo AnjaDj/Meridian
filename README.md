@@ -121,4 +121,25 @@ Na **Slici 6** su prikazana dva nacina povezivanja **MI48E4 TIP Board** sa hosto
 <p align="center"><i><b>Slika 6 </b>: Konceptualni dijagram 2 nacina povezivanja Panthera EVK board </i></p>
 
 
+Registarska mapa Meridian modula je velika, ali je za nasu demonstracionu potrebu sasvim dovoljno podesiti svega 2 registra kako bismo dobili prvi frejm. 
+| Registar | Adresa registra | Vrijednost | Opis |
+|----------|-----------------|------------|------|
+| MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
+| FRAME_MODE | 0xB1 | 0x21 | Single Frame Mode bez zaglavlja |
 
+```python
+#!/bin/bash
+
+i2cset -y 0 0x40 0x00 0x01 # SW Reset
+sleep 3 
+i2cset -y 0 0x40 0xb1 0x21 # Single frame capture with header disabled
+
+touch image.bin # Create image file
+
+for i in {1..120}
+do
+./spidev_test -s 20000000 -D /dev/spidev1.0 -b 16 -i zeroes.bin -o image_row.bin
+cat image_row.bin >> image.bin
+done
+
+```
