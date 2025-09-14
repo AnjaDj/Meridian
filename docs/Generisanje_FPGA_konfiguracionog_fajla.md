@@ -41,7 +41,7 @@ Ako smo se ipak odlucili da rucno gradimo cijeli sistem bez alata za automatizac
 - [Kreiranje i particionisanje SD kartice](Particionisanje_SD_kartice.md)
 - [Konfiguracija i kroskompajliranje U-Boot-a](UBoot.md)
 - [Konfiguracija i kroskompajliranje Linux kernela](Linux.md)
-- [Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici](#kopiranje_konfiguracionog_rbf_fajla_na_fat_particiju_na_sd_kartici)
+- [Kopiranje konfiguracionog rbf fajla na FAT particiju na SD kartici](#Kopiranje_konfiguracionog_rbf_fajla_na_fat_particiju_na_sd_kartici)
 
 
 
