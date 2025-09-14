@@ -19,18 +19,21 @@ Prilagoditi sistem na **FPGA** dijelu čipa tako da se omogući povezivanje izme
 Koristićemo **I2C**/**SPI** periferije u sklopu **HPS** dijela *CycloneV* chip-a, s tim da ćemo signalima **HPS** periferija pristupati preko **GPIO** konektora koji je, kao sto se može vidjeti na [**Šematskom prikazu CycloneV chip-a**](docs/5CSEMA5F31C6_shema.jpg),
 povezan na **FPGA** dio *CycloneV* chip-a. Dakle, signali HPS periferija (konkretno I2C i SPI) ce kroz *FPGA Fabric* biti povezani na pinove *GPIO konektora*.</br>
 
-
-
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/65ffe168-3973-4ec9-97eb-27b86a8303b5" alt="Description">
+  <img src="docs/5CSEMA5F31C6_shema.jpg">
 </p>
-<p align="center"><i><b>Slika 1 </b>: Tok izgradnje sistema </i></p>
+<p align="center"><i><b>Slika 1 </b>: Šema CycloneV SoC (5CSEMA5F31C6N) </i></p>
+
 
 
 
 
 ## [Realizacija hardvera](/docs/Realizacija_hardverskog_dijela_sistema.md) 💻⚙️
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65ffe168-3973-4ec9-97eb-27b86a8303b5" alt="Description">
+</p>
+<p align="center"><i><b>Slika 2 </b>: Tok izgradnje sistema </i></p>
 
 Prvi korak jeste da realizujemo hardverski dio sistema i to pomocu ***Qsys*** alata u okviru ***Quartus Prime***-a, a nas sistem ce se sastojati od:
 1. **Clock Source** izvora takst signala od *50MHz*
