@@ -6,7 +6,7 @@
   3.2.   [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)</br>
   3.3.   [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)</br>
 4. [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla.md)
-5. Izgradnja Linux embedded sistema</br>
+5. [Izgradnja Linux embedded sistema](#izgradnja-embedded-linux-sistema)</br>
    5.1.   [Konfiguracija i kroskompajliranje U-Boot-a](docs/UBoot.md)</br>
    5.2.   [Konfiguracija i kroskompajliranje Linux kernela](docs/Linux.md)</br>
    5.3.   [Koristenje Buildroot alata za izgradnju Linux embedded sistema](docs/Buildroot.md)
