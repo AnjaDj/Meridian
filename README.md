@@ -41,7 +41,7 @@ Na **Slici 2** možemo vidjeti tok izgradnje našeg *embedded* sistema, počevš
 Kompletan vodič za kreiranje hardverskog dijela sistema u okviru **Qsys Quartus** alata dat je [ovdje](/docs/Realizacija_hardverskog_dijela_sistema.md), a u nastavku ćemo se dotaći samo najbitnijih tačaka.</br>
 
 U okviru ***Quartus Prime Qsys*** alata, biramo sledeće komponente koje će činiti naš hardverski sistem:
-1. **Clock Source** izvora takst signala od *50MHz*
+1. **Clock Source** izvora takt signala od *50MHz*
 2. **AlteraV/CycloneV HPS**
 3. **System Peripheral ID**
 
