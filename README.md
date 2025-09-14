@@ -46,9 +46,7 @@ U okviru ***Quartus Prime Qsys*** alata, biramo sledeće komponente koje će či
 </p>
 <p align="center"><i><b>Slika 3 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
-### Podesavanje HPS dijela?
-
-Analizirajuci [semu CycloneV SoC](docs/DE1-SoC_schematic.pdf)-a podesili smo *PinMux* na sledeci nacin :
+Potrebno je podesiti *PinMux* **HPS**-a, te je u skladu sa [šemom CycloneV SoC-a](docs/DE1-SoC_schematic.pdf) izabrana sledeća konfiguracija pinova:
 
 |   PIN   |               Funkcije PIN-a                   |    Selektovana funkcija   |
 |---------|------------------------------------------------|---------------------------|
