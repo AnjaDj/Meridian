@@ -68,10 +68,9 @@ podesavanje parametara SDRAM-a, dok smo za pristup periferijama povezanim na HPS
 <p align="center"><i><b>Slika 4 </b>: HPS DDR3 SDRAM</i></p>
 
 Nakon sto smo ispratili sve korake navedene u vodicu za realizaciju [hardverskod dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md), trebalo bi da je uspjesno zavrsen proces 
-kompilacije **Processing->Start compilation**. 
+kompilacije (*Processing->Start compilation*). 
 
-
-Nakon kompilacije dizajna, dobicemo **output_files/meridian_top.sof**, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u vodicu za generisanje [**FPGA konfiguracionog fajla**](/docs/Generisanje_FPGA_konfiguracionog_fajla.md).
+Nakon kompilacije dizajna, dobicemo *output_files/name.sof*, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u vodicu za generisanje [**FPGA konfiguracionog fajla**](/docs/Generisanje_FPGA_konfiguracionog_fajla.md).
 
 
 ## Izgradnja embedded Linux sistema <img width="40" height="50" alt="image" src="https://github.com/user-attachments/assets/7b4c88f0-3d18-48c7-bf7a-7d46a32c4df7">
