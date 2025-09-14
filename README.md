@@ -158,6 +158,6 @@ done
 > kako bismo zauzvrat dobili jedan red frejma. Da bi se kreirao *zeroes.bin* fajl, moze se koristiti sledeca
 > python skripta
 ```python
-  with open("zeroes.bin", "wb") as f:
+with open("zeroes.bin", "wb") as f:
     f.write(b'\x00' * 320)
 ```
