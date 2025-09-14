@@ -11,6 +11,7 @@
    5.2.   [Konfiguracija i kroskompajliranje Linux kernela](docs/Linux.md)</br>
    5.3.   [Koristenje Buildroot alata za izgradnju Linux embedded sistema](docs/Buildroot.md)
 6. [Razvoj aplikacije](#aplikacija)
+7. [Problemi](#problemi)
   
 # Zadatak
 Integrisati termalnu kameru [**Meridian-MI1602**](https://www.meridianinno.com/products) na infrastrukturu [**DE1-SoC**](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836) platforme.
@@ -201,3 +202,10 @@ plt.title('Thermal Image Heatmap')
 plt.axis('off')
 plt.show()
 ```
+
+## Problemi
+
+1. Na **SenXor** magistrali (interni bus za Panther EVK izmedju kamere i samog termalnog procesora) se javlja greska **CAPTURE_ERROR**:*Communication error on the SenXor interface during thermal data capture*
+
+<img width="804" height="251" alt="image" src="https://github.com/user-attachments/assets/56b4fd56-a800-4cc4-a33d-f1f3e8f7821a" />
+
