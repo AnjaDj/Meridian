@@ -205,7 +205,15 @@ plt.show()
 
 ## Problemi
 
-1. Na **SenXor** magistrali (interni bus za Panther EVK izmedju kamere i samog termalnog procesora) se javlja greska **CAPTURE_ERROR**:*Communication error on the SenXor interface during thermal data capture*
+Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni podaci i to 120*360B), potrebno je
+- restartovati uredjaj
+- izabrati mod rada (dobijanje samo jednog frejma ili kontinualni prijem frejmova)
+<img width="515" height="687" alt="image" src="https://github.com/user-attachments/assets/26a22a49-c71e-48c8-bbfa-c35ddbb7d17c" />
+
+| Registar | Adresa registra | Vrijednost | Opis |
+|----------|-----------------|------------|------|
+| MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
+| FRAME_MODE | 0xB1 | 0x21 | Single Frame Mode bez zaglavlja |
 
 <img width="804" height="251" alt="image" src="https://github.com/user-attachments/assets/56b4fd56-a800-4cc4-a33d-f1f3e8f7821a" />
 
