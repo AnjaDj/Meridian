@@ -231,4 +231,4 @@ Medjutim, kada se ispita vrijednost registra 0xB6 koji je statusni registar dobi
 <img width="279" height="112" alt="image" src="https://github.com/user-attachments/assets/a1e1b15d-531f-445d-8ee9-0736b7911f0d" />
 </br>
 
-Ova greska se prevazilazi kreiranjem overlay-a (*.dtso*) koji ce samo update-ovati postojece nodove (promjena samo za SPI). Overlay fajl se kroskompajlira i prebacuje na SD karticu
+Ova greska se prevazilazi kreiranjem overlay-a (*.dtso*) koji ce samo update-ovati postojece nodove (promjena samo za SPI jer su svi SPI nodovi po defaultu onemoguceni). Overlay fajl se kroskompajlira i prebacuje na SD karticu
