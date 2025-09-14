@@ -216,7 +216,7 @@ Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni pod
 
 <img width="515" height="687" alt="image" src="https://github.com/user-attachments/assets/26a22a49-c71e-48c8-bbfa-c35ddbb7d17c" />
 
-Medjutim, kada se ispita vrijednost registra 0xB6 koji je statusni registar dobijem informaciju o gresci *Communication error on the SenXor interface during thermal data capture*
+Medjutim, kada se ispita vrijednost registra 0xB6 koji je statusni registar dobijem informaciju o gresci *Communication error on the SenXor interface during thermal data capture*</br>
 <img width="279" height="112" alt="image" src="https://github.com/user-attachments/assets/a1e1b15d-531f-445d-8ee9-0736b7911f0d" /></br>
 <img width="804" height="251" alt="image" src="https://github.com/user-attachments/assets/56b4fd56-a800-4cc4-a33d-f1f3e8f7821a" />
 
