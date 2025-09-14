@@ -24,10 +24,6 @@ povezan na **FPGA** dio *CycloneV* chip-a. Dakle, signali HPS periferija (konkre
 </p>
 <p align="center"><i><b>Slika 1 </b>: Šema CycloneV SoC (5CSEMA5F31C6N) </i></p>
 
-
-
-
-
 ## [Realizacija hardverskom dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md) 💻⚙️
 
 <p align="center">
@@ -48,7 +44,7 @@ U okviru ***Quartus Prime Qsys*** alata, biramo sledeće komponente koje će či
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c6c00afe-a715-402d-a3eb-ae2d53a5833d"/>
 </p>
-<p align="center"><i><b>Slika 2 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
+<p align="center"><i><b>Slika 3 </b>: Sematski prikaz hardverskog sistema realizovanog u okviru Qsys alata</i></p>
 
 ### Podesavanje HPS dijela?
 
