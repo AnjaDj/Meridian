@@ -121,7 +121,7 @@ Na **Slici 6** su prikazana dva nacina povezivanja **MI48E4 TIP Board** sa hosto
 <p align="center"><i><b>Slika 6 </b>: Konceptualni dijagram 2 nacina povezivanja Panthera EVK board </i></p>
 
 
-Registarska mapa Meridian modula je velika, ali je za nasu demonstracionu potrebu sasvim dovoljno podesiti svega 2 registra kako bismo dobili prvi frejm. 
+Registarska mapa Meridian modula je velika, ali je za nasu demonstracione potrebe sasvim dovoljno podesiti svega 2 registra kako bismo dobili prvi frejm. 
 | Registar | Adresa registra | Vrijednost | Opis |
 |----------|-----------------|------------|------|
 | MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
