@@ -6,7 +6,7 @@
   3.2.   [Kreiranje Qsys projekta](/docs/Realizacija_hardverskog_dijela_sistema.md#kreiranje-qsys-projekta)</br>
   3.3.   [Kompajliranje dizajna](/docs/Realizacija_hardverskog_dijela_sistema.md#proces-kompajliranja-dizajna)</br>
 4. [Generisanje FPGA konfiguracionog fajla](docs/Generisanje_FPGA_konfiguracionog_fajla.md)
-5. [Izgradnja Linux embedded sistema](#izgradnja-embedded-linux-sistema-image)</br>
+5. [Izgradnja Linux embedded sistema](#izgradnja-embedded-linux-sistema)</br>
    5.1.   [Konfiguracija i kroskompajliranje U-Boot-a](docs/UBoot.md)</br>
    5.2.   [Konfiguracija i kroskompajliranje Linux kernela](docs/Linux.md)</br>
    5.3.   [Koristenje Buildroot alata za izgradnju Linux embedded sistema](docs/Buildroot.md)
@@ -73,7 +73,7 @@ kompilacije (*Processing->Start compilation*).
 Nakon kompilacije dizajna, dobicemo *output_files/name.sof*, koji cemo konvertovati u **Raw Binary File (.rbf)** za konfiguraciju **FPGA Fabric**-a tokom procesa **boot**-anja sistema. Ovaj postupak je detaljno opisan u vodicu za generisanje [**FPGA konfiguracionog fajla**](/docs/Generisanje_FPGA_konfiguracionog_fajla.md).
 
 
-## Izgradnja embedded Linux sistema <img width="40" height="50" alt="image" src="https://github.com/user-attachments/assets/7b4c88f0-3d18-48c7-bf7a-7d46a32c4df7">
+## Izgradnja embedded Linux sistema
 
 Sada je potrebno da izgradimo **embedded Linux sistem**. U sklopu ovog repozitorijuma objasnjena su 2 nacina
 za kompletnu izgradjnu jednog embedded sistema i to:
