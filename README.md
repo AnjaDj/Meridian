@@ -127,6 +127,14 @@ Registarska mapa Meridian modula je velika, ali je za nasu demonstracione potreb
 | MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
 | FRAME_MODE | 0xB1 | 0x21 | Single Frame Mode bez zaglavlja |
 
+<p align="center">
+ <img width="710" height="539" alt="image" src="https://github.com/user-attachments/assets/23f00d33-5469-45de-b53f-ded981e07cac" />
+</p>
+<p align="center"><i><b>Slika 7 </b>: Thermal Data Frame format </i></p>
+
+
+Jedan temperaturni frejm se sastoji od 160x120 rijeci tj. 160x120x2 bajtova (svaka rijec je 2B). Tokom transfera prvo se prenosi bit najvece tezine (BE). Svaka rijec predstavlja temperaturu jednog piksela i predstavljena je kao 16-bit unsigned integer u jedinici 0.1K. Tako na primjer, ako primimo 16-bit rijec 0x0bc1 to ce odgovarati tepmeraturi 300.9K
+
 ```python
 #!/bin/bash
 
