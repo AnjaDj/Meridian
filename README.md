@@ -205,6 +205,11 @@ plt.show()
 
 ## Problemi
 
+1. Nema detekcije I2C uredjaja (adresa 0x40) iako je koristen ALT_IOBUF primitive u vhd dizajnu
+<img width="500" height="410" alt="image" src="https://github.com/user-attachments/assets/de25aa0c-2f05-44ff-9e25-9b0db58e389b" />
+<img width="240" height="257" alt="image" src="https://github.com/user-attachments/assets/ae36a616-c01c-44b2-a7a1-4065443c2573" />
+
+
 Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni podaci i to 120*360B), potrebno je
 - restartovati uredjaj (**MCU_RESET** reg:0x00 value:0x01)
 - izabrati mod rada (dobijanje samo jednog frejma ili kontinualni prijem frejmova) **FRAME_MODE** reg:0xB1
@@ -218,7 +223,5 @@ Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni pod
 
 Medjutim, kada se ispita vrijednost registra 0xB6 koji je statusni registar dobijem informaciju o gresci *Communication error on the SenXor interface during thermal data capture*</br>
 <img width="279" height="112" alt="image" src="https://github.com/user-attachments/assets/a1e1b15d-531f-445d-8ee9-0736b7911f0d" />
-</br>
-<img width="804" height="251" alt="image" src="https://github.com/user-attachments/assets/56b4fd56-a800-4cc4-a33d-f1f3e8f7821a" />
 </br>
 
