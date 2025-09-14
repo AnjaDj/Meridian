@@ -10,7 +10,7 @@
    5.1.   [Konfiguracija i kroskompajliranje U-Boot-a](docs/UBoot.md)</br>
    5.2.   [Konfiguracija i kroskompajliranje Linux kernela](docs/Linux.md)</br>
    5.3.   [Koristenje Buildroot alata za izgradnju Linux embedded sistema](docs/Buildroot.md)
-6. [Razvoj aplikacije](docs/Razvoj_aplikacije.md)
+6. [Razvoj aplikacije](#aplikacija)
   
 # Zadatak
 Integrisati termalnu kameru [**Meridian-MI1602**](https://www.meridianinno.com/products) na infrastrukturu [**DE1-SoC**](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836) platforme.
