@@ -118,7 +118,7 @@ Na **Slici 6** su prikazana dva nacina povezivanja **MI48E4 TIP Board** sa hosto
 <p align="center">
  <img width="578" height="431" alt="image" src="https://github.com/user-attachments/assets/47a873bf-d334-463a-83de-58c5cc0aee99" />
 </p>
-<p align="center"><i><b>Slika 2 </b>: Konceptualni dijagram 2 nacina povezivanja Panthera EVK board </i></p>
+<p align="center"><i><b>Slika 6 </b>: Konceptualni dijagram 2 nacina povezivanja Panthera EVK board </i></p>
 
 
 
