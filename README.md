@@ -1,4 +1,4 @@
-## Sadržaj
+# Sadržaj
 1. [Opis](#Zadatak)
 2. [Instalacija potrebnih softverskih paketa](/docs/Uputstvo_za_instalaciju_softverskih_paketa.md)
 3. [Realizacija hardverskog dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md)</br>
