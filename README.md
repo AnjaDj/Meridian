@@ -205,19 +205,25 @@ plt.show()
 
 ## Problemi
 
-1. Nema detekcije I2C uredjaja (adresa 0x40) iako je koristen ALT_IOBUF primitive u vhd dizajnu
+1. Nema detekcije I2C uredjaja (adresa 0x40) na I2C magistrali 0, iako je koristen **ALT_IOBUF** **primitive** u vhd dizajnu.</br>
 <img width="500" height="410" alt="image" src="https://github.com/user-attachments/assets/de25aa0c-2f05-44ff-9e25-9b0db58e389b" />
 <img width="240" height="257" alt="image" src="https://github.com/user-attachments/assets/ae36a616-c01c-44b2-a7a1-4065443c2573" />
+</br>
+</br>
 
+2. SenXor CAPTURE ERROR</br>
 
-Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni podaci i to 120*360B), potrebno je
-- restartovati uredjaj (**MCU_RESET** reg:0x00 value:0x01)
-- izabrati mod rada (dobijanje samo jednog frejma ili kontinualni prijem frejmova) **FRAME_MODE** reg:0xB1
+Da bismo dobili jedan termalni frejm, bez zaglavlja (sto znaci samo termalni podaci i to 120*360B), potrebno je</br>
+- restartovati uredjaj (**MCU_RESET** reg:0x00 value:0x01)</br>
+- izabrati mod rada (dobijanje samo jednog frejma ili kontinualni prijem frejmova) **FRAME_MODE** reg:0xB1</br>
+
 
 | Registar | Adresa registra | Vrijednost | Opis |
 |----------|-----------------|------------|------|
 | MCU_RESET | 0X00 | 0x01 | softverski reset MI48E4 komponente |
 | FRAME_MODE | 0xB1 | 0x21 | Single Frame Mode bez zaglavlja |
+
+</br>
 
 <img width="515" height="687" alt="image" src="https://github.com/user-attachments/assets/26a22a49-c71e-48c8-bbfa-c35ddbb7d17c" />
 
