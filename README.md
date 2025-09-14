@@ -114,6 +114,9 @@ Na red dolazi konfiguracija i kroskompajliranje Linux kernela sto je detaljno ob
 
 ## Aplikacija
 
+Detaljnije o razvoju aplikacije, samoj hardverskoj komponenti kamere, njenoj registarkoj mapi i nacinu povezivanja, moze se naci na [linku](docs
+/Razvoj_aplikacije.md).
+
 Na **Slici 6** su prikazana dva nacina povezivanja **MI48E4 TIP Board** sa hostom. Mi cemo koristiti drugi nacin.
 <p align="center">
  <img width="578" height="431" alt="image" src="https://github.com/user-attachments/assets/47a873bf-d334-463a-83de-58c5cc0aee99" />
