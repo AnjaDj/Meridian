@@ -28,7 +28,7 @@ povezan na **FPGA** dio *CycloneV* chip-a. Dakle, signali HPS periferija (konkre
 
 
 
-## [Realizacija hardvera](/docs/Realizacija_hardverskog_dijela_sistema.md) 💻⚙️
+## [Realizacija hardverskom dijela sistema](/docs/Realizacija_hardverskog_dijela_sistema.md) 💻⚙️
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/65ffe168-3973-4ec9-97eb-27b86a8303b5" alt="Description">
