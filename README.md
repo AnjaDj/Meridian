@@ -148,8 +148,16 @@ touch image.bin # Create image file
 
 for i in {1..120}
 do
-./spidev_test -s 20000000 -D /dev/spidev1.0 -b 16 -i zeroes.bin -o image_row.bin
+./spidev_test -s 20000000 -D /dev/spidev0.0 -b 16 -i zeroes.bin -o image_row.bin
 cat image_row.bin >> image.bin
 done
+```
 
+> [!NOTE]
+> Prethodna skripta podrazumjeva postojanje *zeroes.bin* fajla (320 nula) koji ce se slati preko SPI *Panther EVK* modulu,
+> kako bismo zauzvrat dobili jedan red frejma. Da bi se kreirao *zeroes.bin* fajl, moze se koristiti sledeca
+> python skripta
+```python
+  with open("zeroes.bin", "wb") as f:
+    f.write(b'\x00' * 320)
 ```
