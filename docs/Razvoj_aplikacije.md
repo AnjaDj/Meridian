@@ -116,7 +116,7 @@ import fcntl
 import spidev
 import time
 
-I2C_BUS        = 2        # /dev/i2c-2
+I2C_BUS        = 0        # /dev/i2c-0
 I2C_ADDR       = 0x40     
 SPI_BUS        = 0        # /dev/spidev0.0
 SPI_CS         = 0
