@@ -38,7 +38,7 @@ povezan na **FPGA** dio *CycloneV* chip-a. Dakle, signali HPS periferija (konkre
 Prvi korak ka integraciji *Meridian termalne kamere* sa *DE1-SoC* sistemom, jeste realizacija hardverskog dijela sistema.
 Na **Slici 2** možemo vidjeti tok izgradnje našeg *embedded* sistema, počevši od realizacije dizajna u slokpu ***Qsys*** alata pa do *build*-anja *bootloader*-a.</br>
 
-Kompletan vodič za kreiranje hardverskog dijela sistema u okviru **Qsys-a/Quartus-a** dat je [ovdje](/docs/Realizacija_hardverskog_dijela_sistema.md), a u nastavku ćemo se dotaći samo najbitnijih tačaka.</br>
+Kompletan vodič za kreiranje hardverskog dijela sistema u okviru **Qsys Quartus** alata dat je [ovdje](/docs/Realizacija_hardverskog_dijela_sistema.md), a u nastavku ćemo se dotaći samo najbitnijih tačaka.</br>
 
 U okviru ***Quartus Prime Qsys*** alata, biramo sledeće komponente koje će činiti naš hardverski sistem:
 1. **Clock Source** izvora takst signala od *50MHz*
