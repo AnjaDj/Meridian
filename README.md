@@ -112,4 +112,13 @@ Model: Terasic DE1-SoC
 
 Na red dolazi konfiguracija i kroskompajliranje Linux kernela sto je detaljno objasnjeno u sklopu fajla [konfiguracija Linux kernela](docs/Linux.md)
 
-## Aplikacija 
+## Aplikacija
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c013d57-1f88-454c-9bc4-fbac36245350" alt="Description">
+</p>
+<p align="center"><i><b>Slika 6 </b>: Panther EVK board </i></p>
+
+Na **Slici 6** je prikazan **MI48E4 TIP Board** sa **MI1602M5S Camera Module** i **MI48E4 Thermal Image Processor** na sebi.</br>
+**MI1602M5S Camera Module** je termalni senzor za snimanje slika od 160x120x2B dugotalasnog infracrvenog zracenja.</br>
+**MI48E4 Thermal Image Processor** je procesor za kontrolu *low-level* signala za snimanje sirovih podataka iz termovizijskog niza i obezbjedjuje standardne interfejse za komunikaciju sa *host*-om.</br>
