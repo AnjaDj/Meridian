@@ -1,4 +1,4 @@
-S# 🧱 Šta je Buildroot?
+# 🧱 Šta je Buildroot?
 
 **Buildroot** je alat (framework) koji se koristi za automatsko generisanje **celog Linux sistema** (toolchain + bootloader + kernel + root filesystem) za neku embedded platformu.
 
