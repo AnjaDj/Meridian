@@ -51,6 +51,8 @@ Unutar `~/buildroot/board/terasic/de1soc_cyclone5` direktorijuma treba da se nad
 Da biste generisali `.patch` fajl potrebno je ispratiti uputstvo za [konfiguraciju UBoot-a](UBoot.md), dok je za kreiranje default kernel configuration fajla 
 potrebno ispratiti uputstvo za [konfiguraciju Linux kernela](Linux.md).
 
+Dodatno, konfiguracioni rbf fajl treba da se nadje i na putanji `buildroot/output/images/`.
+
 Kako predefinisana konfiguracija ne postoji za DE1-SoC ploču, koristicemo predefinisanu konfiguraciju
 za DE10-nano plocu jer su vrlo slicne. 
 - Ucitavamo predefinisanu konfiguraciju za DE10-nano plocu u `.config` kao nasu polaznu radnu konfiguraciju </br>
