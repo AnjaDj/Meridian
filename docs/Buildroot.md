@@ -1,4 +1,4 @@
-# 🧱 Šta je Buildroot?
+S# 🧱 Šta je Buildroot?
 
 **Buildroot** je alat (framework) koji se koristi za automatsko generisanje **celog Linux sistema** (toolchain + bootloader + kernel + root filesystem) za neku embedded platformu.
 
@@ -108,13 +108,15 @@ za DE10-nano plocu jer su vrlo slicne.
     - u okviru **U-Boot binary format** isključite opciju **u-boot.bin** i uključite opciju **u-boot.img**
     - uključite opciju **Install U-Boot SPL binary image**
     - uključite opciju **CRC image for Altera SoC FPGA (mkpimage)**</br>
-      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" />
+      <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b2540ed9-0ef4-49c4-9e12-06cafd18be37" /></br>
 
 - U okviru **Host utilities**:
     - uključite opciju **host u-boot tools**
     - uključite opciju **Environment image**
     - postavite **Source files for environment** opciju na **board/terasic/de1soc_cyclone5/boot-env.txt** 
-    - postavite **Size of environment** opciju na 8192
+    - postavite **Size of environment** opciju na 8192</br>
+      <img width="692" height="182" alt="image" src="https://github.com/user-attachments/assets/631e4d0f-fe3e-40fa-84c7-d5ff28b992e0" /></br>
+
 
 
 Nakon sto smo izvrsili prilagodjenje polazne radne konfiguracije koja je bila u potpunosti prilagodjena **DE10-nano** platformi,
